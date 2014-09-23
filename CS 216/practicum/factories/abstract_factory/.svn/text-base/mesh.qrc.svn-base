@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="xsd">
+    <file>mesh.xsd</file>
+  </qresource>
+</RCC>
+

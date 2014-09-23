@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/mvctest.dir/main.o CMakeFiles/mvctest.dir/namemodel.o CMakeFiles/mvctest.dir/view.o CMakeFiles/mvctest.dir/firstview.o CMakeFiles/mvctest.dir/lastview.o CMakeFiles/mvctest.dir/namecontroller.o  -o mvctest -rdynamic -lQtGui -lpng -lSM -lICE -lXext -lX11 -lm -lQtCore -lz -lrt -lpthread -ldl 

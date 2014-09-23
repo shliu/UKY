@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="mesh">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:group ref="shapeGroup" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:group name="shapeGroup">
+  <xs:choice>
+    <xs:element name="circle" type="circleType"/>
+    <xs:element name="square" type="squareType"/>
+    <xs:element name="rectangle" type="rectangleType"/>
+    <xs:element name="triangle" type="triangleType"/>
+  </xs:choice>
+</xs:group>
+
+<xs:complexType name="circleType">
+  <xs:sequence>
+    <xs:element name="radius" type="xs:double"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="squareType">
+  <xs:sequence>
+    <xs:element name="width" type="xs:double"/>
+  </xs:sequence>  
+</xs:complexType>
+
+<xs:complexType name="rectangleType">
+  <xs:sequence>
+    <xs:element name="width" type="xs:double"/>
+    <xs:element name="height" type="xs:double"/>
+  </xs:sequence> 
+</xs:complexType>
+
+<xs:complexType name="triangleType">
+  <xs:sequence>
+    <xs:element name="base" type="xs:double"/>
+    <xs:element name="height" type="xs:double"/>
+  </xs:sequence> 
+</xs:complexType>
+  
+</xs:schema>

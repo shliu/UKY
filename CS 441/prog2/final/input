@@ -1,0 +1,16 @@
+int var = 10;
+begin
+print var + 1000; 
+begin
+var = 20;
+begin
+var = 30;
+print var;
+int var = 40;
+var = 50;
+print var;
+end
+print var;
+end
+end
+

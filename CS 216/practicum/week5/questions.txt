@@ -1,0 +1,19 @@
+Steven Liu
+CS216 - 001
+Week5 Praticum
+
+1)Does optimization increase or decrease the size of the executable?
+	Decrease.
+
+2)Does optimization increase or decrease the execution time?
+	Decrease.
+
+3)Based on 5 consect. measurements with a million numbers, what's avg speedup? 
+	~3.0071 times faster.
+
+4)What optimization technique is responsible for the speedup?
+	Inlining.
+
+5)Even without the speedup, why prefer std::sort when performance is similar?
+	std::sort is type safe, does not require type casts, and doesn't 
+	require the writing of a compare function for standard types

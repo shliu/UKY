@@ -1,0 +1,32 @@
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+exit
+perror
+puts
+__stack_chk_fail
+printf
+read
+memcmp
+lseek
+open
+__libc_start_main
+__gmon_start__
+GLIBC_2.4
+GLIBC_2.2.5
+/etc/hosH
+/etc/netH
+workf
+/bin/ls
+/bin/catH
+dH3<%(
+[]A\A]A^A_
+Error opening %s
+perror is: 
+lseek error
+read error
+first_test
+You debugged the first one correctly!
+second_test
+You debugged the second one correctly!
+SORRY!  You did not debug the %s correctly.
+;*3$"

@@ -1,0 +1,30 @@
+<mesh>
+  <circle>
+    <radius>1.0</radius>
+  </circle>
+  <square>
+    <width>2.0</width>
+  </square>
+  <rectangle>
+    <width>3.0</width>
+    <height>4.0</height>
+  </rectangle>
+  <triangle>
+    <base>5.0</base>
+    <height>5.0</height>
+  </triangle>
+  <circle>
+    <radius>1.0</radius>
+  </circle>
+  <square>
+    <width>2.0</width>
+  </square>
+  <rectangle>
+    <width>3.0</width>
+    <height>4.0</height>
+  </rectangle>
+  <triangle>
+    <base>5.0</base>
+    <height>5.0</height>
+  </triangle>
+</mesh>

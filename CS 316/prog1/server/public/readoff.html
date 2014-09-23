@@ -1,0 +1,36 @@
+<HTML>
+	<HEAD>
+		<TITLE>Read flag for others off example</TITLE></HEAD>
+	<BODY bgcolor="#99ccff">
+	    <h1>Set read flag for others off for this file</h1>
+		<h1>When you try to access it from a browser, you should get 403 error </h1>
+			<FORM action="http://cor.cs.uky.edu:8600/echo.cgi" method="get">
+			<P align="center"><STRONG><FONT size="6">Customer Database Search<BR>
+			</P>
+			</FONT></STRONG>
+			<P><BR>
+				<BR>
+				<FONT size="4" face="arial">Data files directory: <INPUT type="text" name="file directory" value="~paulp/HTML">
+			</P>
+			<P>
+			Data to display:
+			<P>
+				<INPUT type="radio" name="option" value="number">
+			Customer by customer number
+			<P>
+				<INPUT type="radio" name="option" value="name">
+			Customer by customer name
+			<P>
+				<INPUT type="radio" name="option" value="next"> Next customer ordered by 
+				customer number
+			</P>
+			<P>
+				Customer number or name to search for: <INPUT type="text" name="data">
+			<p>
+			<INPUT type=hidden name=hiddenValue value=0>
+			<INPUT type="submit" value="Submit">
+			</FONT>
+		</FORM>
+		</P>
+	</BODY>
+</HTML>

@@ -1,0 +1,98 @@
+hw1.1
+	1)
+		Completed using vi on multilab.
+
+	2)
+		"gcc --version" in console returned:
+		"gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3"
+		version 4.6.3
+
+	3)
+		Yes, it follows correct c++ syntax
+		
+	4)
+		gcc is a C compiler, we used C++ keywords and libraries.
+		I don't think C has the "iostream" library and the "new" keyword
+		was not included until C++.  This means that we need the
+		g++ compiler to compile this program.
+		
+	5) 
+		"gcc -S hw1.cc", and "gcc -c hw1.cc" executed in console
+		no errors returned.
+		
+	6) 
+		"man gcc" states that
+			-S Stop after the stage of compilation proper; do not assemble.
+				Output in form of assembler code.
+			-c Compile or assemble the source files, but do not link.
+				Output in form of object file.
+			
+		I assume -c prevents linking to the non-existant C library of iostream
+		I'm unsure what assemble means for -S.
+		These options probably do not report errors because they
+		stop the compiling process before the problem areas.
+		
+	7)
+		"gcc -S hw1.cc" produces "hw1.s" 
+			a text file - looks like low level code
+		"gcc -c hw1.cc" produces "hw1.o"
+			a binary file
+			
+	8)
+		"gcc hw1.o" seems to return similiar errors as when I tried "gcc hw1.cc"
+		unable to generate an executable file without errors.
+	
+hw1.2
+	1)
+		hw1.cc is an incorrect C++ program - the Huge class contains dynamic 
+		memory allocation yet does not have a copy constructor nor a copy 
+		assignment operator method
+		We could potentially have dangling pointer issues if we attempt to make
+		copies of this object and delete it.
+		
+	2)
+		We could execute it, but it throws a bunch of errors.  
+		However, before the errors it displays:
+			"
+			freed memory at 0x1439010
+			freed memory at 0x1439010
+			"
+		This means that the same memory location was used for multiple objects
+		and when one object was deleted it left a dangling pointer for the
+		other object.
+		
+	3)
+		a) 
+			-Weffc++ causes the compiler to warn about violations of 
+			style guidelines set from Scott Meyers' "Effective C++" book
+				"
+				Item 11: Define a copy constructor and an assignment operator for classes with dynamically-allocated memory.
+				Item 12: Prefer initialization to assignment in constructors.
+				Item 14: Make destructors virtual in base classes.
+				Item 15: Have operator= return a reference to *this.
+				Item 23: Don't try to return a reference when you must return an object.
+				"
+			
+			The compiler with -Weffc++ option on threw the following warnings:
+				"
+				warning: ‚struct Huge‚ has pointer data members [-Weffc++]
+				warning:   but does not override ‚Huge(const Huge&)‚ [-Weffc++]
+				warning:   or ‚operator=(const Huge&)‚ [-Weffc++]
+				"
+		b)
+			See included hw1.cc file
+			
+			
+hw1.3
+	See included pre_vs_post.cc file
+	Summary:
+		"cout << " is same as "operator<<()"
+		"operator<<(i--)" 
+			post decrement uses value of i first, then decrements
+		"operator<<(--i)" 
+			pre decrement decrements first then uses i
+		"i = i--" 
+			seems to give different results depending on what compiler I used
+			I'm unsure what exactly is happening, but based on what I'm reading 
+			it could be because i=i-- is an undefined behavior
+			

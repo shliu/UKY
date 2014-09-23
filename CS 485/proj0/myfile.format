@@ -1,0 +1,5 @@
+uint 1 a
+char 1 b
+char 7 c
+ushort 2 d
+ulong 1 e

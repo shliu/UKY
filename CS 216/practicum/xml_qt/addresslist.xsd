@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="addresslist">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="address" type="addressType" 
+                  minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="addressType">
+  <xs:sequence>
+    <xs:element name="firstname" type="nonEmptyString"/>
+    <xs:element name="lastname" type="nonEmptyString"/>
+    <xs:element name="street" type="nonEmptyString"/>
+    <xs:element name="city" type="nonEmptyString"/>
+    <xs:element name="state" type="stateType"/>
+    <xs:element name="zip" type="zipType"/>
+  </xs:sequence>
+</xs:complexType>
+  
+<xs:simpleType name="nonEmptyString">
+  <xs:restriction base="xs:string">
+    <xs:minLength value="1"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="stateType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z][A-Z]"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="zipType">
+  <xs:restriction base="xs:nonNegativeInteger">
+    <xs:pattern value="[0-9][0-9][0-9][0-9][0-9]"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall   CMakeFiles/hellotest.dir/hellotest.cpp.o  -o hellotest -rdynamic libhello.so -Wl,-rpath,/u/zon-d2/ugrad/shliu2/libhello/build: 

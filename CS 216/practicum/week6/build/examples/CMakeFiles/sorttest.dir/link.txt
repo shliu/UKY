@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall   CMakeFiles/sorttest.dir/main.cpp.o CMakeFiles/sorttest.dir/sortable.cpp.o  -o sorttest -rdynamic ../libsort/libsort.so -Wl,-rpath,/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/build/libsort: 

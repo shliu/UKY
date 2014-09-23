@@ -1,0 +1,2 @@
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/build/libsort/CMakeFiles/sort.dir
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/build/examples/CMakeFiles/sorttest.dir

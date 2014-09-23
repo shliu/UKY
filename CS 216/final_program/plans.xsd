@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="plans">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:group ref="planGroup" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:group name="planGroup">
+  <xs:choice>
+    <xs:element name="voice" type="planType"/>
+    <xs:element name="text" type="planType"/>
+    <xs:element name="data" type="planType"/>
+  </xs:choice>
+</xs:group>
+
+<xs:complexType name="planType">
+  <xs:sequence>
+    <xs:element name="accountnumber" type="xs:positiveInteger"/>
+    <xs:element name="rate" type="xs:nonNegativeInteger"/>
+    <xs:element name="usage" type="xs:nonNegativeInteger"/>
+  </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

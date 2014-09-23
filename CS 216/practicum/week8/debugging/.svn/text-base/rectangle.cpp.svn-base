@@ -1,0 +1,37 @@
+#include "rectangle.h"
+
+#include <cassert>
+#include <cstdlib>
+#include <iostream>
+#include <cmath>
+
+Rectangle::Rectangle(const Point& p0, const Point& p1)
+: m_p0(p0), m_p1(p1) {}
+
+Point Rectangle::point(const int& index) {
+  assert(index>=0);
+  assert(index<4);
+  switch (index) {
+    case 0:
+      return m_p0;
+      break;
+    case 1:
+      return Point(m_p1.x(), m_p0.y());
+      break;
+    case 2:
+      return m_p1;
+      break;
+    case 3:
+      return Point(m_p0.x(), m_p1.y());
+      break;
+    default:
+      std::cerr << "invalid index\n";
+      exit(EXIT_FAILURE);
+      break;
+  }
+}
+
+double Rectangle::circumference() const {
+  return 2.0*(std::abs(m_p0.x()-m_p1.x())+std::abs(m_p0.y()-m_p1.y()));
+}
+

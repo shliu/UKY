@@ -1,0 +1,10 @@
+int var = 10;
+begin
+	var = 20;
+	print var;
+	begin
+		int var = 30;
+		print var;
+	end
+end 
+print var;

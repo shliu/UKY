@@ -1,0 +1,31 @@
+Steven Liu
+CS216 - 001
+Week4 Praticum
+
+1)Does optimization increase or decrease the size of the class object file?
+	Decreases class object file size.
+
+2)Does optimization increase or decrease the size of the main object file?
+	Increases main object file size.
+
+3)Does optimization increase or decrease the execution time?
+	Decreases the execution time.
+
+4)Why are the execution times not identical for subsequent program runs?
+	Likely because there are other programs running on the same server.
+	While running my program, I used the command "top" to watch the list
+	of running processes.  I noticed that there are many other processes
+	running at the same time as my program.  Occasionally, other students
+	were running their own GeometricSeries program, using up the cpu.
+
+5)Based on 5 consecutive measurements, find speedup ratio of non/opt.
+	using ratio = .5 and n = 10,000,000
+	opt1: 13.6948		non1: 13.8736
+	opt2: 13.7018		non2: 13.8999
+	opt3: 13.8158		non3: 13.9151
+	opt4: 13.724		non4: 13.9148
+	opt5: 13.6812		non5: 13.9246
+	avgopt: 13.7235		avgnon: 13.9056
+	
+	speedup ratio: 13.9056/13.7235 = 1.0133 
+	~1.33% speed up

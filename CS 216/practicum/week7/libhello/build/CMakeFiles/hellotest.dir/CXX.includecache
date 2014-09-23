@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/u/zon-d2/ugrad/shliu2/libhello/hello.h
+string
+-
+
+/u/zon-d2/ugrad/shliu2/libhello/hellotest.cpp
+iostream
+-
+hello.h
+/u/zon-d2/ugrad/shliu2/libhello/hello.h
+

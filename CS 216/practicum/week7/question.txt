@@ -1,0 +1,48 @@
+Steven Liu
+CS216 
+Practicum week 7
+
+1)
+Path: .
+URL: file:///u/zon-d2/ugrad/shliu2/repos/trunk/libhello
+Repository Root: file:///u/zon-d2/ugrad/shliu2/repos
+Repository UUID: d2da3570-dd1f-47b8-9d88-bbeb560844c5
+Revision: 4
+Node Kind: directory
+Schedule: normal
+Last Changed Author: shliu2
+Last Changed Rev: 4
+Last Changed Date: 2011-10-05 09:33:51 -0400 (Wed, 05 Oct 2011)
+
+
+2)
+?       hellotest.cpp
+?       hello.h
+?       hello.cpp.in
+?       CMakeLists.txt
+
+
+3)
+A       hellotest.cpp
+A       hello.cpp.in
+A       hello.h
+A       CMakeLists.txt
+
+
+4)
+------------------------------------------------------------------------
+r5 | shliu2 | 2011-10-05 14:30:41 -0400 (Wed, 05 Oct 2011) | 1 line
+
+
+------------------------------------------------------------------------
+r4 | shliu2 | 2011-10-05 09:33:51 -0400 (Wed, 05 Oct 2011) | 1 line
+
+
+------------------------------------------------------------------------
+
+
+5)
+Using libhello 1.0
+$Id: hello.cpp.in 7 2011-10-05 18:51:01Z shliu2 $
+Hello World!
+

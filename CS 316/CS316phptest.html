@@ -1,0 +1,35 @@
+<HTML>
+	<HEAD>
+		<TITLE>The Customer Data Base Search Engine</TITLE></HEAD>
+	<BODY bgcolor="#99ccff">
+	
+		<FORM action="CS316phptest.php" method="post">
+			<P align="center"><STRONG><FONT size="6">Customer Database Search<BR>
+			</P>
+			</FONT></STRONG>
+			<P><BR>
+				<BR>
+				<FONT size="4" face="arial">Data files directory: <INPUT type="text" name="file directory" value="~paulp/HTML">
+			</P>
+			<P>
+			Data to display:
+			<P>
+				<INPUT type="radio" name="option" value="number">
+			Customer by customer number
+			<P>
+				<INPUT type="radio" name="option" value="name">
+			Customer by customer name
+			<P>
+				<INPUT type="radio" name="option" value="next"> Next customer ordered by 
+				customer number
+			</P>
+			<P>
+				Customer number or name to search for: <INPUT type="text" name="data">
+			<p>
+			<INPUT type=hidden name=hiddenValue value=0>
+			<INPUT type="submit" value="Submit">
+			</FONT>
+		</FORM>
+		</P>
+	</BODY>
+</HTML>

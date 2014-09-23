@@ -1,0 +1,17 @@
+Steven Liu
+Tim Parrott
+
+We were unable to make the program do exact as the milestone A demanded.  
+However, we were able to make our program perform while, do/while, 
+and repeat/until loops correctly.  
+
+Although we were able to analyze and learn the general concept of the 
+functions of symbol_table.cc, we were unsuccessful in attempting to integrate
+it into our program.
+
+The code has been left at its latest state - it's not able to correctly
+compile but we feel we were close to achieving milestone A.
+
+Dec 5th
+We have completed milestone A, the program now uses the symbol table to store 
+variable names. We have not accomplished milestone B yet or enabled floats.

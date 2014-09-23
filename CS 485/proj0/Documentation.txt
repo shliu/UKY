@@ -1,0 +1,25 @@
+This program reads in a format file, then by using the information
+from the format file is then able to extract binary data from the
+data file.  The user can then input commands the perform bitwise
+operations on the binary data.
+
+The program stores the binary data in a 2D array.  The outer array
+is size 26, for the maximum number of single character variable names.
+The inner array has a max size of 10.  The actual binary data is 
+stored in a union of all possible types (char, ushort, uint, ulong).
+
+Since the data is stored in an array, accessing the data is relatively
+fast (constant time).  The program finds the array indices by using
+the idea that char's have integer representations.  By subtracting
+user input char's the program is able to quickly find the correct 
+index: eg array[input1-'a'][input2-'0'];  However, as the program 
+stores the data in a preallocated array, if there are very little 
+data, a lot of space is wasted.  
+
+When operating on the data, a trick is used where the program
+forces the union to be casted to the data type needed.  For example,
+when AND'ing a short and a long, depending on which operand comes
+first, the program may treat the long data as a short.  The result
+is then type casted to the desired returning datatype.  From my 
+testing so far, this seems like a valid method and prevents a mess
+of if/else statements.

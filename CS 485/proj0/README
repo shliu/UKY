@@ -1,0 +1,13 @@
+Steven Liu
+CS485
+Project0
+
+This project includes the following files:
+global.h
+operator.c  
+read_data.c    
+main.c    
+makefile      
+print.c     
+read_format.c  
+

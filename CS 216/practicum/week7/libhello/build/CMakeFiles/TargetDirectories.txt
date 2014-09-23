@@ -1,0 +1,2 @@
+/u/zon-d2/ugrad/shliu2/libhello/build/CMakeFiles/hello.dir
+/u/zon-d2/ugrad/shliu2/libhello/build/CMakeFiles/hellotest.dir

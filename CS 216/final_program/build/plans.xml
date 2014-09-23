@@ -1,0 +1,32 @@
+<plans>
+  <voice>
+    <accountnumber>1</accountnumber>
+    <rate>1</rate>
+    <usage>1</usage>
+  </voice>
+  <data>
+    <accountnumber>1</accountnumber>
+    <rate>1</rate>
+    <usage>1</usage>
+  </data>
+  <text>
+    <accountnumber>1</accountnumber>
+    <rate>1</rate>
+    <usage>1</usage>
+  </text>
+  <voice>
+    <accountnumber>2</accountnumber>
+    <rate>2</rate>
+    <usage>2</usage>
+  </voice>
+  <data>
+    <accountnumber>2</accountnumber>
+    <rate>2</rate>
+    <usage>2</usage>
+  </data>
+  <voice>
+    <accountnumber>3</accountnumber>
+    <rate>3</rate>
+    <usage>3</usage>
+  </voice>
+</plans>

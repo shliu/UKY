@@ -1,0 +1,4 @@
+/u/zon-d2/ugrad/shliu2/lib/libsort.a
+/u/zon-d2/ugrad/shliu2/include/sort/sortablebase.h
+/u/zon-d2/ugrad/shliu2/include/sort/timer.h
+/u/zon-d2/ugrad/shliu2/bin/sorttest

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging
+END
+point.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/point.h
+END
+square.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/square.cpp
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/main.cpp
+END
+rectangle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/rectangle.cpp
+END
+square.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/square.h
+END
+triangle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/triangle.cpp
+END
+polygon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/polygon.cpp
+END
+point.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/point.cpp
+END
+rectangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/rectangle.h
+END
+triangle.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/triangle.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/CMakeLists.txt
+END
+polygon.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/cs216/!svn/ver/15/tags/practicum/fall2011/debugging/polygon.h
+END

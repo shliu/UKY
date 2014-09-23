@@ -1,0 +1,1 @@
+/u/zon-d2/ugrad/shliu2/cs216/practicum/mvc_qt/build/CMakeFiles/mvc_test.dir

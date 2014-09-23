@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sort/sortablebase.h
+vector
+-
+
+../sort/timer.h
+
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/libsort/sortablebase.cpp
+sort/sortablebase.h
+-
+cassert
+-
+iostream
+-
+
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/libsort/timer.cpp
+sort/timer.h
+-
+cassert
+-
+windows.h
+-
+sys/time.h
+-
+

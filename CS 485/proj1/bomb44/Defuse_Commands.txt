@@ -1,0 +1,8 @@
+Steven Liu
+
+phase1: Wow! Brazil is big.
+phase2: 1 2 4 7 11 16
+phase3: 1 -562
+phase4: 8 1
+phase5: 25<4?7
+phase6: 1 5 2 6 3 4

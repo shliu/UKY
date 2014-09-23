@@ -1,0 +1,1589 @@
+Script started on Fri 19 Sep 2014 01:30:19 PM EDT
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ objdump -d a.out > a.s
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ grep '<' a.s
+00000000004005c8 [01;31m[K<[m[K_init>:
+  4005cc:	48 8b 05 25 1a 20 00 	mov    0x201a25(%rip),%rax        # 601ff8 [01;31m[K<[m[K_DYNAMIC+0x1d0>
+  4005d6:	74 05                	je     4005dd [01;31m[K<[m[K_init+0x15>
+  4005d8:	e8 93 00 00 00       	callq  400670 [01;31m[K<[m[K__gmon_start__@plt>
+00000000004005f0 [01;31m[K<[m[Kputs@plt-0x10>:
+  4005f0:	ff 35 12 1a 20 00    	pushq  0x201a12(%rip)        # 602008 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x8>
+  4005f6:	ff 25 14 1a 20 00    	jmpq   *0x201a14(%rip)        # 602010 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x10>
+0000000000400600 [01;31m[K<[m[Kputs@plt>:
+  400600:	ff 25 12 1a 20 00    	jmpq   *0x201a12(%rip)        # 602018 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x18>
+  40060b:	e9 e0 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400610 [01;31m[K<[m[K__stack_chk_fail@plt>:
+  400610:	ff 25 0a 1a 20 00    	jmpq   *0x201a0a(%rip)        # 602020 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x20>
+  40061b:	e9 d0 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400620 [01;31m[K<[m[Kprintf@plt>:
+  400620:	ff 25 02 1a 20 00    	jmpq   *0x201a02(%rip)        # 602028 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x28>
+  40062b:	e9 c0 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400630 [01;31m[K<[m[Klseek@plt>:
+  400630:	ff 25 fa 19 20 00    	jmpq   *0x2019fa(%rip)        # 602030 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x30>
+  40063b:	e9 b0 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400640 [01;31m[K<[m[Kread@plt>:
+  400640:	ff 25 f2 19 20 00    	jmpq   *0x2019f2(%rip)        # 602038 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x38>
+  40064b:	e9 a0 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400650 [01;31m[K<[m[K__libc_start_main@plt>:
+  400650:	ff 25 ea 19 20 00    	jmpq   *0x2019ea(%rip)        # 602040 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x40>
+  40065b:	e9 90 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400660 [01;31m[K<[m[Kmemcmp@plt>:
+  400660:	ff 25 e2 19 20 00    	jmpq   *0x2019e2(%rip)        # 602048 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x48>
+  40066b:	e9 80 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400670 [01;31m[K<[m[K__gmon_start__@plt>:
+  400670:	ff 25 da 19 20 00    	jmpq   *0x2019da(%rip)        # 602050 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x50>
+  40067b:	e9 70 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400680 [01;31m[K<[m[Kopen@plt>:
+  400680:	ff 25 d2 19 20 00    	jmpq   *0x2019d2(%rip)        # 602058 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x58>
+  40068b:	e9 60 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+0000000000400690 [01;31m[K<[m[Kperror@plt>:
+  400690:	ff 25 ca 19 20 00    	jmpq   *0x2019ca(%rip)        # 602060 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x60>
+  40069b:	e9 50 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+00000000004006a0 [01;31m[K<[m[Kexit@plt>:
+  4006a0:	ff 25 c2 19 20 00    	jmpq   *0x2019c2(%rip)        # 602068 [01;31m[K<[m[K_GLOBAL_OFFSET_TABLE_+0x68>
+  4006ab:	e9 40 ff ff ff       	jmpq   4005f0 [01;31m[K<[m[K_init+0x28>
+00000000004006b0 [01;31m[K<[m[K_start>:
+  4006d4:	e8 77 ff ff ff       	callq  400650 [01;31m[K<[m[K__libc_start_main@plt>
+00000000004006e0 [01;31m[K<[m[Kderegister_tm_clones>:
+  4006f3:	77 02                	ja     4006f7 [01;31m[K<[m[Kderegister_tm_clones+0x17>
+  4006ff:	74 f4                	je     4006f5 [01;31m[K<[m[Kderegister_tm_clones+0x15>
+0000000000400710 [01;31m[K<[m[Kregister_tm_clones>:
+  400730:	75 02                	jne    400734 [01;31m[K<[m[Kregister_tm_clones+0x24>
+  40073c:	74 f4                	je     400732 [01;31m[K<[m[Kregister_tm_clones+0x22>
+0000000000400750 [01;31m[K<[m[K__do_global_dtors_aux>:
+  400750:	80 3d 29 19 20 00 00 	cmpb   $0x0,0x201929(%rip)        # 602080 [01;31m[K<[m[K__TMC_END__>
+  400757:	75 11                	jne    40076a [01;31m[K<[m[K__do_global_dtors_aux+0x1a>
+  40075d:	e8 7e ff ff ff       	callq  4006e0 [01;31m[K<[m[Kderegister_tm_clones>
+  400763:	c6 05 16 19 20 00 01 	movb   $0x1,0x201916(%rip)        # 602080 [01;31m[K<[m[K__TMC_END__>
+0000000000400770 [01;31m[K<[m[Kframe_dummy>:
+  400770:	48 83 3d a8 16 20 00 	cmpq   $0x0,0x2016a8(%rip)        # 601e20 [01;31m[K<[m[K__JCR_END__>
+  400778:	74 1e                	je     400798 [01;31m[K<[m[Kframe_dummy+0x28>
+  400782:	74 14                	je     400798 [01;31m[K<[m[Kframe_dummy+0x28>
+  400790:	e9 7b ff ff ff       	jmpq   400710 [01;31m[K<[m[Kregister_tm_clones>
+  400798:	e9 73 ff ff ff       	jmpq   400710 [01;31m[K<[m[Kregister_tm_clones>
+000000000040079d [01;31m[K<[m[Kmain>:
+  40080a:	e8 62 00 00 00       	callq  400871 [01;31m[K<[m[Kfirst_test>
+  40084e:	e8 96 01 00 00       	callq  4009e9 [01;31m[K<[m[Ksecond_test>
+  400860:	74 05                	je     400867 [01;31m[K<[m[Kmain+0xca>
+  400862:	e8 a9 fd ff ff       	callq  400610 [01;31m[K<[m[K__stack_chk_fail@plt>
+0000000000400871 [01;31m[K<[m[Kfirst_test>:
+  400892:	e8 e9 fd ff ff       	callq  400680 [01;31m[K<[m[Kopen@plt>
+  40089e:	79 2a                	jns    4008ca [01;31m[K<[m[Kfirst_test+0x59>
+  4008b1:	e8 6a fd ff ff       	callq  400620 [01;31m[K<[m[Kprintf@plt>
+  4008bb:	e8 d0 fd ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  4008c5:	e8 d6 fd ff ff       	callq  4006a0 [01;31m[K<[m[Kexit@plt>
+  4008db:	e8 a0 fd ff ff       	callq  400680 [01;31m[K<[m[Kopen@plt>
+  4008e7:	79 2a                	jns    400913 [01;31m[K<[m[Kfirst_test+0xa2>
+  4008fa:	e8 21 fd ff ff       	callq  400620 [01;31m[K<[m[Kprintf@plt>
+  400904:	e8 87 fd ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  40090e:	e8 8d fd ff ff       	callq  4006a0 [01;31m[K<[m[Kexit@plt>
+  400922:	e8 09 fd ff ff       	callq  400630 [01;31m[K<[m[Klseek@plt>
+  40092e:	79 0a                	jns    40093a [01;31m[K<[m[Kfirst_test+0xc9>
+  400935:	e8 56 fd ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400949:	e8 f2 fc ff ff       	callq  400640 [01;31m[K<[m[Kread@plt>
+  400955:	79 0a                	jns    400961 [01;31m[K<[m[Kfirst_test+0xf0>
+  40095c:	e8 2f fd ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400970:	e8 bb fc ff ff       	callq  400630 [01;31m[K<[m[Klseek@plt>
+  40097c:	79 0a                	jns    400988 [01;31m[K<[m[Kfirst_test+0x117>
+  400983:	e8 08 fd ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400997:	e8 a4 fc ff ff       	callq  400640 [01;31m[K<[m[Kread@plt>
+  4009a3:	79 0a                	jns    4009af [01;31m[K<[m[Kfirst_test+0x13e>
+  4009aa:	e8 e1 fc ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  4009be:	e8 9d fc ff ff       	callq  400660 [01;31m[K<[m[Kmemcmp@plt>
+  4009ca:	74 11                	je     4009dd [01;31m[K<[m[Kfirst_test+0x16c>
+  4009d6:	e8 9a 01 00 00       	callq  400b75 [01;31m[K<[m[Ksorry>
+  4009db:	eb 0a                	jmp    4009e7 [01;31m[K<[m[Kfirst_test+0x176>
+  4009e2:	e8 19 fc ff ff       	callq  400600 [01;31m[K<[m[Kputs@plt>
+00000000004009e9 [01;31m[K<[m[Ksecond_test>:
+  400a0a:	e8 71 fc ff ff       	callq  400680 [01;31m[K<[m[Kopen@plt>
+  400a16:	79 2a                	jns    400a42 [01;31m[K<[m[Ksecond_test+0x59>
+  400a29:	e8 f2 fb ff ff       	callq  400620 [01;31m[K<[m[Kprintf@plt>
+  400a33:	e8 58 fc ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400a3d:	e8 5e fc ff ff       	callq  4006a0 [01;31m[K<[m[Kexit@plt>
+  400a53:	e8 28 fc ff ff       	callq  400680 [01;31m[K<[m[Kopen@plt>
+  400a5f:	79 2a                	jns    400a8b [01;31m[K<[m[Ksecond_test+0xa2>
+  400a72:	e8 a9 fb ff ff       	callq  400620 [01;31m[K<[m[Kprintf@plt>
+  400a7c:	e8 0f fc ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400a86:	e8 15 fc ff ff       	callq  4006a0 [01;31m[K<[m[Kexit@plt>
+  400a9a:	e8 91 fb ff ff       	callq  400630 [01;31m[K<[m[Klseek@plt>
+  400aa6:	79 0a                	jns    400ab2 [01;31m[K<[m[Ksecond_test+0xc9>
+  400aad:	e8 de fb ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400ac1:	e8 7a fb ff ff       	callq  400640 [01;31m[K<[m[Kread@plt>
+  400acd:	79 0a                	jns    400ad9 [01;31m[K<[m[Ksecond_test+0xf0>
+  400ad4:	e8 b7 fb ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400ae8:	e8 43 fb ff ff       	callq  400630 [01;31m[K<[m[Klseek@plt>
+  400af4:	79 0a                	jns    400b00 [01;31m[K<[m[Ksecond_test+0x117>
+  400afb:	e8 90 fb ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400b0f:	e8 2c fb ff ff       	callq  400640 [01;31m[K<[m[Kread@plt>
+  400b1b:	79 0a                	jns    400b27 [01;31m[K<[m[Ksecond_test+0x13e>
+  400b22:	e8 69 fb ff ff       	callq  400690 [01;31m[K<[m[Kperror@plt>
+  400b4a:	e8 11 fb ff ff       	callq  400660 [01;31m[K<[m[Kmemcmp@plt>
+  400b56:	74 11                	je     400b69 [01;31m[K<[m[Ksecond_test+0x180>
+  400b62:	e8 0e 00 00 00       	callq  400b75 [01;31m[K<[m[Ksorry>
+  400b67:	eb 0a                	jmp    400b73 [01;31m[K<[m[Ksecond_test+0x18a>
+  400b6e:	e8 8d fa ff ff       	callq  400600 [01;31m[K<[m[Kputs@plt>
+0000000000400b75 [01;31m[K<[m[Ksorry>:
+  400b92:	e8 89 fa ff ff       	callq  400620 [01;31m[K<[m[Kprintf@plt>
+  400b9c:	e8 ff fa ff ff       	callq  4006a0 [01;31m[K<[m[Kexit@plt>
+0000000000400bb0 [01;31m[K<[m[K__libc_csu_init>:
+  400bc1:	4c 8d 25 48 12 20 00 	lea    0x201248(%rip),%r12        # 601e10 [01;31m[K<[m[K__frame_dummy_init_array_entry>
+  400bc9:	48 8d 2d 48 12 20 00 	lea    0x201248(%rip),%rbp        # 601e18 [01;31m[K<[m[K__init_array_end>
+  400bde:	e8 e5 f9 ff ff       	callq  4005c8 [01;31m[K<[m[K_init>
+  400be6:	74 1e                	je     400c06 [01;31m[K<[m[K__libc_csu_init+0x56>
+  400c04:	75 ea                	jne    400bf0 [01;31m[K<[m[K__libc_csu_init+0x40>
+0000000000400c20 [01;31m[K<[m[K__libc_csu_fini>:
+0000000000400c24 [01;31m[K<[m[K_fini>:
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ grep ',[K<' a.s | less
+[?1049h[?1h=00000000004005c8 <_init>:
+  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f f8 <_DYNAMIC+0x1d0>
+  4005d6:       74 05                   je     4005dd <_init+0x15>
+  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+00000000004005f0 <puts@plt-0x10>:
+  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ GLOBAL_OFFSET_TABLE_+0x8>
+  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < _GLOBAL_OFFSET_TABLE_+0x10>
+0000000000400600 <puts@plt>:
+  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < _GLOBAL_OFFSET_TABLE_+0x18>
+  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400610 <__stack_chk_fail@plt>:
+  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < _GLOBAL_OFFSET_TABLE_+0x20>
+  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400620 <printf@plt>:
+  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < _GLOBAL_OFFSET_TABLE_+0x28>
+  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400630 <lseek@plt>:
+  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < _GLOBAL_OFFSET_TABLE_+0x30>
+  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400640 <read@plt>:
+  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < _GLOBAL_OFFSET_TABLE_+0x38>
+  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400650 <__libc_start_main@plt>:
+  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < _GLOBAL_OFFSET_TABLE_+0x40>
+  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400660 <memcmp@plt>:
+  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < _GLOBAL_OFFSET_TABLE_+0x48>
+  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400670 <__gmon_start__@plt>:
+  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < _GLOBAL_OFFSET_TABLE_+0x50>
+  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400680 <open@plt>:
+  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < _GLOBAL_OFFSET_TABLE_+0x58>
+  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400690 <perror@plt>:
+  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < _GLOBAL_OFFSET_TABLE_+0x60>
+  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+00000000004006a0 <exit@plt>:
+  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < _GLOBAL_OFFSET_TABLE_+0x68>
+  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+00000000004006b0 <_start>:
+  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+00000000004006e0 <deregister_tm_clones>:
+  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 >
+  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 >
+:[K[K/[K<<[Kmm[Kaa[Kii[Knn[K[1;1H00000000004005c8 <_init>:
+[2;1H  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f [3;1Hf8 <_DYNAMIC+0x1d0>
+[4;1H  4005d6:       74 05                   je     4005dd <_init+0x15>
+[5;1H  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+[6;1H00000000004005f0 <puts@plt-0x10>:
+[7;1H  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ [8;1HGLOBAL_OFFSET_TABLE_+0x8>
+[9;1H  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < [10;1H_GLOBAL_OFFSET_TABLE_+0x10>
+[11;1H0000000000400600 <puts@plt>:
+[12;1H  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < [13;1H_GLOBAL_OFFSET_TABLE_+0x18>
+[14;1H  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[15;1H0000000000400610 <__stack_chk_fail@plt>:
+[16;1H  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < [17;1H_GLOBAL_OFFSET_TABLE_+0x20>
+[18;1H  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[19;1H0000000000400620 <printf@plt>:
+[20;1H  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < [21;1H_GLOBAL_OFFSET_TABLE_+0x28>
+[22;1H  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[23;1H0000000000400630 <lseek@plt>:
+[24;1H  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < [25;1H_GLOBAL_OFFSET_TABLE_+0x30>
+[26;1H  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[27;1H0000000000400640 <read@plt>:
+[28;1H  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < [29;1H_GLOBAL_OFFSET_TABLE_+0x38>
+[30;1H  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[31;1H0000000000400650 <__libc_start_main@plt>:
+[32;1H  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < [33;1H_GLOBAL_OFFSET_TABLE_+0x40>
+[34;1H  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+[35;1H0000000000400660 <memcmp@plt>:
+[36;1H  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < [37;1H_GLOBAL_OFFSET_TABLE_+0x48>
+[38;1H  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+[39;1H0000000000400670 <__gmon_start__@plt>:
+[40;1H  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < [41;1H_GLOBAL_OFFSET_TABLE_+0x50>
+[42;1H  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+[43;1H0000000000400680 <open@plt>:
+[44;1H  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < [45;1H_GLOBAL_OFFSET_TABLE_+0x58>
+[46;1H  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+[47;1H0000000000400690 <perror@plt>:
+[48;1H  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < [49;1H_GLOBAL_OFFSET_TABLE_+0x60>
+[50;1H  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+[51;1H00000000004006a0 <exit@plt>:
+[52;1H  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < [53;1H_GLOBAL_OFFSET_TABLE_+0x68>
+[54;1H  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+[55;1H00000000004006b0 <_start>:
+[56;1H  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+[57;1H00000000004006e0 <deregister_tm_clones>:
+[58;1H  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 [59;1H>
+[60;1H  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 [61;1H>
+[62;1H[1;1H00000000004005c8 <_init>:
+[2;1H  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f [3;1Hf8 <_DYNAMIC+0x1d0>
+[4;1H  4005d6:       74 05                   je     4005dd <_init+0x15>
+[5;1H  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+[6;1H00000000004005f0 <puts@plt-0x10>:
+[7;1H  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ [8;1HGLOBAL_OFFSET_TABLE_+0x8>
+[9;1H  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < [10;1H_GLOBAL_OFFSET_TABLE_+0x10>
+[11;1H0000000000400600 <puts@plt>:
+[12;1H  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < [13;1H_GLOBAL_OFFSET_TABLE_+0x18>
+[14;1H  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[15;1H0000000000400610 <__stack_chk_fail@plt>:
+[16;1H  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < [17;1H_GLOBAL_OFFSET_TABLE_+0x20>
+[18;1H  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[19;1H0000000000400620 <printf@plt>:
+[20;1H  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < [21;1H_GLOBAL_OFFSET_TABLE_+0x28>
+[22;1H  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[23;1H0000000000400630 <lseek@plt>:
+[24;1H  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < [25;1H_GLOBAL_OFFSET_TABLE_+0x30>
+[26;1H  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[27;1H0000000000400640 <read@plt>:
+[28;1H  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < [29;1H_GLOBAL_OFFSET_TABLE_+0x38>
+[30;1H  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[31;1H0000000000400650 <__libc_start_main@plt>:
+[32;1H  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < [33;1H_GLOBAL_OFFSET_TABLE_+0x40>
+[34;1H  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+[35;1H0000000000400660 <memcmp@plt>:
+[36;1H  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < [37;1H_GLOBAL_OFFSET_TABLE_+0x48>
+[38;1H  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+[39;1H0000000000400670 <__gmon_start__@plt>:
+[40;1H  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < [41;1H_GLOBAL_OFFSET_TABLE_+0x50>
+[42;1H  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+[43;1H0000000000400680 <open@plt>:
+[44;1H  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < [45;1H_GLOBAL_OFFSET_TABLE_+0x58>
+[46;1H  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+[47;1H0000000000400690 <perror@plt>:
+[48;1H  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < [49;1H_GLOBAL_OFFSET_TABLE_+0x60>
+[50;1H  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+[51;1H00000000004006a0 <exit@plt>:
+[52;1H  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < [53;1H_GLOBAL_OFFSET_TABLE_+0x68>
+[54;1H  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+[55;1H00000000004006b0 <_start>:
+[56;1H  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+[57;1H00000000004006e0 <deregister_tm_clones>:
+[58;1H  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 [59;1H>
+[60;1H  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 [61;1H>
+[62;1H...skipping...
+000000000040079d [7m<main[27m>:
+  40080a:       e8 62 00 00 00          callq  400871 <first_test>
+  40084e:       e8 96 01 00 00          callq  4009e9 <second_test>
+  400860:       74 05                   je     400867 [7m<main[27m+0xca>
+  400862:       e8 a9 fd ff ff          callq  400610 <__stack_chk_fail@plt>
+0000000000400871 <first_test>:
+  400892:       e8 e9 fd ff ff          callq  400680 <open@plt>
+  40089e:       79 2a                   jns    4008ca <first_test+0x59>
+  4008b1:       e8 6a fd ff ff          callq  400620 <printf@plt>
+  4008bb:       e8 d0 fd ff ff          callq  400690 <perror@plt>
+  4008c5:       e8 d6 fd ff ff          callq  4006a0 <exit@plt>
+  4008db:       e8 a0 fd ff ff          callq  400680 <open@plt>
+  4008e7:       79 2a                   jns    400913 <first_test+0xa2>
+  4008fa:       e8 21 fd ff ff          callq  400620 <printf@plt>
+  400904:       e8 87 fd ff ff          callq  400690 <perror@plt>
+  40090e:       e8 8d fd ff ff          callq  4006a0 <exit@plt>
+  400922:       e8 09 fd ff ff          callq  400630 <lseek@plt>
+  40092e:       79 0a                   jns    40093a <first_test+0xc9>
+  400935:       e8 56 fd ff ff          callq  400690 <perror@plt>
+  400949:       e8 f2 fc ff ff          callq  400640 <read@plt>
+  400955:       79 0a                   jns    400961 <first_test+0xf0>
+  40095c:       e8 2f fd ff ff          callq  400690 <perror@plt>
+  400970:       e8 bb fc ff ff          callq  400630 <lseek@plt>
+  40097c:       79 0a                   jns    400988 <first_test+0x117>
+  400983:       e8 08 fd ff ff          callq  400690 <perror@plt>
+  400997:       e8 a4 fc ff ff          callq  400640 <read@plt>
+  4009a3:       79 0a                   jns    4009af <first_test+0x13e>
+  4009aa:       e8 e1 fc ff ff          callq  400690 <perror@plt>
+  4009be:       e8 9d fc ff ff          callq  400660 <memcmp@plt>
+  4009ca:       74 11                   je     4009dd <first_test+0x16c>
+  4009d6:       e8 9a 01 00 00          callq  400b75 <sorry>
+  4009db:       eb 0a                   jmp    4009e7 <first_test+0x176>
+  4009e2:       e8 19 fc ff ff          callq  400600 <puts@plt>
+00000000004009e9 <second_test>:
+  400a0a:       e8 71 fc ff ff          callq  400680 <open@plt>
+  400a16:       79 2a                   jns    400a42 <second_test+0x59>
+  400a29:       e8 f2 fb ff ff          callq  400620 <printf@plt>
+  400a33:       e8 58 fc ff ff          callq  400690 <perror@plt>
+  400a3d:       e8 5e fc ff ff          callq  4006a0 <exit@plt>
+  400a53:       e8 28 fc ff ff          callq  400680 <open@plt>
+  400a5f:       79 2a                   jns    400a8b <second_test+0xa2>
+  400a72:       e8 a9 fb ff ff          callq  400620 <printf@plt>
+  400a7c:       e8 0f fc ff ff          callq  400690 <perror@plt>
+  400a86:       e8 15 fc ff ff          callq  4006a0 <exit@plt>
+  400a9a:       e8 91 fb ff ff          callq  400630 <lseek@plt>
+  400aa6:       79 0a                   jns    400ab2 <second_test+0xc9>
+  400aad:       e8 de fb ff ff          callq  400690 <perror@plt>
+  400ac1:       e8 7a fb ff ff          callq  400640 <read@plt>
+  400acd:       79 0a                   jns    400ad9 <second_test+0xf0>
+  400ad4:       e8 b7 fb ff ff          callq  400690 <perror@plt>
+  400ae8:       e8 43 fb ff ff          callq  400630 <lseek@plt>
+  400af4:       79 0a                   jns    400b00 <second_test+0x117>
+  400afb:       e8 90 fb ff ff          callq  400690 <perror@plt>
+  400b0f:       e8 2c fb ff ff          callq  400640 <read@plt>
+  400b1b:       79 0a                   jns    400b27 <second_test+0x13e>
+  400b22:       e8 69 fb ff ff          callq  400690 <perror@plt>
+  400b4a:       e8 11 fb ff ff          callq  400660 <memcmp@plt>
+  400b56:       74 11                   je     400b69 <second_test+0x180>
+  400b62:       e8 0e 00 00 00          callq  400b75 <sorry>
+  400b67:       eb 0a                   jmp    400b73 <second_test+0x18a>
+  400b6e:       e8 8d fa ff ff          callq  400600 <puts@plt>
+:[K[K/[Kff[Kii[Krr[Kss[Ktt[K[K[K[K[K[K<<[Kff[Kii[Krr[Kss[Ktt[K__[K[1;1H000000000040079d <main>:
+[2;1H  40080a:       e8 62 00 00 00          callq  400871 <first_test>
+[3;1H  40084e:       e8 96 01 00 00          callq  4009e9 <second_test>
+[4;1H  400860:       74 05                   je     400867 <main+0xca>
+[5;1H  400862:       e8 a9 fd ff ff          callq  400610 <__stack_chk_fail@plt>
+[6;1H0000000000400871 <first_test>:
+[7;1H  400892:       e8 e9 fd ff ff          callq  400680 <open@plt>
+[8;1H  40089e:       79 2a                   jns    4008ca <first_test+0x59>
+[9;1H  4008b1:       e8 6a fd ff ff          callq  400620 <printf@plt>
+[10;1H  4008bb:       e8 d0 fd ff ff          callq  400690 <perror@plt>
+[11;1H  4008c5:       e8 d6 fd ff ff          callq  4006a0 <exit@plt>
+[12;1H  4008db:       e8 a0 fd ff ff          callq  400680 <open@plt>
+[13;1H  4008e7:       79 2a                   jns    400913 <first_test+0xa2>
+[14;1H  4008fa:       e8 21 fd ff ff          callq  400620 <printf@plt>
+[15;1H  400904:       e8 87 fd ff ff          callq  400690 <perror@plt>
+[16;1H  40090e:       e8 8d fd ff ff          callq  4006a0 <exit@plt>
+[17;1H  400922:       e8 09 fd ff ff          callq  400630 <lseek@plt>
+[18;1H  40092e:       79 0a                   jns    40093a <first_test+0xc9>
+[19;1H  400935:       e8 56 fd ff ff          callq  400690 <perror@plt>
+[20;1H  400949:       e8 f2 fc ff ff          callq  400640 <read@plt>
+[21;1H  400955:       79 0a                   jns    400961 <first_test+0xf0>
+[22;1H  40095c:       e8 2f fd ff ff          callq  400690 <perror@plt>
+[23;1H  400970:       e8 bb fc ff ff          callq  400630 <lseek@plt>
+[24;1H  40097c:       79 0a                   jns    400988 <first_test+0x117>
+[25;1H  400983:       e8 08 fd ff ff          callq  400690 <perror@plt>
+[26;1H  400997:       e8 a4 fc ff ff          callq  400640 <read@plt>
+[27;1H  4009a3:       79 0a                   jns    4009af <first_test+0x13e>
+[28;1H  4009aa:       e8 e1 fc ff ff          callq  400690 <perror@plt>
+[29;1H  4009be:       e8 9d fc ff ff          callq  400660 <memcmp@plt>
+[30;1H  4009ca:       74 11                   je     4009dd <first_test+0x16c>
+[31;1H  4009d6:       e8 9a 01 00 00          callq  400b75 <sorry>
+[32;1H  4009db:       eb 0a                   jmp    4009e7 <first_test+0x176>
+[33;1H  4009e2:       e8 19 fc ff ff          callq  400600 <puts@plt>
+[34;1H00000000004009e9 <second_test>:
+[35;1H  400a0a:       e8 71 fc ff ff          callq  400680 <open@plt>
+[36;1H  400a16:       79 2a                   jns    400a42 <second_test+0x59>
+[37;1H  400a29:       e8 f2 fb ff ff          callq  400620 <printf@plt>
+[38;1H  400a33:       e8 58 fc ff ff          callq  400690 <perror@plt>
+[39;1H  400a3d:       e8 5e fc ff ff          callq  4006a0 <exit@plt>
+[40;1H  400a53:       e8 28 fc ff ff          callq  400680 <open@plt>
+[41;1H  400a5f:       79 2a                   jns    400a8b <second_test+0xa2>
+[42;1H  400a72:       e8 a9 fb ff ff          callq  400620 <printf@plt>
+[43;1H  400a7c:       e8 0f fc ff ff          callq  400690 <perror@plt>
+[44;1H  400a86:       e8 15 fc ff ff          callq  4006a0 <exit@plt>
+[45;1H  400a9a:       e8 91 fb ff ff          callq  400630 <lseek@plt>
+[46;1H  400aa6:       79 0a                   jns    400ab2 <second_test+0xc9>
+[47;1H  400aad:       e8 de fb ff ff          callq  400690 <perror@plt>
+[48;1H  400ac1:       e8 7a fb ff ff          callq  400640 <read@plt>
+[49;1H  400acd:       79 0a                   jns    400ad9 <second_test+0xf0>
+[50;1H  400ad4:       e8 b7 fb ff ff          callq  400690 <perror@plt>
+[51;1H  400ae8:       e8 43 fb ff ff          callq  400630 <lseek@plt>
+[52;1H  400af4:       79 0a                   jns    400b00 <second_test+0x117>
+[53;1H  400afb:       e8 90 fb ff ff          callq  400690 <perror@plt>
+[54;1H  400b0f:       e8 2c fb ff ff          callq  400640 <read@plt>
+[55;1H  400b1b:       79 0a                   jns    400b27 <second_test+0x13e>
+[56;1H  400b22:       e8 69 fb ff ff          callq  400690 <perror@plt>
+[57;1H  400b4a:       e8 11 fb ff ff          callq  400660 <memcmp@plt>
+[58;1H  400b56:       74 11                   je     400b69 <second_test+0x180>
+[59;1H  400b62:       e8 0e 00 00 00          callq  400b75 <sorry>
+[60;1H  400b67:       eb 0a                   jmp    400b73 <second_test+0x18a>
+[61;1H  400b6e:       e8 8d fa ff ff          callq  400600 <puts@plt>
+[62;1H[1;1H000000000040079d <main>:
+[2;1H  40080a:       e8 62 00 00 00          callq  400871 [7m<first_[27mtest>
+[3;1H  40084e:       e8 96 01 00 00          callq  4009e9 <second_test>
+[4;1H  400860:       74 05                   je     400867 <main+0xca>
+[5;1H  400862:       e8 a9 fd ff ff          callq  400610 <__stack_chk_fail@plt>
+[6;1H0000000000400871 [7m<first_[27mtest>:
+[7;1H  400892:       e8 e9 fd ff ff          callq  400680 <open@plt>
+[8;1H  40089e:       79 2a                   jns    4008ca [7m<first_[27mtest+0x59>
+[9;1H  4008b1:       e8 6a fd ff ff          callq  400620 <printf@plt>
+[10;1H  4008bb:       e8 d0 fd ff ff          callq  400690 <perror@plt>
+[11;1H  4008c5:       e8 d6 fd ff ff          callq  4006a0 <exit@plt>
+[12;1H  4008db:       e8 a0 fd ff ff          callq  400680 <open@plt>
+[13;1H  4008e7:       79 2a                   jns    400913 [7m<first_[27mtest+0xa2>
+[14;1H  4008fa:       e8 21 fd ff ff          callq  400620 <printf@plt>
+[15;1H  400904:       e8 87 fd ff ff          callq  400690 <perror@plt>
+[16;1H  40090e:       e8 8d fd ff ff          callq  4006a0 <exit@plt>
+[17;1H  400922:       e8 09 fd ff ff          callq  400630 <lseek@plt>
+[18;1H  40092e:       79 0a                   jns    40093a [7m<first_[27mtest+0xc9>
+[19;1H  400935:       e8 56 fd ff ff          callq  400690 <perror@plt>
+[20;1H  400949:       e8 f2 fc ff ff          callq  400640 <read@plt>
+[21;1H  400955:       79 0a                   jns    400961 [7m<first_[27mtest+0xf0>
+[22;1H  40095c:       e8 2f fd ff ff          callq  400690 <perror@plt>
+[23;1H  400970:       e8 bb fc ff ff          callq  400630 <lseek@plt>
+[24;1H  40097c:       79 0a                   jns    400988 [7m<first_[27mtest+0x117>
+[25;1H  400983:       e8 08 fd ff ff          callq  400690 <perror@plt>
+[26;1H  400997:       e8 a4 fc ff ff          callq  400640 <read@plt>
+[27;1H  4009a3:       79 0a                   jns    4009af [7m<first_[27mtest+0x13e>
+[28;1H  4009aa:       e8 e1 fc ff ff          callq  400690 <perror@plt>
+[29;1H  4009be:       e8 9d fc ff ff          callq  400660 <memcmp@plt>
+[30;1H  4009ca:       74 11                   je     4009dd [7m<first_[27mtest+0x16c>
+[31;1H  4009d6:       e8 9a 01 00 00          callq  400b75 <sorry>
+[32;1H  4009db:       eb 0a                   jmp    4009e7 [7m<first_[27mtest+0x176>
+[33;1H  4009e2:       e8 19 fc ff ff          callq  400600 <puts@plt>
+[34;1H00000000004009e9 <second_test>:
+[35;1H  400a0a:       e8 71 fc ff ff          callq  400680 <open@plt>
+[36;1H  400a16:       79 2a                   jns    400a42 <second_test+0x59>
+[37;1H  400a29:       e8 f2 fb ff ff          callq  400620 <printf@plt>
+[38;1H  400a33:       e8 58 fc ff ff          callq  400690 <perror@plt>
+[39;1H  400a3d:       e8 5e fc ff ff          callq  4006a0 <exit@plt>
+[40;1H  400a53:       e8 28 fc ff ff          callq  400680 <open@plt>
+[41;1H  400a5f:       79 2a                   jns    400a8b <second_test+0xa2>
+[42;1H  400a72:       e8 a9 fb ff ff          callq  400620 <printf@plt>
+[43;1H  400a7c:       e8 0f fc ff ff          callq  400690 <perror@plt>
+[44;1H  400a86:       e8 15 fc ff ff          callq  4006a0 <exit@plt>
+[45;1H  400a9a:       e8 91 fb ff ff          callq  400630 <lseek@plt>
+[46;1H  400aa6:       79 0a                   jns    400ab2 <second_test+0xc9>
+[47;1H  400aad:       e8 de fb ff ff          callq  400690 <perror@plt>
+[48;1H  400ac1:       e8 7a fb ff ff          callq  400640 <read@plt>
+[49;1H  400acd:       79 0a                   jns    400ad9 <second_test+0xf0>
+[50;1H  400ad4:       e8 b7 fb ff ff          callq  400690 <perror@plt>
+[51;1H  400ae8:       e8 43 fb ff ff          callq  400630 <lseek@plt>
+[52;1H  400af4:       79 0a                   jns    400b00 <second_test+0x117>
+[53;1H  400afb:       e8 90 fb ff ff          callq  400690 <perror@plt>
+[54;1H  400b0f:       e8 2c fb ff ff          callq  400640 <read@plt>
+[55;1H  400b1b:       79 0a                   jns    400b27 <second_test+0x13e>
+[56;1H  400b22:       e8 69 fb ff ff          callq  400690 <perror@plt>
+[57;1H  400b4a:       e8 11 fb ff ff          callq  400660 <memcmp@plt>
+[58;1H  400b56:       74 11                   je     400b69 <second_test+0x180>
+[59;1H  400b62:       e8 0e 00 00 00          callq  400b75 <sorry>
+[60;1H  400b67:       eb 0a                   jmp    400b73 <second_test+0x18a>
+[61;1H  400b6e:       e8 8d fa ff ff          callq  400600 <puts@plt>
+[62;1H0000000000400b75 <sorry>:
+:[K[K[?1l>[?1049l]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ./a.out 
+SORRY!  You did not debug the first_test correctly.
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ./a.out grep '<' a.s | less
+[?1049h[?1h=00000000004005c8 <_init>:
+  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f f8 <_DYNAMIC+0x1d0>
+  4005d6:       74 05                   je     4005dd <_init+0x15>
+  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+00000000004005f0 <puts@plt-0x10>:
+  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ GLOBAL_OFFSET_TABLE_+0x8>
+  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < _GLOBAL_OFFSET_TABLE_+0x10>
+0000000000400600 <puts@plt>:
+  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < _GLOBAL_OFFSET_TABLE_+0x18>
+  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400610 <__stack_chk_fail@plt>:
+  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < _GLOBAL_OFFSET_TABLE_+0x20>
+  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400620 <printf@plt>:
+  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < _GLOBAL_OFFSET_TABLE_+0x28>
+  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400630 <lseek@plt>:
+  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < _GLOBAL_OFFSET_TABLE_+0x30>
+  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400640 <read@plt>:
+  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < _GLOBAL_OFFSET_TABLE_+0x38>
+  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400650 <__libc_start_main@plt>:
+  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < _GLOBAL_OFFSET_TABLE_+0x40>
+  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400660 <memcmp@plt>:
+  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < _GLOBAL_OFFSET_TABLE_+0x48>
+  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400670 <__gmon_start__@plt>:
+  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < _GLOBAL_OFFSET_TABLE_+0x50>
+  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400680 <open@plt>:
+  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < _GLOBAL_OFFSET_TABLE_+0x58>
+  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+0000000000400690 <perror@plt>:
+  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < _GLOBAL_OFFSET_TABLE_+0x60>
+  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+00000000004006a0 <exit@plt>:
+  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < _GLOBAL_OFFSET_TABLE_+0x68>
+  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+00000000004006b0 <_start>:
+  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+00000000004006e0 <deregister_tm_clones>:
+  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 >
+  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 >
+:[K[K[K:[K[K/[K<<[Kpp[Kee[Krr[Krr[K[1;1H00000000004005c8 <_init>:
+[2;1H  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f [3;1Hf8 <_DYNAMIC+0x1d0>
+[4;1H  4005d6:       74 05                   je     4005dd <_init+0x15>
+[5;1H  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+[6;1H00000000004005f0 <puts@plt-0x10>:
+[7;1H  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ [8;1HGLOBAL_OFFSET_TABLE_+0x8>
+[9;1H  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < [10;1H_GLOBAL_OFFSET_TABLE_+0x10>
+[11;1H0000000000400600 <puts@plt>:
+[12;1H  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < [13;1H_GLOBAL_OFFSET_TABLE_+0x18>
+[14;1H  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[15;1H0000000000400610 <__stack_chk_fail@plt>:
+[16;1H  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < [17;1H_GLOBAL_OFFSET_TABLE_+0x20>
+[18;1H  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[19;1H0000000000400620 <printf@plt>:
+[20;1H  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < [21;1H_GLOBAL_OFFSET_TABLE_+0x28>
+[22;1H  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[23;1H0000000000400630 <lseek@plt>:
+[24;1H  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < [25;1H_GLOBAL_OFFSET_TABLE_+0x30>
+[26;1H  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[27;1H0000000000400640 <read@plt>:
+[28;1H  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < [29;1H_GLOBAL_OFFSET_TABLE_+0x38>
+[30;1H  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[31;1H0000000000400650 <__libc_start_main@plt>:
+[32;1H  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < [33;1H_GLOBAL_OFFSET_TABLE_+0x40>
+[34;1H  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+[35;1H0000000000400660 <memcmp@plt>:
+[36;1H  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < [37;1H_GLOBAL_OFFSET_TABLE_+0x48>
+[38;1H  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+[39;1H0000000000400670 <__gmon_start__@plt>:
+[40;1H  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < [41;1H_GLOBAL_OFFSET_TABLE_+0x50>
+[42;1H  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+[43;1H0000000000400680 <open@plt>:
+[44;1H  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < [45;1H_GLOBAL_OFFSET_TABLE_+0x58>
+[46;1H  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+[47;1H0000000000400690 <perror@plt>:
+[48;1H  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < [49;1H_GLOBAL_OFFSET_TABLE_+0x60>
+[50;1H  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+[51;1H00000000004006a0 <exit@plt>:
+[52;1H  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < [53;1H_GLOBAL_OFFSET_TABLE_+0x68>
+[54;1H  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+[55;1H00000000004006b0 <_start>:
+[56;1H  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+[57;1H00000000004006e0 <deregister_tm_clones>:
+[58;1H  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 [59;1H>
+[60;1H  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 [61;1H>
+[62;1H[1;1H00000000004005c8 <_init>:
+[2;1H  4005cc:       48 8b 05 25 1a 20 00    mov    0x201a25(%rip),%rax        # 601f [3;1Hf8 <_DYNAMIC+0x1d0>
+[4;1H  4005d6:       74 05                   je     4005dd <_init+0x15>
+[5;1H  4005d8:       e8 93 00 00 00          callq  400670 <__gmon_start__@plt>
+[6;1H00000000004005f0 <puts@plt-0x10>:
+[7;1H  4005f0:       ff 35 12 1a 20 00       pushq  0x201a12(%rip)        # 602008 <_ [8;1HGLOBAL_OFFSET_TABLE_+0x8>
+[9;1H  4005f6:       ff 25 14 1a 20 00       jmpq   *0x201a14(%rip)        # 602010 < [10;1H_GLOBAL_OFFSET_TABLE_+0x10>
+[11;1H0000000000400600 <puts@plt>:
+[12;1H  400600:       ff 25 12 1a 20 00       jmpq   *0x201a12(%rip)        # 602018 < [13;1H_GLOBAL_OFFSET_TABLE_+0x18>
+[14;1H  40060b:       e9 e0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[15;1H0000000000400610 <__stack_chk_fail@plt>:
+[16;1H  400610:       ff 25 0a 1a 20 00       jmpq   *0x201a0a(%rip)        # 602020 < [17;1H_GLOBAL_OFFSET_TABLE_+0x20>
+[18;1H  40061b:       e9 d0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[19;1H0000000000400620 <printf@plt>:
+[20;1H  400620:       ff 25 02 1a 20 00       jmpq   *0x201a02(%rip)        # 602028 < [21;1H_GLOBAL_OFFSET_TABLE_+0x28>
+[22;1H  40062b:       e9 c0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[23;1H0000000000400630 <lseek@plt>:
+[24;1H  400630:       ff 25 fa 19 20 00       jmpq   *0x2019fa(%rip)        # 602030 < [25;1H_GLOBAL_OFFSET_TABLE_+0x30>
+[26;1H  40063b:       e9 b0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[27;1H0000000000400640 <read@plt>:
+[28;1H  400640:       ff 25 f2 19 20 00       jmpq   *0x2019f2(%rip)        # 602038 < [29;1H_GLOBAL_OFFSET_TABLE_+0x38>
+[30;1H  40064b:       e9 a0 ff ff ff          jmpq   4005f0 <_init+0x28>
+[31;1H0000000000400650 <__libc_start_main@plt>:
+[32;1H  400650:       ff 25 ea 19 20 00       jmpq   *0x2019ea(%rip)        # 602040 < [33;1H_GLOBAL_OFFSET_TABLE_+0x40>
+[34;1H  40065b:       e9 90 ff ff ff          jmpq   4005f0 <_init+0x28>
+[35;1H0000000000400660 <memcmp@plt>:
+[36;1H  400660:       ff 25 e2 19 20 00       jmpq   *0x2019e2(%rip)        # 602048 < [37;1H_GLOBAL_OFFSET_TABLE_+0x48>
+[38;1H  40066b:       e9 80 ff ff ff          jmpq   4005f0 <_init+0x28>
+[39;1H0000000000400670 <__gmon_start__@plt>:
+[40;1H  400670:       ff 25 da 19 20 00       jmpq   *0x2019da(%rip)        # 602050 < [41;1H_GLOBAL_OFFSET_TABLE_+0x50>
+[42;1H  40067b:       e9 70 ff ff ff          jmpq   4005f0 <_init+0x28>
+[43;1H0000000000400680 <open@plt>:
+[44;1H  400680:       ff 25 d2 19 20 00       jmpq   *0x2019d2(%rip)        # 602058 < [45;1H_GLOBAL_OFFSET_TABLE_+0x58>
+[46;1H  40068b:       e9 60 ff ff ff          jmpq   4005f0 <_init+0x28>
+[47;1H0000000000400690 [7m<perr[27mor@plt>:
+[48;1H  400690:       ff 25 ca 19 20 00       jmpq   *0x2019ca(%rip)        # 602060 < [49;1H_GLOBAL_OFFSET_TABLE_+0x60>
+[50;1H  40069b:       e9 50 ff ff ff          jmpq   4005f0 <_init+0x28>
+[51;1H00000000004006a0 <exit@plt>:
+[52;1H  4006a0:       ff 25 c2 19 20 00       jmpq   *0x2019c2(%rip)        # 602068 < [53;1H_GLOBAL_OFFSET_TABLE_+0x68>
+[54;1H  4006ab:       e9 40 ff ff ff          jmpq   4005f0 <_init+0x28>
+[55;1H00000000004006b0 <_start>:
+[56;1H  4006d4:       e8 77 ff ff ff          callq  400650 <__libc_start_main@plt>
+[57;1H00000000004006e0 <deregister_tm_clones>:
+[58;1H  4006f3:       77 02                   ja     4006f7 <deregister_tm_clones+0x17 [59;1H>
+[60;1H  4006ff:       74 f4                   je     4006f5 <deregister_tm_clones+0x15 [61;1H>
+[62;1H0000000000400710 <register_tm_clones>:
+  400730:       75 02                   jne    400734 <register_tm_clones+0x24>
+  40073c:       74 f4                   je     400732 <register_tm_clones+0x22>
+0000000000400750 <__do_global_dtors_aux>:
+  400750:       80 3d 29 19 20 00 00    cmpb   $0x0,0x201929(%rip)        # 6020 80 <__TMC_END__>
+  400757:       75 11                   jne    40076a <__do_global_dtors_aux+0x1 a>
+  40075d:       e8 7e ff ff ff          callq  4006e0 <deregister_tm_clones>
+  400763:       c6 05 16 19 20 00 01    movb   $0x1,0x201916(%rip)        # 6020 80 <__TMC_END__>
+0000000000400770 <frame_dummy>:
+  400770:       48 83 3d a8 16 20 00    cmpq   $0x0,0x2016a8(%rip)        # 601e 20 <__JCR_END__>
+  400778:       74 1e                   je     400798 <frame_dummy+0x28>
+  400782:       74 14                   je     400798 <frame_dummy+0x28>
+  400790:       e9 7b ff ff ff          jmpq   400710 <register_tm_clones>
+  400798:       e9 73 ff ff ff          jmpq   400710 <register_tm_clones>
+000000000040079d <main>:
+  40080a:       e8 62 00 00 00          callq  400871 <first_test>
+  40084e:       e8 96 01 00 00          callq  4009e9 <second_test>
+  400860:       74 05                   je     400867 <main+0xca>
+  400862:       e8 a9 fd ff ff          callq  400610 <__stack_chk_fail@plt>
+0000000000400871 <first_test>:
+  400892:       e8 e9 fd ff ff          callq  400680 <open@plt>
+  40089e:       79 2a                   jns    4008ca <first_test+0x59>
+  4008b1:       e8 6a fd ff ff          callq  400620 <printf@plt>
+  4008bb:       e8 d0 fd ff ff          callq  400690 [7m<perr[27mor@plt>
+  4008c5:       e8 d6 fd ff ff          callq  4006a0 <exit@plt>
+  4008db:       e8 a0 fd ff ff          callq  400680 <open@plt>
+  4008e7:       79 2a                   jns    400913 <first_test+0xa2>
+  4008fa:       e8 21 fd ff ff          callq  400620 <printf@plt>
+  400904:       e8 87 fd ff ff          callq  400690 [7m<perr[27mor@plt>
+  40090e:       e8 8d fd ff ff          callq  4006a0 <exit@plt>
+  400922:       e8 09 fd ff ff          callq  400630 <lseek@plt>
+  40092e:       79 0a                   jns    40093a <first_test+0xc9>
+  400935:       e8 56 fd ff ff          callq  400690 [7m<perr[27mor@plt>
+  400949:       e8 f2 fc ff ff          callq  400640 <read@plt>
+  400955:       79 0a                   jns    400961 <first_test+0xf0>
+  40095c:       e8 2f fd ff ff          callq  400690 [7m<perr[27mor@plt>
+  400970:       e8 bb fc ff ff          callq  400630 <lseek@plt>
+  40097c:       79 0a                   jns    400988 <first_test+0x117>
+  400983:       e8 08 fd ff ff          callq  400690 [7m<perr[27mor@plt>
+  400997:       e8 a4 fc ff ff          callq  400640 <read@plt>
+  4009a3:       79 0a                   jns    4009af <first_test+0x13e>
+  4009aa:       e8 e1 fc ff ff          callq  400690 [7m<perr[27mor@plt>
+:[K[K[?1l>[?1049l]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ grep '<' a.s | less[1P less[1Pless[1Pess[1Pss[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kless a.s[K[K[K[K[K[K[K[Kvim a.s
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;62r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[62;1H"a.s" 474L, 23389C[>c[27m[m[H[2J[2;1H[36ma[m[33m.out[m:     [36mfile[m [36mformat[m [36melf64[m-[36mx86[m-[31m64[m
+
+
+[36mDisassembly[m [36mof[m [36msection[m [33m.init[m:
+
+[31m00000000004005[m[36mc8[m <[36m_init[m>:
+  [31m4005[m[36mc8[m:[7C[31m48[m [31m83[m [36mec[m 0[31m8[m[13C[36msub[m    $[31m0x8[m,%[36mrsp[m
+  [31m4005[m[36mcc[m:[7C[31m48[m [31m8[m[36mb[m [31m05 25[m [31m1[m[36ma[m [31m20[m [31m00 [m   [36mmov[m    [31m0x201a25[m(%[36mrip[m),%[36mrax[m[8C[34m# 601ff[10;1Hf8 <_DYNAMIC+0x1d0>[m
+  [31m4005[m[36md3[m:[7C[31m48[m [31m85[m [36mc0[16Ctest[m   %[36mrax[m,%[36mrax[m
+  [31m4005[m[36md6[m:[7C[31m74[m [31m05 [m[18C[36mje[m     [31m4005[m[36mdd[m <[36m_init[m+[31m0x15[m>
+  [31m4005[m[36md8[m:[7C[36me8[m [31m93[m [31m00 00 00 [m[9C[36mcallq[m  [31m400670[m <[36m__gmon_start__[m@[36mplt[m>
+  [31m4005[m[36mdd[m:[7C[31m48[m [31m83[m [36mc4[m 0[31m8[m[13C[36madd[m    $[31m0x8[m,%[36mrsp[m
+  [31m4005[m[36me1[m:[7C[36mc3[22Cretq
+
+Disassembly[m [36mof[m [36msection[m [33m.plt[m:
+
+[31m00000000004005[m[36mf0[m <[36mputs[m@[36mplt[m-[31m0x10[m>:
+  [31m4005[m[36mf0[m:[7C[36mff[m [31m35[m [31m12[m [31m1[m[36ma[m [31m20[m [31m00 [m      [36mpushq[m  [31m0x201a12[m(%[36mrip[m)[8C[34m# 602008 <__[21;1HGLOBAL_OFFSET_TABLE_+0x8>[m
+  [31m4005[m[36mf6[m:[7C[36mff[m [31m25[m [31m14[m [31m1[m[36ma[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x201a14[m(%[36mrip[m)[8C[34m# 602010 <<[23;1H_GLOBAL_OFFSET_TABLE_+0x10>[m
+  [31m4005[m[36mfc[m:[7C0[36mf[m [31m1[m[36mf[m [31m40[m [31m00 [m[12C[36mnopl[m   [31m0x0[m(%[36mrax[m)
+
+[31m0000000000400600[m <[36mputs[m@[36mplt[m>:
+  [31m400600[m:[7C[36mff[m [31m25[m [31m12[m [31m1[m[36ma[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x201a12[m(%[36mrip[m)[8C[34m# 602018 <<[28;1H_GLOBAL_OFFSET_TABLE_+0x18>[m
+  [31m400606[m:[7C[31m68[m [31m00 00 00 00 [m[9C[36mpushq[m  $[31m0x0
+[m  [31m40060[m[36mb[m:[7C[36me9[m [36me0[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400610[m <[36m__stack_chk_fail[m@[36mplt[m>:
+  [31m400610[m:[7C[36mff[m [31m25[m 0[36ma[m [31m1[m[36ma[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x201a0a[m(%[36mrip[m)[8C[34m# 602020 <<[34;1H_GLOBAL_OFFSET_TABLE_+0x20>[m
+  [31m400616[m:[7C[31m68[m [31m01 00 00 00 [m[9C[36mpushq[m  $[31m0x1
+[m  [31m40061[m[36mb[m:[7C[36me9[m [36md0[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400620[m <[36mprintf[m@[36mplt[m>:
+  [31m400620[m:[7C[36mff[m [31m25[m [31m02 1[m[36ma[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x201a02[m(%[36mrip[m)[8C[34m# 602028 <<[40;1H_GLOBAL_OFFSET_TABLE_+0x28>[m
+  [31m400626[m:[7C[31m68[m [31m02 00 00 00 [m[9C[36mpushq[m  $[31m0x2
+[m  [31m40062[m[36mb[m:[7C[36me9[m [36mc0[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400630[m <[36mlseek[m@[36mplt[m>:
+  [31m400630[m:[7C[36mff[m [31m25[m [36mfa[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019fa[m(%[36mrip[m)[8C[34m# 602030 <<[46;1H_GLOBAL_OFFSET_TABLE_+0x30>[m
+  [31m400636[m:[7C[31m68[m [31m03 00 00 00 [m[9C[36mpushq[m  $[31m0x3
+[m  [31m40063[m[36mb[m:[7C[36me9[m [36mb0[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400640[m <[36mread[m@[36mplt[m>:
+  [31m400640[m:[7C[36mff[m [31m25[m [36mf2[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019f2[m(%[36mrip[m)[8C[34m# 602038 <<[52;1H_GLOBAL_OFFSET_TABLE_+0x38>[m
+  [31m400646[m:[7C[31m68[m [31m04 00 00 00 [m[9C[36mpushq[m  $[31m0x4
+[m  [31m40064[m[36mb[m:[7C[36me9[m [36ma0[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400650[m <[36m__libc_start_main[m@[36mplt[m>:
+  [31m400650[m:[7C[36mff[m [31m25[m [36mea[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019ea[m(%[36mrip[m)[8C[34m# 602040 <<[58;1H_GLOBAL_OFFSET_TABLE_+0x40>[m
+  [31m400656[m:[7C[31m68[m [31m05 00 00 00 [m[9C[36mpushq[m  $[31m0x5
+[m  [31m40065[m[36mb[m:[7C[36me9[m [31m90[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>[62;63H1,0-1[9CTop"a.s" 474L, 23389C[44C     [9C   [1;1H[?12l[?25h[?25l[62;1H[K[62;1H/[?12l[?25hp[?25l[?12l[?25he[?25l[?12l[?25hr[?25l[?12l[?25hr[?25l[?12l[?25h[?25l[1;61r[1;1H[19M[1;62r[43;1H[31m0000000000400660[m <[36mmemcmp[m@[36mplt[m>:
+  [31m400660[m:[7C[36mff[m [31m25[m [36me2[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019e2[m(%[36mrip[m)[8C[34m# 602048 <<[45;1H_GLOBAL_OFFSET_TABLE_+0x48>[m
+  [31m400666[m:[7C[31m68[m [31m06 00 00 00 [m[9C[36mpushq[m  $[31m0x6
+[m  [31m40066[m[36mb[m:[7C[36me9[m [31m80[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400670[m <[36m__gmon_start__[m@[36mplt[m>:
+  [31m400670[m:[7C[36mff[m [31m25[m [36mda[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019da[m(%[36mrip[m)[8C[34m# 602050 <<[51;1H_GLOBAL_OFFSET_TABLE_+0x50>[m
+  [31m400676[m:[7C[31m68[m [31m07 00 00 00 [m[9C[36mpushq[m  $[31m0x7
+[m  [31m40067[m[36mb[m:[7C[36me9[m [31m70[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400680[m <[36mopen[m@[36mplt[m>:
+  [31m400680[m:[7C[36mff[m [31m25[m [36md2[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019d2[m(%[36mrip[m)[8C[34m# 602058 <<[57;1H_GLOBAL_OFFSET_TABLE_+0x58>[m
+  [31m400686[m:[7C[31m68[m 0[31m8[m [31m00 00 00 [m[9C[36mpushq[m  $[31m0x8
+[m  [31m40068[m[36mb[m:[7C[36me9[m [31m60[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>
+
+[31m0000000000400690[m <[36mperror[m@[36mplt[m>:[62;1H[K[62;63H68,19[10C4%[61;19H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m400690[m:[7C[36mff[m [31m25[m [36mca[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019ca[m(%[36mrip[m)[8C[34m# 602060 <<[61;1H_GLOBAL_OFFSET_TABLE_+0x60>[m[62;63H[K[62;63H69,13-19[7C4%[60;19H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m400696[m:[7C[31m68[m 0[31m9[m [31m00 00 00 [m[9C[36mpushq[m  $[31m0x9
+[m  [31m40069[m[36mb[m:[7C[36me9[m [31m50[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>[62;63H[K[62;63H70,13-19[7C4%[60;19H[?12l[?25h[?25l[62;64H1[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[62;63H[K[62;63H72,0-1[9C4%[61;1H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;1H[31m00000000004006[m[36ma0[m <[36mexit[m@[36mplt[m>:[62;63H[K[62;63H73,19[10C5%[61;19H[?12l[?25h[?25l[1;61r[1;1H[3M[1;62r[59;3H[31m4006[m[36ma0[m:[7C[36mff[m [31m25[m [36mc2[m [31m19[m [31m20[m [31m00 [m      [36mjmpq[m   *[31m0x2019c2[m(%[36mrip[m)[8C[34m# 602068 <<[60;1H_GLOBAL_OFFSET_TABLE_+0x68>[m
+  [31m4006[m[36ma6[m:[7C[31m68[m 0[36ma[m [31m00 00 00 [m[9C[36mpushq[m  $[31m0xa[m[62;63H[K[62;63H74,13-19[7C5%[59;19H[?12l[?25h[?25l[62;64H5[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mab[m:[7C[36me9[m [31m40[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m4005[m[36mf0[m <[36m_init[m+[31m0x28[m>[62;63H[K[62;63H76,13-19[7C5%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[62;63H[K[62;63H77,0-1[9C6%[61;1H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;1H[36mDisassembly[m [36mof[m [36msection[m [33m.text[m:[62;63H[K[62;63H78,19[10C6%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[62;63H[K[62;63H79,0-1[9C6%[61;1H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;1H[31m00000000004006[m[36mb0[m <[36m_start[m>:
+  [31m4006[m[36mb0[m:[7C[31m31[m [36med[19Cxor[m    %[36mebp[m,%[36mebp[m[62;63H[K[62;63H80,19[10C6%[60;19H[?12l[?25h[?25l[62;64H1,13-19[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mb2[m:[7C[31m49[m [31m89[m [36md1[16Cmov[m    %[36mrdx[m,%[36mr9[m[62;63H[K[62;63H82,13-19[7C7%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mb5[m:[7C[31m5[m[36me[22Cpop[m    %[36mrsi[m[62;63H[K[62;63H83,13-19[7C7%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mb6[m:[7C[31m48[m [31m89[m [36me2[16Cmov[m    %[36mrsp[m,%[36mrdx[m[62;63H[K[62;63H84,13-19[7C7%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mb9[m:[7C[31m48[m [31m83[m [36me4[m [36mf0[13Cand[m    $[31m0xfffffffffffffff0[m,%[36mrsp[m[62;63H[K[62;63H85,13-19[7C7%[61;19H[?12l[?25h[?25l[62;64H4[60;19H[?12l[?25h[?25l[62;64H3[59;19H[?12l[?25h[?25l[62;64H2[58;19H[?12l[?25h[?25l[62;64H1[57;19H[?12l[?25h[?25l[62;64H0,19   [56;19H[?12l[?25h[?25l[62;63H79,0-1[55;1H[?12l[?25h[?25l[62;64H8,19 [54;19H[?12l[?25h[?25l[62;64H7,0-1[53;1H[?12l[?25h[?25l[62;64H8,19 [54;19H[?12l[?25h[?25l[62;64H9,0-1[55;1H[?12l[?25h[?25l[62;63H80,19 [56;19H[?12l[?25h[?25l[62;64H1,13-19[57;19H[?12l[?25h[?25l[62;64H2[58;19H[?12l[?25h[?25l[62;64H3[59;19H[?12l[?25h[?25l[62;64H4[60;19H[?12l[?25h[?25l[62;64H5[61;19H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m4006[m[36mbd[m:[7C[31m50[m[22C[36mpush[m   %[36mrax[m
+  [31m4006[m[36mbe[m:[7C[31m54[m[22C[36mpush[m   %[36mrsp[m[62;63H[K[62;63H86,13-19[7C8%[60;19H[?12l[?25h[?25l[62;64H7[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mbf[m:[7C[31m49[m [36mc7[m [36mc0[m [31m20[m 0[36mc[m [31m40[m [31m00 [m   [36mmov[m    $[31m0x400c20[m,%[36mr8[m[62;63H[K[62;63H88,13-19[7C8%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mc6[m:[7C[31m48[m [36mc7[m [36mc1[m [36mb0[m [31m0b[m [31m40[m [31m00 [m   [36mmov[m    $[31m0x400bb0[m,%[36mrcx[m[62;63H[K[62;63H89,13-19[7C8%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36mcd[m:[7C[31m48[m [36mc7[m [36mc7[m [31m9[m[36md[m [31m07 40[m [31m00 [m   [36mmov[m    $[31m0x40079d[m,%[36mrdi[m[62;63H[K[62;63H90,13-19[7C8%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36md4[m:[7C[36me8[m [31m77[m [36mff[m [36mff[m [36mff[10Ccallq[m  [31m400650[m <[36m__libc_start_main[m@[36mplt[m>[62;63H[K[62;63H91,13-19[7C9%[61;19H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m4006[m[36md9[m:[7C[36mf4[22Chlt[m
+  [31m4006[m[36mda[m:[7C[31m66[m 0[36mf[m [31m1[m[36mf[m [31m44[m [31m00 00 [m      [36mnopw[m   [31m0x0[m(%[36mrax[m,%[36mrax[m,[31m1[m)[62;63H[K[62;63H92,13-19[7C9%[60;19H[?12l[?25h[?25l[62;64H3[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[62;63H[K[62;63H94,0-1[9C9%[61;1H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;1H[31m00000000004006[m[36me0[m <[36mderegister_tm_clones[m>:[62;63H[K[62;63H95,19[10C9%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36me0[m:[7C[36mb8[m [31m87[m [31m20[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x602087[m,%[36meax[m[62;63H[K[62;63H96,13-19      10%[61;19H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4006[m[36me5[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m[62;63H[K[62;63H97,13-19      10%[61;19H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m4006[m[36me6[m:[7C[31m48[m [31m2[m[36md[m [31m80[m [31m20[m [31m60[m [31m00 [m      [36msub[m    $[31m0x602080[m,%[36mrax[m
+  [31m4006[m[36mec[m:[7C[31m48[m [31m83[m [36mf8[m 0[36me[13Ccmp[m    $[31m0xe[m,%[36mrax[m[62;63H[K[62;63H98,13-19      10%[60;19H[?12l[?25h[?25l[62;64H9[61;19H[?12l[?25h[?25l[62;63H[K[62;1H/[?12l[?25h<[?25l[?12l[?25hm[?25l[?12l[?25ha[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25h[?25l[27m[m[H[2J[1;3H[31m400750[m:[7C[31m80[m [31m3[m[36md[m [31m29[m [31m19[m [31m20[m [31m00 00 [m   [36mcmpb[m   $[31m0x0[m,[31m0x201929[m(%[36mrip[m)[8C[34m# 60200[2;1H80 <__TMC_END__>[m
+  [31m400757[m:[7C[31m75[m [31m11[m[19C[36mjne[m    [31m40076[m[36ma[m <[36m__do_global_dtors_aux[m+[31m0x11[4;1Ha[m>
+  [31m400759[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m
+  [31m40075[m[36ma[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m
+  [31m40075[m[36md[m:[7C[36me8[m [31m7[m[36me[m [36mff[m [36mff[m [36mff[10Ccallq[m  [31m4006[m[36me0[m <[36mderegister_tm_clones[m>
+  [31m400762[m:[7C[31m5[m[36md[22Cpop[m    %[36mrbp[m
+  [31m400763[m:[7C[36mc6[m [31m05 16[m [31m19[m [31m20[m [31m00 01 [m   [36mmovb[m   $[31m0x1[m,[31m0x201916[m(%[36mrip[m)[8C[34m# 60200[10;1H80 <__TMC_END__>[m
+  [31m40076[m[36ma[m:[7C[36mf3[m [36mc3[19Crepz[m [36mretq[m
+  [31m40076[m[36mc[m:[7C0[36mf[m [31m1[m[36mf[m [31m40[m [31m00 [m[12C[36mnopl[m   [31m0x0[m(%[36mrax[m)
+
+[31m0000000000400770[m <[36mframe_dummy[m>:
+  [31m400770[m:[7C[31m48[m [31m83[m [31m3[m[36md[m [36ma8[m [31m16[m [31m20[m [31m00 [m   [36mcmpq[m   $[31m0x0[m,[31m0x2016a8[m(%[36mrip[m)[8C[34m# 601ee[16;1H20 <__JCR_END__>[m
+  [31m400777[m:[7C[31m00 
+[m  [31m400778[m:[7C[31m74[m [31m1[m[36me[19Cje[m     [31m400798[m <[36mframe_dummy[m+[31m0x28[m>
+  [31m40077[m[36ma[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m
+  [31m40077[m[36mf[m:[7C[31m48[m [31m85[m [36mc0[16Ctest[m   %[36mrax[m,%[36mrax[m
+  [31m400782[m:[7C[31m74[m [31m14[m[19C[36mje[m     [31m400798[m <[36mframe_dummy[m+[31m0x28[m>
+  [31m400784[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m
+  [31m400785[m:[7C[36mbf[m [31m20[m [31m1[m[36me[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x601e20[m,%[36medi[m
+  [31m40078[m[36ma[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m
+  [31m40078[m[36md[m:[7C[36mff[m [36md0[19Ccallq[m  *%[36mrax[m
+  [31m40078[m[36mf[m:[7C[31m5[m[36md[22Cpop[m    %[36mrbp[m
+  [31m400790[m:[7C[36me9[m [31m7[m[36mb[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m400710[m <[36mregister_tm_clones[m>
+  [31m400795[m:[7C0[36mf[m [31m1[m[36mf[m [31m00 [m[15C[36mnopl[m   (%[36mrax[m)
+  [31m400798[m:[7C[36me9[m [31m73[m [36mff[m [36mff[m [36mff[10Cjmpq[m   [31m400710[m <[36mregister_tm_clones[m>
+
+[31m000000000040079[m[36md[m <[36mmain[m>:
+  [31m40079[m[36md[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m
+  [31m40079[m[36me[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m
+  [31m4007[m[36ma1[m:[7C[31m53[m[22C[36mpush[m   %[36mrbx[m
+  [31m4007[m[36ma2[m:[7C[31m48[m [31m81[m [36mec[m [36me8[m [31m00 00 00 [m   [36msub[m    $[31m0xe8[m,%[36mrsp[m
+  [31m4007[m[36ma9[m:[7C[31m64[m [31m48[m [31m8[m[36mb[m [31m04 25[m [31m28[m [31m00 [m   [36mmov[m    %[36mfs[m:[31m0x28[m,%[36mrax[m
+  [31m4007[m[36mb0[m:[7C[31m00 00 
+[m  [31m4007[m[36mb2[m:[7C[31m48[m [31m89[m [31m45[m [36me8[13Cmov[m    %[36mrax[m,-[31m0x18[m(%[36mrbp[m)
+  [31m4007[m[36mb6[m:[7C[31m31[m [36mc0[19Cxor[m    %[36meax[m,%[36meax[m
+  [31m4007[m[36mb8[m:[7C[31m48[m [31m8[m[36md[m [31m85[m [31m10[m [36mff[m [36mff[m [36mff[m    [36mlea[m    -[31m0xf0[m(%[36mrbp[m),%[36mrax[m
+  [31m4007[m[36mbf[m:[7C[31m48[m [36mb9[m [31m2[m[36mf[m [31m65[m [31m74[m [31m63[m [31m2[m[36mf[m    [36mmovabs[m $[31m0x736f682f6374652f[m,%[36mrcx[m
+  [31m4007[m[36mc6[m:[7C[31m68[m [31m6[m[36mf[m [31m73
+[m  [31m4007[m[36mc9[m:[7C[31m48[m [31m89[m 0[31m8[m[16C[36mmov[m    %[36mrcx[m,(%[36mrax[m)
+  [31m4007[m[36mcc[m:[7C[31m66[m [36mc7[m [31m40[m 0[31m8[m [31m74[m [31m73[m[7C[36mmovw[m   $[31m0x7374[m,[31m0x8[m(%[36mrax[m)
+  [31m4007[m[36md2[m:[7C[36mc6[m [31m40[m 0[36ma[m [31m00 [m[12C[36mmovb[m   $[31m0x0[m,[31m0xa[m(%[36mrax[m)
+  [31m4007[m[36md6[m:[7C[31m48[m [31m8[m[36md[m [31m45[m [31m80[m[13C[36mlea[m    -[31m0x80[m(%[36mrbp[m),%[36mrax[m
+  [31m4007[m[36mda[m:[7C[31m48[m [36mbb[m [31m2[m[36mf[m [31m65[m [31m74[m [31m63[m [31m2[m[36mf[m    [36mmovabs[m $[31m0x74656e2f6374652f[m,%[36mrbx[m
+  [31m4007[m[36me1[m:[7C[31m6[m[36me[m [31m65[m [31m74
+[m  [31m4007[m[36me4[m:[7C[31m48[m [31m89[m [31m18[m[16C[36mmov[m    %[36mrbx[m,(%[36mrax[m)
+  [31m4007[m[36me7[m:[7C[36mc7[m [31m40[m 0[31m8[m [31m77[m [31m6[m[36mf[m [31m72[m [31m6[m[36mb[m    [36mmovl[m   $[31m0x6b726f77[m,[31m0x8[m(%[36mrax[m)
+  [31m4007[m[36mee[m:[7C[31m66[m [36mc7[m [31m40[m 0[36mc[m [31m73[m [31m00 [m      [36mmovw[m   $[31m0x73[m,[31m0xc[m(%[36mrax[m)
+  [31m4007[m[36mf4[m:[7C[31m48[m [31m8[m[36md[m [31m55[m [31m80[m[13C[36mlea[m    -[31m0x80[m(%[36mrbp[m),%[36mrdx[m
+  [31m4007[m[36mf8[m:[7C[31m48[m [31m8[m[36md[m [31m85[m [31m10[m [36mff[m [36mff[m [36mff[m    [36mlea[m    -[31m0xf0[m(%[36mrbp[m),%[36mrax[m
+  [31m4007[m[36mff[m:[7C[31m48[m [31m89[m [36md6[16Cmov[m    %[36mrdx[m,%[36mrsi[m
+  [31m400802[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m
+  [31m400805[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m
+  [31m40080[m[36ma[m:[7C[36me8[m [31m62[m [31m00 00 00 [m[9C[36mcallq[m  [31m400871[m <[36mfirst_test[m>
+  [31m40080[m[36mf[m:[7C[31m48[m [31m8[m[36md[m [31m85[m [31m10[m [36mff[m [36mff[m [36mff[m    [36mlea[m    -[31m0xf0[m(%[36mrbp[m),%[36mrax[m
+  [31m400816[m:[7C[31m48[m [36mb9[m [31m2[m[36mf[m [31m62[m [31m69[m [31m6[m[36me[m [31m2[m[36mf[m    [36mmovabs[m $[31m0x736c2f6e69622f[m,%[36mrcx[m
+  [31m40081[m[36md[m:[7C[31m6[m[36mc[m [31m73[m [31m00 
+[m  [31m400820[m:[7C[31m48[m [31m89[m 0[31m8[m[16C[36mmov[m    %[36mrcx[m,(%[36mrax[m)[62;63H161,18[8C32%[31;18H[?12l[?25h[?25l[62;65H2,12-18[32;18H[?12l[?25h[?25l[62;65H3[33;18H[?12l[?25h[?25l[62;65H4[34;18H[?12l[?25h[?25l[62;65H5[35;18H[?12l[?25h[?25l[62;65H6[36;18H[?12l[?25h[?25l[62;65H7[37;18H[?12l[?25h[?25l[62;65H8[38;18H[?12l[?25h[?25l[62;65H9[39;18H[?12l[?25h[?25l[62;64H70[40;18H[?12l[?25h[?25l[62;65H1[41;18H[?12l[?25h[?25l[62;65H2[42;18H[?12l[?25h[?25l[62;65H3[43;18H[?12l[?25h[?25l[62;65H4[44;18H[?12l[?25h[?25l[62;65H5[45;18H[?12l[?25h[?25l[62;65H6[46;18H[?12l[?25h[?25l[62;65H7[47;18H[?12l[?25h[?25l[62;65H8[48;18H[?12l[?25h[?25l[62;65H9[49;18H[?12l[?25h[?25l[62;64H80[50;18H[?12l[?25h[?25l[62;65H1[51;18H[?12l[?25h[?25l[62;65H2[52;18H[?12l[?25h[?25l[62;65H3[53;18H[?12l[?25h[?25l[62;65H4[54;18H[?12l[?25h[?25l[62;65H5[55;18H[?12l[?25h[?25l[62;65H6[56;18H[?12l[?25h[?25l[62;65H7[57;18H[?12l[?25h[?25l[62;65H8[58;18H[?12l[?25h[?25l[62;65H9[59;18H[?12l[?25h[?25l[62;64H90[60;18H[?12l[?25h[?25l[62;65H1[61;18H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m400823[m:[7C[31m48[m [31m8[m[36md[m [31m45[m [31m80[m[13C[36mlea[m    -[31m0x80[m(%[36mrbp[m),%[36mrax[m
+  [31m400827[m:[7C[31m48[m [36mbe[m [31m2[m[36mf[m [31m62[m [31m69[m [31m6[m[36me[m [31m2[m[36mf[m    [36mmovabs[m $[31m0x7461632f6e69622f[m,%[36mrsi[m[62;63H[K[62;63H192,12-18     32%[60;18H[?12l[?25h[?25l[62;65H3[61;18H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m40082[m[36me[m:[7C[31m63[m [31m61[m [31m74
+[m  [31m400831[m:[7C[31m48[m [31m89[m [31m30[m[16C[36mmov[m    %[36mrsi[m,(%[36mrax[m)[62;63H[K[62;63H194,12-18     32%[60;18H[?12l[?25h[?25l[62;65H5[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400834[m:[7C[36mc6[m [31m40[m 0[31m8[m [31m00 [m[12C[36mmovb[m   $[31m0x0[m,[31m0x8[m(%[36mrax[m)[62;63H[K[62;63H196,12-18     33%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400838[m:[7C[31m48[m [31m8[m[36md[m [31m55[m [31m80[m[13C[36mlea[m    -[31m0x80[m(%[36mrbp[m),%[36mrdx[m[62;63H[K[62;63H197,12-18     33%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40083[m[36mc[m:[7C[31m48[m [31m8[m[36md[m [31m85[m [31m10[m [36mff[m [36mff[m [36mff[m    [36mlea[m    -[31m0xf0[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H198,12-18     33%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400843[m:[7C[31m48[m [31m89[m [36md6[16Cmov[m    %[36mrdx[m,%[36mrsi[m[62;63H[K[62;63H199,12-18     33%[61;18H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m400846[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m
+  [31m400849[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H200,12-18     34%[60;18H[?12l[?25h[?25l[62;65H1[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40084[m[36me[m:[7C[36me8[m [31m96[m [31m01 00 00 [m[9C[36mcallq[m  [31m4009[m[36me9[m <[36msecond_test[m>[62;63H[K[62;63H202,12-18     34%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400853[m:[7C[31m48[m [31m8[m[36mb[m [31m7[m[36md[m [36me8[13Cmov[m    -[31m0x18[m(%[36mrbp[m),%[36mrdi[m[62;63H[K[62;63H203,12-18     34%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400857[m:[7C[31m64[m [31m48[m [31m33[m [31m3[m[36mc[m [31m25[m [31m28[m [31m00 [m   [36mxor[m    %[36mfs[m:[31m0x28[m,%[36mrdi[m[62;63H[K[62;63H204,12-18     34%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40085[m[36me[m:[7C[31m00 00 [m[62;63H[K[62;63H205,12-18     35%[61;18H[?12l[?25h[?25l[1;61r[1;1H[2M[1;62r[60;3H[31m400860[m:[7C[31m74[m [31m05 [m[18C[36mje[m     [31m400867[m <[36mmain[m+[31m0xca[m>
+  [31m400862[m:[7C[36me8[m [36ma9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400610[m <[36m__stack_chk_fail[m@[36mplt[m>[62;63H[K[62;63H206,12-18     35%[60;18H[?12l[?25h[?25l[62;65H7[61;18H[?12l[?25h[?25l[62;65H6[60;18H[?12l[?25h[?25l[62;65H7[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400867[m:[7C[31m48[m [31m81[m [36mc4[m [36me8[m [31m00 00 00 [m   [36madd[m    $[31m0xe8[m,%[36mrsp[m[62;63H[K[62;63H208,12-18     35%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40086[m[36me[m:[7C[31m5[m[36mb[22Cpop[m    %[36mrbx[m[62;63H[K[62;63H209,12-18     35%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40086[m[36mf[m:[7C[31m5[m[36md[22Cpop[m    %[36mrbp[m[62;63H[K[62;63H210,12-18     36%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400870[m:[7C[36mc3[22Cretq[m[62;63H[K[62;63H211,12-18     36%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[62;63H[K[62;63H212,0-1[7C36%[61;1H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;1H[31m0000000000400871[m <[36mfirst_test[m>:[62;63H[K[62;63H213,18[8C36%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400871[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m[62;63H[K[62;63H214,12-18     37%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400872[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m[62;63H[K[62;63H215,12-18     37%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400875[m:[7C[31m48[m [31m83[m [36mec[m [31m20[m[13C[36msub[m    $[31m0x20[m,%[36mrsp[m[62;63H[K[62;63H216,12-18     37%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400879[m:[7C[31m48[m [31m89[m [31m7[m[36md[m [36me8[13Cmov[m    %[36mrdi[m,-[31m0x18[m(%[36mrbp[m)[62;63H[K[62;63H217,12-18     37%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40087[m[36md[m:[7C[31m48[m [31m89[m [31m75[m [36me0[13Cmov[m    %[36mrsi[m,-[31m0x20[m(%[36mrbp[m)[62;63H[K[62;63H218,12-18     38%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400881[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[13Cmov[m    -[31m0x18[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H219,12-18     38%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400885[m:[7C[36mbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36mesi[m[62;63H[K[62;63H220,12-18     38%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40088[m[36ma[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m[62;63H[K[62;63H221,12-18     38%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40088[m[36md[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H222,12-18     38%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400892[m:[7C[36me8[m [36me9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[62;63H[K[62;63H223,12-18     39%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400897[m:[7C[31m89[m [31m45[m [36mf4[16Cmov[m    %[36meax[m,-[31m0xc[m(%[36mrbp[m)[62;63H[K[62;63H224,12-18     39%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40089[m[36ma[m:[7C[31m83[m [31m7[m[36md[m [36mf4[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0xc[m(%[36mrbp[m)[62;63H[K[62;63H225,12-18     39%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40089[m[36me[m:[7C[31m79[m [31m2[m[36ma[19Cjns[m    [31m4008[m[36mca[m <[36mfirst_test[m+[31m0x59[m>[62;63H[K[62;63H226,12-18     39%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36ma0[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[13Cmov[m    -[31m0x18[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H227,12-18     40%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36ma4[m:[7C[31m48[m [31m89[m [36mc6[16Cmov[m    %[36mrax[m,%[36mrsi[m[62;63H[K[62;63H228,12-18     40%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36ma7[m:[7C[36mbf[m [31m38[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c38[m,%[36medi[m[62;63H[K[62;63H229,12-18     40%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mac[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H230,12-18     40%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mb1[m:[7C[36me8[m [31m6[m[36ma[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[62;63H[K[62;63H231,12-18     41%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mb6[m:[7C[36mbf[m [31m4[m[36ma[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c4a[m,%[36medi[m[62;63H[K[62;63H232,12-18     41%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mbb[m:[7C[36me8[m [36md0[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H233,12-18     41%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mc0[m:[7C[36mbf[m [36mff[m [36mff[m [36mff[m [36mff[10Cmov[m    $[31m0xffffffff[m,%[36medi[m[62;63H[K[62;63H234,12-18     41%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mc5[m:[7C[36me8[m [36md6[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[62;63H[K[62;63H235,12-18     42%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mca[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[13Cmov[m    -[31m0x20[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H236,12-18     42%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mce[m:[7C[36mbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36mesi[m[62;63H[K[62;63H237,12-18     42%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36md3[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m[62;63H[K[62;63H238,12-18     42%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36md6[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H239,12-18     43%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mdb[m:[7C[36me8[m [36ma0[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[62;63H[K[62;63H240,12-18     43%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36me0[m:[7C[31m89[m [31m45[m [36mf8[16Cmov[m    %[36meax[m,-[31m0x8[m(%[36mrbp[m)[62;63H[K[62;63H241,12-18     43%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36me3[m:[7C[31m83[m [31m7[m[36md[m [36mf8[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x8[m(%[36mrbp[m)[62;63H[K[62;63H242,12-18     43%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36me7[m:[7C[31m79[m [31m2[m[36ma[19Cjns[m    [31m400913[m <[36mfirst_test[m+[31m0xa2[m>[62;63H[K[62;63H243,12-18     44%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36me9[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[13Cmov[m    -[31m0x20[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H244,12-18     44%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36med[m:[7C[31m48[m [31m89[m [36mc6[16Cmov[m    %[36mrax[m,%[36mrsi[m[62;63H[K[62;63H245,12-18     44%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mf0[m:[7C[36mbf[m [31m38[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c38[m,%[36medi[m[62;63H[K[62;63H246,12-18     44%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mf5[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H247,12-18     45%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mfa[m:[7C[36me8[m [31m21[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[62;63H[K[62;63H248,12-18     45%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4008[m[36mff[m:[7C[36mbf[m [31m4[m[36ma[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c4a[m,%[36medi[m[62;63H[K[62;63H249,12-18     45%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400904[m:[7C[36me8[m [31m87[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H250,12-18     45%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400909[m:[7C[36mbf[m [36mff[m [36mff[m [36mff[m [36mff[10Cmov[m    $[31m0xffffffff[m,%[36medi[m[62;63H[K[62;63H251,12-18     46%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40090[m[36me[m:[7C[36me8[m [31m8[m[36md[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[62;63H[K[62;63H252,12-18     46%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400913[m:[7C[31m8[m[36mb[m [31m45[m [36mf4[16Cmov[m    -[31m0xc[m(%[36mrbp[m),%[36meax[m[62;63H[K[62;63H253,12-18     46%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400916[m:[7C[36mba[m [31m01 00 00 00 [m[9C[36mmov[m    $[31m0x1[m,%[36medx[m[62;63H[K[62;63H254,12-18     46%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40091[m[36mb[m:[7C[36mbe[m 0[36ma[m [31m00 00 00 [m[9C[36mmov[m    $[31m0xa[m,%[36mesi[m[62;63H[K[62;63H255,12-18     46%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400920[m:[7C[31m89[m [36mc7[19Cmov[m    %[36meax[m,%[36medi[m[62;63H[K[62;63H256,12-18     47%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400922[m:[7C[36me8[m 0[31m9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400630[m <[36mlseek[m@[36mplt[m>[62;63H[K[62;63H257,12-18     47%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400927[m:[7C[31m89[m [31m45[m [36mfc[16Cmov[m    %[36meax[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H258,12-18     47%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40092[m[36ma[m:[7C[31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H259,12-18     47%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40092[m[36me[m:[7C[31m79[m 0[36ma[19Cjns[m    [31m40093[m[36ma[m <[36mfirst_test[m+[31m0xc9[m>[62;63H[K[62;63H260,12-18     48%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400930[m:[7C[36mbf[m [31m56[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c56[m,%[36medi[m[62;63H[K[62;63H261,12-18     48%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400935[m:[7C[36me8[m [31m56[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H262,12-18     48%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40093[m[36ma[m:[7C[31m8[m[36mb[m [31m45[m [36mf4[16Cmov[m    -[31m0xc[m(%[36mrbp[m),%[36meax[m[62;63H[K[62;63H263,12-18     48%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40093[m[36md[m:[7C[36mba[m [31m05 00 00 00 [m[9C[36mmov[m    $[31m0x5[m,%[36medx[m[62;63H[K[62;63H264,12-18     49%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400942[m:[7C[36mbe[m [31m20[m [31m21[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x602120[m,%[36mesi[m[62;63H[K[62;63H265,12-18     49%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400947[m:[7C[31m89[m [36mc7[19Cmov[m    %[36meax[m,%[36medi[m[62;63H[K[62;63H266,12-18     49%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400949[m:[7C[36me8[m [36mf2[m [36mfc[m [36mff[m [36mff[10Ccallq[m  [31m400640[m <[36mread[m@[36mplt[m>[62;63H[K[62;63H267,12-18     49%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40094[m[36me[m:[7C[31m89[m [31m45[m [36mfc[16Cmov[m    %[36meax[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H268,12-18     50%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400951[m:[7C[31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H269,12-18     50%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400955[m:[7C[31m79[m 0[36ma[19Cjns[m    [31m400961[m <[36mfirst_test[m+[31m0xf0[m>[62;63H[K[62;63H270,12-18     50%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400957[m:[7C[36mbf[m [31m62[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c62[m,%[36medi[m[62;63H[K[62;63H271,12-18     50%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40095[m[36mc[m:[7C[36me8[m [31m2[m[36mf[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H272,12-18     51%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400961[m:[7C[31m8[m[36mb[m [31m45[m [36mf8[16Cmov[m    -[31m0x8[m(%[36mrbp[m),%[36meax[m[62;63H[K[62;63H273,12-18     51%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400964[m:[7C[36mba[m [31m01 00 00 00 [m[9C[36mmov[m    $[31m0x1[m,%[36medx[m[62;63H[K[62;63H274,12-18     51%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400969[m:[7C[36mbe[m [31m48[m [31m00 00 00 [m[9C[36mmov[m    $[31m0x48[m,%[36mesi[m[62;63H[K[62;63H275,12-18     51%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40096[m[36me[m:[7C[31m89[m [36mc7[19Cmov[m    %[36meax[m,%[36medi[m[62;63H[K[62;63H276,12-18     52%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400970[m:[7C[36me8[m [36mbb[m [36mfc[m [36mff[m [36mff[10Ccallq[m  [31m400630[m <[36mlseek[m@[36mplt[m>[62;63H[K[62;63H277,12-18     52%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400975[m:[7C[31m89[m [31m45[m [36mfc[16Cmov[m    %[36meax[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H278,12-18     52%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400978[m:[7C[31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H279,12-18     52%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40097[m[36mc[m:[7C[31m79[m 0[36ma[19Cjns[m    [31m400988[m <[36mfirst_test[m+[31m0x117[m>[62;63H[K[62;63H280,12-18     53%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40097[m[36me[m:[7C[36mbf[m [31m56[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c56[m,%[36medi[m[62;63H[K[62;63H281,12-18     53%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400983[m:[7C[36me8[m 0[31m8[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H282,12-18     53%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400988[m:[7C[31m8[m[36mb[m [31m45[m [36mf8[16Cmov[m    -[31m0x8[m(%[36mrbp[m),%[36meax[m[62;63H[K[62;63H283,12-18     53%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40098[m[36mb[m:[7C[36mba[m [31m05 00 00 00 [m[9C[36mmov[m    $[31m0x5[m,%[36medx[m[62;63H[K[62;63H284,12-18     53%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400990[m:[7C[36mbe[m [36ma0[m [31m20[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x6020a0[m,%[36mesi[m[62;63H[K[62;63H285,12-18     54%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400995[m:[7C[31m89[m [36mc7[19Cmov[m    %[36meax[m,%[36medi[m[62;63H[K[62;63H286,12-18     54%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m400997[m:[7C[36me8[m [36ma4[m [36mfc[m [36mff[m [36mff[10Ccallq[m  [31m400640[m <[36mread[m@[36mplt[m>[62;63H[K[62;63H287,12-18     54%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40099[m[36mc[m:[7C[31m89[m [31m45[m [36mfc[16Cmov[m    %[36meax[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H288,12-18     54%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m40099[m[36mf[m:[7C[31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H289,12-18     55%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36ma3[m:[7C[31m79[m 0[36ma[19Cjns[m    [31m4009[m[36maf[m <[36mfirst_test[m+[31m0x13e[m>[62;63H[K[62;63H290,12-18     55%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36ma5[m:[7C[36mbf[m [31m62[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c62[m,%[36medi[m[62;63H[K[62;63H291,12-18     55%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36maa[m:[7C[36me8[m [36me1[m [36mfc[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H292,12-18     55%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36maf[m:[7C[36mba[m [31m05 00 00 00 [m[9C[36mmov[m    $[31m0x5[m,%[36medx[m[62;63H[K[62;63H293,12-18     56%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mb4[m:[7C[36mbe[m [36ma0[m [31m20[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x6020a0[m,%[36mesi[m[62;63H[K[62;63H294,12-18     56%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mb9[m:[7C[36mbf[m [31m20[m [31m21[m [31m60[m [31m00 [m[9C[36mmov[m    $[31m0x602120[m,%[36medi[m[62;63H[K[62;63H295,12-18     56%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mbe[m:[7C[36me8[m [31m9[m[36md[m [36mfc[m [36mff[m [36mff[10Ccallq[m  [31m400660[m <[36mmemcmp[m@[36mplt[m>[62;63H[K[62;63H296,12-18     56%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mc3[m:[7C[31m89[m [31m45[m [36mfc[16Cmov[m    %[36meax[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H297,12-18     57%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mc6[m:[7C[31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[62;63H[K[62;63H298,12-18     57%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mca[m:[7C[31m74[m [31m11[m[19C[36mje[m     [31m4009[m[36mdd[m <[36mfirst_test[m+[31m0x16c[m>[62;63H[K[62;63H299,12-18     57%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mcc[m:[7C[36mbf[m [31m6[m[36md[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c6d[m,%[36medi[m[62;63H[K[62;63H300,12-18     57%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36md1[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H301,12-18     58%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36md6[m:[7C[36me8[m [31m9[m[36ma[m [31m01 00 00 [m[9C[36mcallq[m  [31m400[m[36mb75[m <[36msorry[m>[62;63H[K[62;63H302,12-18     58%[61;18H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;3H[31m4009[m[36mdb[m:[7C[36meb[m 0[36ma[19Cjmp[m    [31m4009[m[36me7[m <[36mfirst_test[m+[31m0x176[m>[62;63H[K[62;63H303,12-18     58%[61;18H[?12l[?25h[?25l[62;65H2[60;18H[?12l[?25h[?25l[62;65H1[59;18H[?12l[?25h[?25l[62;65H0[58;18H[?12l[?25h[?25l[62;63H299[57;18H[?12l[?25h[?25l[62;65H8[56;18H[?12l[?25h[?25l[62;65H7[55;18H[?12l[?25h[?25l[62;65H6[54;18H[?12l[?25h[?25l[62;65H5[53;18H[?12l[?25h[?25l[62;65H4[52;18H[?12l[?25h[?25l[62;65H3[51;18H[?12l[?25h[?25l[62;65H2[50;18H[?12l[?25h[?25l[62;65H1[49;18H[?12l[?25h[?25l[62;65H0[48;18H[?12l[?25h[?25l[62;64H89[47;18H[?12l[?25h[?25l[62;65H8[46;18H[?12l[?25h[?25l[62;65H7[45;18H[?12l[?25h[?25l[62;65H6[44;18H[?12l[?25h[?25l[62;65H5[43;18H[?12l[?25h[?25l[62;65H4[42;18H[?12l[?25h[?25l[62;65H3[41;18H[?12l[?25h[?25l[62;65H2[40;18H[?12l[?25h[?25l[62;65H1[39;18H[?12l[?25h[?25l[62;65H0[38;18H[?12l[?25h[?25l[62;64H79[37;18H[?12l[?25h[?25l[62;65H8[36;18H[?12l[?25h[?25l[62;65H7[35;18H[?12l[?25h[?25l[62;65H6[34;18H[?12l[?25h[?25l[62;65H5[33;18H[?12l[?25h[?25l[62;65H4[32;18H[?12l[?25h[?25l[62;65H3[31;18H[?12l[?25h[?25l[62;65H2[30;18H[?12l[?25h[?25l[62;65H1[29;18H[?12l[?25h[?25l[62;65H0[28;18H[?12l[?25h[?25l[62;64H69[27;18H[?12l[?25h[?25l[62;65H8[26;18H[?12l[?25h[?25l[62;65H7[25;18H[?12l[?25h[?25l[62;65H6[24;18H[?12l[?25h[?25l[62;65H5[23;18H[?12l[?25h[?25l[62;65H4[22;18H[?12l[?25h[?25l[62;65H3[21;18H[?12l[?25h[?25l[62;65H2[20;18H[?12l[?25h[?25l[62;65H1[19;18H[?12l[?25h[?25l[62;65H0[18;18H[?12l[?25h[?25l[62;64H59[17;18H[?12l[?25h[?25l[62;65H8[16;18H[?12l[?25h[?25l[62;65H7[15;18H[?12l[?25h[?25l[62;65H6[14;18H[?12l[?25h[?25l[62;65H5[13;18H[?12l[?25h[?25l[62;65H4[12;18H[?12l[?25h[?25l[62;65H3[11;18H[?12l[?25h[?25l[62;65H2[10;18H[?12l[?25h[?25l[62;65H1[9;18H[?12l[?25h[?25l[62;65H0[8;18H[?12l[?25h[?25l[62;64H49[7;18H[?12l[?25h[?25l[62;65H8[6;18H[?12l[?25h[?25l[62;65H7[5;18H[?12l[?25h[?25l[62;65H6[4;18H[?12l[?25h[?25l[62;65H5[3;18H[?12l[?25h[?25l[62;65H4[2;18H[?12l[?25h[?25l[62;65H3[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36me3[m:[7C[31m83[m [31m7[m[36md[m [36mf8[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x8[m(%[36mrbp[m)[62;63H[K[62;63H242,12-18     58%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36me0[m:[7C[31m89[m [31m45[m [36mf8[16Cmov[m    %[36meax[m,-[31m0x8[m(%[36mrbp[m)[62;63H[K[62;63H241,12-18     58%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mdb[m:[7C[36me8[m [36ma0[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[62;63H[K[62;63H240,12-18     57%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36md6[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H239,12-18     57%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36md3[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m[62;63H[K[62;63H238,12-18     57%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mce[m:[7C[36mbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36mesi[m[62;63H[K[62;63H237,12-18     57%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mca[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[13Cmov[m    -[31m0x20[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H236,12-18     56%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mc5[m:[7C[36me8[m [36md6[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[62;63H[K[62;63H235,12-18     56%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mc0[m:[7C[36mbf[m [36mff[m [36mff[m [36mff[m [36mff[10Cmov[m    $[31m0xffffffff[m,%[36medi[m[62;63H[K[62;63H234,12-18     56%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mbb[m:[7C[36me8[m [36md0[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[62;63H[K[62;63H233,12-18     56%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mb6[m:[7C[36mbf[m [31m4[m[36ma[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c4a[m,%[36medi[m[62;63H[K[62;63H232,12-18     55%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mb1[m:[7C[36me8[m [31m6[m[36ma[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[62;63H[K[62;63H231,12-18     55%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36mac[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H230,12-18     55%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36ma7[m:[7C[36mbf[m [31m38[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c38[m,%[36medi[m[62;63H[K[62;63H229,12-18     55%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36ma4[m:[7C[31m48[m [31m89[m [36mc6[16Cmov[m    %[36mrax[m,%[36mrsi[m[62;63H[K[62;63H228,12-18     54%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m4008[m[36ma0[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[13Cmov[m    -[31m0x18[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H227,12-18     54%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40089[m[36me[m:[7C[31m79[m [31m2[m[36ma[19Cjns[m    [31m4008[m[36mca[m <[36mfirst_test[m+[31m0x59[m>[62;63H[K[62;63H226,12-18     54%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40089[m[36ma[m:[7C[31m83[m [31m7[m[36md[m [36mf4[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0xc[m(%[36mrbp[m)[62;63H[K[62;63H225,12-18     54%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400897[m:[7C[31m89[m [31m45[m [36mf4[16Cmov[m    %[36meax[m,-[31m0xc[m(%[36mrbp[m)[62;63H[K[62;63H224,12-18     53%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400892[m:[7C[36me8[m [36me9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[62;63H[K[62;63H223,12-18     53%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40088[m[36md[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m[62;63H[K[62;63H222,12-18     53%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40088[m[36ma[m:[7C[31m48[m [31m89[m [36mc7[16Cmov[m    %[36mrax[m,%[36mrdi[m[62;63H[K[62;63H221,12-18     53%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400885[m:[7C[36mbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36mesi[m[62;63H[K[62;63H220,12-18     53%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400881[m:[7C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[13Cmov[m    -[31m0x18[m(%[36mrbp[m),%[36mrax[m[62;63H[K[62;63H219,12-18     52%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40087[m[36md[m:[7C[31m48[m [31m89[m [31m75[m [36me0[13Cmov[m    %[36mrsi[m,-[31m0x20[m(%[36mrbp[m)[62;63H[K[62;63H218,12-18     52%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400879[m:[7C[31m48[m [31m89[m [31m7[m[36md[m [36me8[13Cmov[m    %[36mrdi[m,-[31m0x18[m(%[36mrbp[m)[62;63H[K[62;63H217,12-18     52%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400875[m:[7C[31m48[m [31m83[m [36mec[m [31m20[m[13C[36msub[m    $[31m0x20[m,%[36mrsp[m[62;63H[K[62;63H216,12-18     52%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400872[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m[62;63H[K[62;63H215,12-18     51%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400871[m:[7C[31m55[m[22C[36mpush[m   %[36mrbp[m[62;63H[K[62;63H214,12-18     51%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;1H[31m0000000000400871[m <[36mfirst_test[m>:[62;63H[K[62;63H213,18[8C51%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[62;63H[K[62;63H212,0-1[7C51%[1;1H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400870[m:[7C[36mc3[22Cretq[m[62;63H[K[62;63H211,12-18     50%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40086[m[36mf[m:[7C[31m5[m[36md[22Cpop[m    %[36mrbp[m[62;63H[K[62;63H210,12-18     50%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m40086[m[36me[m:[7C[31m5[m[36mb[22Cpop[m    %[36mrbx[m[62;63H[K[62;63H209,12-18     50%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400867[m:[7C[31m48[m [31m81[m [36mc4[m [36me8[m [31m00 00 00 [m   [36madd[m    $[31m0xe8[m,%[36mrsp[m[62;63H[K[62;63H208,12-18     50%[1;18H[?12l[?25h[?25l[1;61r[1;1H[L[1;62r[1;3H[31m400862[m:[7C[36me8[m [36ma9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400610[m <[36m__stack_chk_fail[m@[36mplt[m>[62;63H[K[62;63H207,12-18     49%[1;18H[?12l[?25h[?25l[62;65H8[2;18H[?12l[?25h[?25l[62;65H9[3;18H[?12l[?25h[?25l[62;64H10[4;18H[?12l[?25h[?25l[62;65H1[5;18H[?12l[?25h[?25l[62;65H2,0-1  [6;1H[?12l[?25h[?25l[62;65H3,18 [7;18H[?12l[?25h[?25l[62;65H4,12-18[8;18H[?12l[?25h[?25l[62;65H5[9;18H[?12l[?25h[?25l[62;65H6[10;18H[?12l[?25h[?25l[62;65H7[11;18H[?12l[?25h[?25l[62;65H8[12;18H[?12l[?25h[?25l[62;65H9[13;18H[?12l[?25h[?25l[62;68H3-19[13;19H[?12l[?25h[?25l[62;68H4-20[13;20H[?12l[?25h[?25l[62;68H5-21[13;21H[?12l[?25h[?25l[62;64H20[14;21H[?12l[?25h[?25l[62;65H1[15;21H[?12l[?25h[?25l[62;65H2[16;21H[?12l[?25h[?25l[62;65H3[17;21H[?12l[?25h[?25l[62;65H4[18;21H[?12l[?25h[?25l[62;65H5[19;21H[?12l[?25h[?25l[62;65H6[20;21H[?12l[?25h[?25l[62;63H[K[62;1H:[1;8H[36mf[m[8C[31m5[m[36md[m            [10C[36mpop[m    %[36mrbp[m[1;52H[K[2;7H[31m70[m[8C[36mc3[m                      [36mretq[m[2;48H[K[3;3H[K[4;1H[31m0000000000400871[m <[36mfirst_test[m>:[4;41H[K[5;8H[31m1[8C55[m[22C[36mpush[m   %[36mrbp[m
+  [31m400872[m:[7C[31m48[m [31m89[m [36me5[16Cmov[m    %[36mrsp[m,%[36mrbp[m
+  [31m400875[m:       [31m48[m [31m83[m [36mec[m [31m20[m   [10C[36msub[m    $[31m0x20[m,%[36mrsp[m[8;8H[31m9[8C48[m [31m89[m [31m7[m[36md[m [36me8[13Cmov[m [5C[36mdi[m,-[31m0x18[m(%[36mrbp[m)[9;8H[36md[m[14C[31m75[m [36me0[23Ci[m,-[31m0x20[m(%[36mrbp[m)[10;7H[31m81[m[12C[36mb[m [31m45[m [36me8[13Cmov[m    -[2C[31m18[m([2C[36mb[m[1C),%[36mrax[m[11;7H[31m85[m[8C[36mbe[m [31m00 00 00 00 [m[16C$[31m0x0[m,%[36mesi[m[11;57H[K[12;7H[31m8[m[36ma[14Cc7[m   [22C[36max[m,%[36mrdi[m[12;57H[K[13;8H[36md[8Cb8[m [31m00 00 00 00 [m[16C$[2C[31m0[m,%[36meax[m[13;57H[K[14;7H[31m92[m[8C[36me8[m [36me9[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[15;7H[31m97[8C89[m [31m45[m [36mf4[24Ce[m[3C-[31m0xc[m(%[36mrbp[m)[16;7H[31m9[m[36ma[m[8C[31m83[m [31m7[m[36md[m [36mf4[m [3C   [9C[36mcmpl[m[8C-[31m0xc[m(%[36mrbp[m)[17;8H[36me[m[8C[31m79[m [31m2[m[36ma[m         [10C[36mjns[m  [5C[31m8[m[36mca[m <[36mfirst_test[m+[31m0x59[m>[18;7H[36ma0[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[m[20C-[31m0x18[m(%[36mrbp[m),%[36mrax[19;7Ha4[m[8C[31m48[m [31m89[m [36mc6[m    [12C[36mmov[m    %[36mrax[m,%[36mrsi[m[19;57H[K[20;7H[36ma7[8Cbf[m [31m38[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[1C[31mx400c38[m,%[36medi[m[20;62H[K[21;8H[36mc[8Cb8[m [31m00 00 00 00 [m[16C$[2C[31m0[m,%[36meax[m[21;57H[K[22;7H[36mb1[8Ce8[m [31m6[m[36ma[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[23;7H[36mb6[m[11C[31m4[m[36ma[m[33C[31m4a[m[24;7H[36mbb[8Ce8[m [36md0[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[25;7H[36mc0[8Cbf[m [36mff[2Cf[16Cmov[m    $[1C[31mxffffffff[m,%[36medi[m[25;64H[K[26;7H[36mc5[8Ce8[m [36md6[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[27;7H[36mca[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[m   [10C[36mmov[m    -[1C[31mx20[m(%[36mrbp[m),%[1C[36max[m[27;64H[K[28;8H[36me[9Ce[m [31m00 00 00 00 [19C0[m,%[36mesi[m[28;57H[K[29;7H[36md3[m[8C[31m48[m [31m89[m [36mc7[m      [10C[36mmov[m    %[36mrax[m,%[36mrdi[m[29;57H[K[30;7H[36md6[8Cb8[m [31m00 00 00 00 [m[16C$[2C[31m0[m,%[36meax[m[30;57H[K[31;7H[36mdb[8Ce8[m [36ma0[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m400680[m <[36mopen[m@[36mplt[m>[32;7H[36me0[m[8C[31m89[m [31m45[m [36mf8[24Ce[m[3C-[31m0x8[m(%[36mrbp[m)[33;7H[36me3[m[8C[31m83[m [31m7[m[36md[m [36mf8[m [3C   [9C[36mcmpl[m[8C-[31m0x8[m(%[36mrbp[m)[34;7H[36me7[m[8C[31m79[m [31m2[m[36ma[m         [10C[36mjns[m  [5C[31m913[m <[36mfirst_test[m+[31m0xa2[m>[35;8H[36m9[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[m[20C-[31m0x20[m(%[36mrbp[m),%[36mrax[36;8Hd[m[8C[31m48[m [31m89[m [36mc6[m    [12C[36mmov[m    %[36mrax[m,%[36mrsi[m[36;57H[K[37;7H[36mf0[8Cbf[m [31m38[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[1C[31mx400c38[m,%[36medi[m[37;62H[K[38;7H[36mf5[8Cb8[m [31m00 00 00 00 [m[16C$[2C[31m0[m,%[36meax[m[38;57H[K[39;7H[36mfa[8Ce8[m [31m21[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[40;8H[36mf[m[11C[31m4[m[36ma[m[33C[31m4a[41;6H904[m[8C[36me[m[2C[31m87[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m400690[m <[36mperror[m@[36mplt[m>[42;6H[31m909[m[8C[36mbf[m [36mff[2Cf[16Cmov[m    $[1C[31mxffffffff[m,%[36medi[m[42;64H[K[43;6H[31m90[m[36me[8Ce8[m [31m8[m[36md[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[44;7H[31m13[8C8[m[36mb[m [31m45[m[2C[36m4[m      [10C[36mmov[m    -[1C[31mxc[m(%[36mrb[m[1C),%[36meax[m[44;63H[K[45;7H[31m16[m[9C[36ma[m [31m01 00 00 00 [19C1[m,%[36medx[m[45;57H[K[46;7H[31m1[m[36mb[8Cbe[m 0[36ma[m [31m00 00 00 [m[9C[36mmov[m    $[1C[31mxa[m,%[36mesi[m[46;57H[K[47;7H[31m20[9C9[m [36mc7[m   [23C%[36meax[m,%[36medi[m[47;57H[K[48;7H[31m22[m[8C[36me8[m 0[31m9[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m400630[m <[36mlseek[m@[36mplt[m>[49;7H[31m27[8C89[m [31m45[m [36mfc[m       [16C%[36meax[m,-[31m0x4[m(%[36mrbp[m)[50;8H[36ma[m[9C[31m3[m [31m7[m[36md[m [36mfc[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[51;8H[36me[m[8C[31m79[m 0[36ma[m         [10C[36mjns[m  [5C[31m9[m[1C[36ma[m <[36mfirst_test[m+[31m0xc9[m>[52;7H[31m30[m[8C[36mbf[m [31m56[m 0[2C[31m40[m [31m00 [m[16C$[31m0x400c56[m,%[36medi[m[52;62H[K[53;1H[7ma.s                                                           226,15-21      49%[m[54;1H[1m[34m:[m[33mwq[m[54;4H[K[55;1H[1m[34m:[m[33mq[m[55;3H[K[56;1H[1m[34m:[m[56;3H[K[57;1H[1m[34m:
+:
+:
+:[57;2H~                                                                              [58;2H~                                                                              [59;2H~                                                                              [60;2H~                                                                              [m[61;1H[1m[7m[Command Line]                                                3,0-1          All[56;2H[?12l[?25h[?25l[m[62;1H[1mrecording[56;2H[?12l[?25h[?25l[m[62;1H[K[56;2H[?12l[?25h[62;1H[?25l[1;8H[31m2[m[8C[36me8[m [36ma9[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400610[m <[36m__stack_chk_fail[m@[36mplt[m>[2;7H[31m67[8C48[m [31m81[m [36mc4[m [36me8[m [31m00 00 00 [m   [36madd[m    $[31m0xe8[m,%[36mrsp[m
+  [31m40086[m[36me[m:[7C[31m5[m[36mb[22Cpop[m    %[36mrbx[m
+  [31m40086[m[36mf[m:       [31m5[m[36md[m            [10C[36mpop[m    %[36mrbp[m[5;8H[31m0[m[8C[36mc3[22Cretq[m[5;48H[K[6;3H[K[7;1H[31m0000000000400871[m <[36mfirst_test[m>:[7;41H[K[8;8H[31m1[8C55[m         [13C[36mpush[5Cbp[m[8;52H[K[9;8H[31m2[m[14C[36me5[m   [23C[36mp[m,%[36mrbp[m[9;57H[K[10;7H[31m75[12C3[m [36mec[m [31m20[m[13C[36msub[m    $[2C[31m20[m,[2C[36ms[m[10;58H[K[11;7H[31m79[8C48[m [31m89[m [31m7[m[36md[m [36me8[m    [16C%[36mrdi[m,-[31m0x18[m(%[36mrbp[m)[12;7H[31m7[m[36md[m[14C[31m75[m [36me0[22Csi[m,-[31m0x20[m(%[36mrbp[m)[13;8H[31m1[8C48[m [31m8[m[36mb[m [31m45[m [36me8[m    [16C-[2C[31m18[m(%[36mrbp[m),%[36mrax[m[14;7H[31m85[m[8C[36mbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[1C[31mx0[m,%[36mesi[m[14;57H[K[15;7H[31m8[m[36ma[m[8C[31m48[m [31m89[m [36mc7[24Cr[m[3C%[36mrdi[m[15;57H[K[16;7H[31m8[m[36md[8Cb8[m [31m00 00 00 00 [m[9C[36mmov[m [8C%[36meax[m[16;57H[K[17;8H[31m2[m[8C[36me8[m [36me9[m [36mfd[m [36mff[m [36mff[10Ccallq[m[5C[31m680[m <[36mopen[m@[36mplt[m>[17;65H[K[18;7H[31m97[8C89[m [31m45[m [36mf4[m   [20C%[36meax[m,-[31m0xc[m(%[36mrbp[m)[18;63H[K[19;7H[31m9[m[36ma[m[8C[31m83[m [31m7[m[36md[m [36mf4[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0xc[m(%[36mrbp[m)[20;7H[31m9[m[36me[m[8C[31m79[m [31m2[m[36ma[m          [9C[36mjns[m    [31m4008[m[36mca[m <[36mfirst_test[m+[31m0x59[m>[21;8H[36m0[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me8[m    [16C-[2C[31m18[m(%[36mrbp[m),%[36mrax[22;7Ha4[m[8C[31m48[m [31m89[m [36mc6[m      [10C[36mmov[m    %[36mrax[m,%[36mrsi[m[22;57H[K[23;7H[36ma7[m[11C[31m38[33C38[m[24;7H[36mac[8Cb[m[2C[31m00 00 00 00 [m[9C[36mmov[m    $[1C[31mx0[m,%[36meax[m[24;57H[K[25;7H[36mb1[8Ce8[m [31m6[m[36ma[2Cd[16Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[26;7H[36mb6[8Cbf[m [31m4[m[36ma[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[1C[31mx400c4a[m,%[36medi[m[26;62H[K[27;7H[36mbb[8Ce8[m [36md0[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperro[m[1C@[36mplt[m>[28;8H[36m0[9Cf[m [36mff[m [36mff[m [36mff[m [36mff[m [19C[31mffffffff[m,%[36medi[29;7Hc5[8Ce8[m [36md6[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[30;7H[36mca[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[m    [16C-[2C[31m20[m(%[36mrbp[m),%[36mrax[31;7Hce[8Cbe[m [31m00 00 00 00 [m[9C[36mmov[m    $[1C[31mx0[m,%[36mesi[m[31;57H[K[32;7H[36md3[m[8C[31m48[m [31m89[m [36mc7[24Cr[m[3C%[36mrdi[m[32;57H[K[33;7H[36md6[8Cb8[m [31m00 00 00 00 [m[9C[36mmov[m [8C%[36meax[m[33;57H[K[34;7H[36mdb[8Ce8[m [36ma0[m [36mfd[m [36mff[m [36mff[10Ccallq[m[5C[31m680[m <[36mopen[m@[36mplt[m>[34;65H[K[35;8H[36m0[m[8C[31m89[m [31m45[m [36mf8[m   [20C%[36meax[m,-[31m0x8[m(%[36mrbp[m)[35;63H[K[36;8H[36m3[m[8C[31m83[m [31m7[m[36md[m [36mf8[m [31m00 [m[12C[36mcmpl[m   $[31m0x0[m,-[31m0x8[m(%[36mrbp[m)[37;7H[36me7[m[8C[31m79[m [31m2[m[36ma[m          [9C[36mjns[m    [31m400913[m <[36mfirst_test[m+[31m0xa2[m>[38;7H[36me9[m[8C[31m48[m [31m8[m[36mb[m [31m45[m [36me0[m    [16C-[2C[31m20[m(%[36mrbp[m),%[36mrax[39;7Hed[m[8C[31m48[m [31m89[m [36mc6[m      [10C[36mmov[m    %[36mrax[m,%[36mrsi[m[39;57H[K[40;8H[36m0[m[11C[31m38[33C38[41;6H8[m[36mf5[8Cb[m[2C[31m00 00 00 00 [m[9C[36mmov[m    $[1C[31mx0[m,%[36meax[m[41;57H[K[42;6H[31m8[m[36mfa[8Ce8[m [31m21[m[2C[36md[16Ccallq[m  [31m400620[m <[36mprintf[m@[36mplt[m>[43;6H[31m8[m[36mff[8Cbf[m [31m4[m[36ma[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[1C[31mx400c4a[m,%[36medi[m[43;62H[K[44;7H[31m04[m[8C[36me8[m [31m87[m[2C[36md[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[1C[36merror[m@[36mplt[m>[45;7H[31m09[m[9C[36mf[m [36mff[m [36mff[m [36mff[m [36mff[m [19C[31mffffffff[m,%[36medi[m[46;7H[31m0[m[36me[8Ce8[m [31m8[m[36md[m [36mfd[m [36mff[m [36mff[m [9C[36mcallq[m  [31m4006[m[36ma0[m <[36mexit[m@[36mplt[m>[47;7H[31m13[m[9C[36mb[m [31m45[m [36mf4[m[23C-[31m0xc[m(%[36mrbp[m),%[36meax[m[48;7H[31m16[m[8C[36mba[m [31m01 00 00 00 [m[9C[36mmov[m    $[1C[31mx1[m,%[36medx[m[48;57H[K[49;7H[31m1[m[36mb[8Cbe[m 0[36ma[m [31m00 00 00 [m[16C$[31m0xa[m,%[36mesi[m[49;57H[K[50;8H[31m0[9C9[m [36mc7[m       [12C[36mmov[m    %[36meax[m,%[36medi[m[50;57H[K[51;8H[31m2[m[8C[36me8[m 0[31m9[m [36mfd[m [36mff[m [36mff[10Ccallq[m[5C[31m630[m <[36mlseek[m@[36mplt[m>[51;66H[K[52;7H[31m27[8C89[m [31m45[m [36mf[m[2C      [16C%[36meax[m,-[31m0x4[m(%[36mrbp[m)
+  [31m40092[m[36ma[m:       [31m83[m [31m7[m[36md[m [36mfc[m [31m00 [m            [36mcmpl[m   $[31m0x0[m,-[31m0x4[m(%[36mrbp[m)[53;63H[K[54;1H  [31m40092[m[36me[m:[7C[31m79[m 0[36ma[19Cjns[m    [31m40093[m[36ma[m <[36mfirst_test[m+[31m0xc9[m>
+  [31m400930[m:[7C[36mbf[m [31m56[m 0[36mc[m [31m40[m [31m00 [m[9C[36mmov[m    $[31m0x400c56[m,%[36medi[m
+  [31m400935[m:[7C[36me8[m [31m56[m [36mfd[m [36mff[m [36mff[10Ccallq[m  [31m400690[m <[36mperror[m@[36mplt[m>
+  [31m40093[m[36ma[m:       [31m8[m[36mb[m [31m45[m [36mf4[m                [36mmov[m    -[31m0xc[m(%[36mrbp[m),%[36meax[m[57;63H[K[58;1H  [31m40093[m[36md[m:       [36mba[m [31m05 00 00 00 [m         [36mmov[m    $[31m0x5[m,%[36medx[m[58;57H[K[59;1H  [31m400942[m:       [36mbe[m [31m20[m [31m21[m [31m60[m [31m00 [m         [36mmov[m    $[31m0x602120[m,%[36mesi[m[59;62H[K[60;1H  [31m400947[m:       [31m89[m [36mc7[m                   [36mmov[m    %[36meax[m,%[36medi[m[60;57H[K[61;1H  [31m400949[m:       [36me8[m [36mf2[m [36mfc[m [36mff[m [36mff[m          [36mcallq[m  [31m400640[m <[36mread[m@[36mplt[m>[61;65H[K[62;63H226,15-21     49%[20;21H[?12l[?25h[?25l[62;63H[K[62;1H:[?12l[?25hq[?25l[?12l[?25h[?25l[62;1H[K[62;1H[?1l>[?12l[?25h[?1049l]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ gdb a.s
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+"/home/shliu2/lab3/a.s": not in executable format: File format not recognized
+(gdb) break  40089e[1P40089e*40089e
+Breakpoint 1 at 0x9c99
+(gdb) run
+Starting program:  
+No executable file specified.
+Use the "file" or "exec-file" command.
+(gdb) quit
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ d[Kgdb a.out
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...(no debugging symbols found)...done.
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+SORRY!  You did not debug the first_test correctly.
+[Inferior 1 (process 8675) exited with code 0377]
+(gdb) break * 40089e 40089e[K[K[K[K[K[K[K[1P40089e
+Breakpoint 1 at 0x9c99
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+Warning:
+Cannot insert breakpoint 1.
+Cannot access memory at address 0x9c99
+
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 8679] will be killed.
+
+Quit anyway? (y or n) y
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ gdb a.out
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...(no debugging symbols found)...done.
+(gdb) break first_test
+Breakpoint 1 at 0x400875
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+
+Breakpoint 1, 0x0000000000400875 in first_test ()
+(gdb) next
+Single stepping until exit from function first_test,
+which has no line number information.
+SORRY!  You did not debug the first_test correctly.
+[Inferior 1 (process 8682) exited with code 0377]
+(gdb) quit
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ gdb a.out test
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...(no debugging symbols found)...done.
+/home/shliu2/lab3/test: No such file or directory.
+(gdb) run[K[K[Kbreak first_test
+Breakpoint 1 at 0x400875
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+
+Breakpoint 1, 0x0000000000400875 in first_test ()
+(gdb) next
+Single stepping until exit from function first_test,
+which has no line number information.
+SORRY!  You did not debug the first_test correctly.
+[Inferior 1 (process 8688) exited with code 0377]
+(gdb) quit
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ gdb a.out test[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K
+a.out: command not found
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ./a.out 
+SORRY!  You did not debug the first_test correctly.
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ (reverse-i-search)`':[C]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ls
+[0m[01;32ma.out[0m  a.out.1  a.s  core  [01;32mmatch[0m  match.c  MySession.txt
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ rm a.out
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ./[K[Kmv a.out.1 [K[K[K a.out
+mv: cannot stat ‘a.out’: No such file or directory
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ mv a.out a.out. a.out1 a.out
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ ls
+a.out  a.s  core  [0m[01;32mmatch[0m  match.c  MySession.txt
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ /.[K[K./a.o[Kout
+bash: ./a.out: Permission denied
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ chmod a+rx a.out
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ chmod a+rx a.out[9P./a.out
+Please enter the magic pass phrase: 
+Sorry.  That pass phrase is incorrect.
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ objdump [K[K[K[K[K[K[K[Kls
+[0m[01;32ma.out[0m  a.s  core  [01;32mmatch[0m  match.c  MySession.txt
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ rm a.s
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ objdump -d a.out > a.s
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ grep '<' a.s[Ks
+080483a4 [01;31m[K<[m[K_init>:
+ 80483a8:	e8 f3 00 00 00       	call   80484a0 [01;31m[K<[m[K__x86.get_pc_thunk.bx>
+ 80483bb:	74 05                	je     80483c2 [01;31m[K<[m[K_init+0x1e>
+ 80483bd:	e8 3e 00 00 00       	call   8048400 [01;31m[K<[m[K__gmon_start__@plt>
+080483d0 [01;31m[K<[m[Kstrcmp@plt-0x10>:
+080483e0 [01;31m[K<[m[Kstrcmp@plt>:
+ 80483eb:	e9 e0 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+080483f0 [01;31m[K<[m[Kputs@plt>:
+ 80483fb:	e9 d0 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048400 [01;31m[K<[m[K__gmon_start__@plt>:
+ 804840b:	e9 c0 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048410 [01;31m[K<[m[Kexit@plt>:
+ 804841b:	e9 b0 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048420 [01;31m[K<[m[K__libc_start_main@plt>:
+ 804842b:	e9 a0 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048430 [01;31m[K<[m[Kputchar@plt>:
+ 804843b:	e9 90 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048440 [01;31m[K<[m[K__printf_chk@plt>:
+ 804844b:	e9 80 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048450 [01;31m[K<[m[K__gets_chk@plt>:
+ 804845b:	e9 70 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048460 [01;31m[K<[m[K__sprintf_chk@plt>:
+ 804846b:	e9 60 ff ff ff       	jmp    80483d0 [01;31m[K<[m[K_init+0x2c>
+08048470 [01;31m[K<[m[K_start>:
+ 804848c:	e8 8f ff ff ff       	call   8048420 [01;31m[K<[m[K__libc_start_main@plt>
+080484a0 [01;31m[K<[m[K__x86.get_pc_thunk.bx>:
+080484b0 [01;31m[K<[m[Kderegister_tm_clones>:
+ 80484bd:	77 01                	ja     80484c0 [01;31m[K<[m[Kderegister_tm_clones+0x10>
+ 80484c7:	74 f6                	je     80484bf [01;31m[K<[m[Kderegister_tm_clones+0xf>
+080484e0 [01;31m[K<[m[Kregister_tm_clones>:
+ 80484f6:	75 01                	jne    80484f9 [01;31m[K<[m[Kregister_tm_clones+0x19>
+ 8048500:	74 f6                	je     80484f8 [01;31m[K<[m[Kregister_tm_clones+0x18>
+08048520 [01;31m[K<[m[K__do_global_dtors_aux>:
+ 8048527:	75 13                	jne    804853c [01;31m[K<[m[K__do_global_dtors_aux+0x1c>
+ 804852f:	e8 7c ff ff ff       	call   80484b0 [01;31m[K<[m[Kderegister_tm_clones>
+08048540 [01;31m[K<[m[Kframe_dummy>:
+ 8048547:	74 1f                	je     8048568 [01;31m[K<[m[Kframe_dummy+0x28>
+ 8048550:	74 16                	je     8048568 [01;31m[K<[m[Kframe_dummy+0x28>
+ 8048562:	e9 79 ff ff ff       	jmp    80484e0 [01;31m[K<[m[Kregister_tm_clones>
+ 8048568:	e9 73 ff ff ff       	jmp    80484e0 [01;31m[K<[m[Kregister_tm_clones>
+0804856d [01;31m[K<[m[Kmain>:
+ 80485a3:	e8 98 fe ff ff       	call   8048440 [01;31m[K<[m[K__printf_chk@plt>
+ 80485b7:	e8 94 fe ff ff       	call   8048450 [01;31m[K<[m[K__gets_chk@plt>
+ 80485c3:	e8 68 fe ff ff       	call   8048430 [01;31m[K<[m[Kputchar@plt>
+ 80485f7:	e8 64 fe ff ff       	call   8048460 [01;31m[K<[m[K__sprintf_chk@plt>
+ 804862f:	e8 2c fe ff ff       	call   8048460 [01;31m[K<[m[K__sprintf_chk@plt>
+ 804863b:	e8 a0 fd ff ff       	call   80483e0 [01;31m[K<[m[Kstrcmp@plt>
+ 8048642:	75 27                	jne    804866b [01;31m[K<[m[Kmain+0xfe>
+ 804864b:	e8 a0 fd ff ff       	call   80483f0 [01;31m[K<[m[Kputs@plt>
+ 804865a:	e8 91 fd ff ff       	call   80483f0 [01;31m[K<[m[Kputs@plt>
+ 8048666:	e8 a5 fd ff ff       	call   8048410 [01;31m[K<[m[Kexit@plt>
+ 8048672:	e8 79 fd ff ff       	call   80483f0 [01;31m[K<[m[Kputs@plt>
+ 804867e:	e8 8d fd ff ff       	call   8048410 [01;31m[K<[m[Kexit@plt>
+08048683 [01;31m[K<[m[Kproginit>:
+08048690 [01;31m[K<[m[K__libc_csu_init>:
+ 8048696:	e8 05 fe ff ff       	call   80484a0 [01;31m[K<[m[K__x86.get_pc_thunk.bx>
+ 80486ae:	e8 f1 fc ff ff       	call   80483a4 [01;31m[K<[m[K_init>
+ 80486c0:	74 27                	je     80486e9 [01;31m[K<[m[K__libc_csu_init+0x59>
+ 80486e7:	75 df                	jne    80486c8 [01;31m[K<[m[K__libc_csu_init+0x38>
+ 80486f1:	eb 0d                	jmp    8048700 [01;31m[K<[m[K__libc_csu_fini>
+08048700 [01;31m[K<[m[K__libc_csu_fini>:
+08048704 [01;31m[K<[m[K_fini>:
+ 8048708:	e8 93 fd ff ff       	call   80484a0 [01;31m[K<[m[K__x86.get_pc_thunk.bx>
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ grep '<' a.s[Kgrep '<' a.s | ;ess[K[K[K[Kless
+[?1049h[?1h=080483a4 <_init>:
+ 80483a8:       e8 f3 00 00 00          call   80484a0 <__x86.get_pc_thunk.bx>
+ 80483bb:       74 05                   je     80483c2 <_init+0x1e>
+ 80483bd:       e8 3e 00 00 00          call   8048400 <__gmon_start__@plt>
+080483d0 <strcmp@plt-0x10>:
+080483e0 <strcmp@plt>:
+ 80483eb:       e9 e0 ff ff ff          jmp    80483d0 <_init+0x2c>
+080483f0 <puts@plt>:
+ 80483fb:       e9 d0 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048400 <__gmon_start__@plt>:
+ 804840b:       e9 c0 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048410 <exit@plt>:
+ 804841b:       e9 b0 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048420 <__libc_start_main@plt>:
+ 804842b:       e9 a0 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048430 <putchar@plt>:
+ 804843b:       e9 90 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048440 <__printf_chk@plt>:
+ 804844b:       e9 80 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048450 <__gets_chk@plt>:
+ 804845b:       e9 70 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048460 <__sprintf_chk@plt>:
+ 804846b:       e9 60 ff ff ff          jmp    80483d0 <_init+0x2c>
+08048470 <_start>:
+ 804848c:       e8 8f ff ff ff          call   8048420 <__libc_start_main@plt>
+080484a0 <__x86.get_pc_thunk.bx>:
+080484b0 <deregister_tm_clones>:
+ 80484bd:       77 01                   ja     80484c0 <deregister_tm_clones+0x1 0>
+ 80484c7:       74 f6                   je     80484bf <deregister_tm_clones+0xf >
+080484e0 <register_tm_clones>:
+ 80484f6:       75 01                   jne    80484f9 <register_tm_clones+0x19>
+ 8048500:       74 f6                   je     80484f8 <register_tm_clones+0x18>
+08048520 <__do_global_dtors_aux>:
+ 8048527:       75 13                   jne    804853c <__do_global_dtors_aux+0x 1c>
+ 804852f:       e8 7c ff ff ff          call   80484b0 <deregister_tm_clones>
+08048540 <frame_dummy>:
+ 8048547:       74 1f                   je     8048568 <frame_dummy+0x28>
+ 8048550:       74 16                   je     8048568 <frame_dummy+0x28>
+ 8048562:       e9 79 ff ff ff          jmp    80484e0 <register_tm_clones>
+ 8048568:       e9 73 ff ff ff          jmp    80484e0 <register_tm_clones>
+0804856d <main>:
+ 80485a3:       e8 98 fe ff ff          call   8048440 <__printf_chk@plt>
+ 80485b7:       e8 94 fe ff ff          call   8048450 <__gets_chk@plt>
+ 80485c3:       e8 68 fe ff ff          call   8048430 <putchar@plt>
+ 80485f7:       e8 64 fe ff ff          call   8048460 <__sprintf_chk@plt>
+ 804862f:       e8 2c fe ff ff          call   8048460 <__sprintf_chk@plt>
+ 804863b:       e8 a0 fd ff ff          call   80483e0 <strcmp@plt>
+ 8048642:       75 27                   jne    804866b <main+0xfe>
+ 804864b:       e8 a0 fd ff ff          call   80483f0 <puts@plt>
+ 804865a:       e8 91 fd ff ff          call   80483f0 <puts@plt>
+ 8048666:       e8 a5 fd ff ff          call   8048410 <exit@plt>
+ 8048672:       e8 79 fd ff ff          call   80483f0 <puts@plt>
+ 804867e:       e8 8d fd ff ff          call   8048410 <exit@plt>
+08048683 <proginit>:
+08048690 <__libc_csu_init>:
+ 8048696:       e8 05 fe ff ff          call   80484a0 <__x86.get_pc_thunk.bx>
+ 80486ae:       e8 f1 fc ff ff          call   80483a4 <_init>
+ 80486c0:       74 27                   je     80486e9 <__libc_csu_init+0x59>
+:[K[K/[Kmm[Kaa[Kii[Knn[K[K[K[K[K<<[Kmm[Kaa[Kii[Knn[K[1;1H080483a4 <_init>:
+[2;1H 80483a8:       e8 f3 00 00 00          call   80484a0 <__x86.get_pc_thunk.bx>
+[3;1H 80483bb:       74 05                   je     80483c2 <_init+0x1e>
+[4;1H 80483bd:       e8 3e 00 00 00          call   8048400 <__gmon_start__@plt>
+[5;1H080483d0 <strcmp@plt-0x10>:
+[6;1H080483e0 <strcmp@plt>:
+[7;1H 80483eb:       e9 e0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[8;1H080483f0 <puts@plt>:
+[9;1H 80483fb:       e9 d0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[10;1H08048400 <__gmon_start__@plt>:
+[11;1H 804840b:       e9 c0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[12;1H08048410 <exit@plt>:
+[13;1H 804841b:       e9 b0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[14;1H08048420 <__libc_start_main@plt>:
+[15;1H 804842b:       e9 a0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[16;1H08048430 <putchar@plt>:
+[17;1H 804843b:       e9 90 ff ff ff          jmp    80483d0 <_init+0x2c>
+[18;1H08048440 <__printf_chk@plt>:
+[19;1H 804844b:       e9 80 ff ff ff          jmp    80483d0 <_init+0x2c>
+[20;1H08048450 <__gets_chk@plt>:
+[21;1H 804845b:       e9 70 ff ff ff          jmp    80483d0 <_init+0x2c>
+[22;1H08048460 <__sprintf_chk@plt>:
+[23;1H 804846b:       e9 60 ff ff ff          jmp    80483d0 <_init+0x2c>
+[24;1H08048470 <_start>:
+[25;1H 804848c:       e8 8f ff ff ff          call   8048420 <__libc_start_main@plt>
+[26;1H080484a0 <__x86.get_pc_thunk.bx>:
+[27;1H080484b0 <deregister_tm_clones>:
+[28;1H 80484bd:       77 01                   ja     80484c0 <deregister_tm_clones+0x1 [29;1H0>
+[30;1H 80484c7:       74 f6                   je     80484bf <deregister_tm_clones+0xf [31;1H>
+[32;1H080484e0 <register_tm_clones>:
+[33;1H 80484f6:       75 01                   jne    80484f9 <register_tm_clones+0x19>
+[34;1H 8048500:       74 f6                   je     80484f8 <register_tm_clones+0x18>
+[35;1H08048520 <__do_global_dtors_aux>:
+[36;1H 8048527:       75 13                   jne    804853c <__do_global_dtors_aux+0x [37;1H1c>
+[38;1H 804852f:       e8 7c ff ff ff          call   80484b0 <deregister_tm_clones>
+[39;1H08048540 <frame_dummy>:
+[40;1H 8048547:       74 1f                   je     8048568 <frame_dummy+0x28>
+[41;1H 8048550:       74 16                   je     8048568 <frame_dummy+0x28>
+[42;1H 8048562:       e9 79 ff ff ff          jmp    80484e0 <register_tm_clones>
+[43;1H 8048568:       e9 73 ff ff ff          jmp    80484e0 <register_tm_clones>
+[44;1H0804856d <main>:
+[45;1H 80485a3:       e8 98 fe ff ff          call   8048440 <__printf_chk@plt>
+[46;1H 80485b7:       e8 94 fe ff ff          call   8048450 <__gets_chk@plt>
+[47;1H 80485c3:       e8 68 fe ff ff          call   8048430 <putchar@plt>
+[48;1H 80485f7:       e8 64 fe ff ff          call   8048460 <__sprintf_chk@plt>
+[49;1H 804862f:       e8 2c fe ff ff          call   8048460 <__sprintf_chk@plt>
+[50;1H 804863b:       e8 a0 fd ff ff          call   80483e0 <strcmp@plt>
+[51;1H 8048642:       75 27                   jne    804866b <main+0xfe>
+[52;1H 804864b:       e8 a0 fd ff ff          call   80483f0 <puts@plt>
+[53;1H 804865a:       e8 91 fd ff ff          call   80483f0 <puts@plt>
+[54;1H 8048666:       e8 a5 fd ff ff          call   8048410 <exit@plt>
+[55;1H 8048672:       e8 79 fd ff ff          call   80483f0 <puts@plt>
+[56;1H 804867e:       e8 8d fd ff ff          call   8048410 <exit@plt>
+[57;1H08048683 <proginit>:
+[58;1H08048690 <__libc_csu_init>:
+[59;1H 8048696:       e8 05 fe ff ff          call   80484a0 <__x86.get_pc_thunk.bx>
+[60;1H 80486ae:       e8 f1 fc ff ff          call   80483a4 <_init>
+[61;1H 80486c0:       74 27                   je     80486e9 <__libc_csu_init+0x59>
+[62;1H[1;1H080483a4 <_init>:
+[2;1H 80483a8:       e8 f3 00 00 00          call   80484a0 <__x86.get_pc_thunk.bx>
+[3;1H 80483bb:       74 05                   je     80483c2 <_init+0x1e>
+[4;1H 80483bd:       e8 3e 00 00 00          call   8048400 <__gmon_start__@plt>
+[5;1H080483d0 <strcmp@plt-0x10>:
+[6;1H080483e0 <strcmp@plt>:
+[7;1H 80483eb:       e9 e0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[8;1H080483f0 <puts@plt>:
+[9;1H 80483fb:       e9 d0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[10;1H08048400 <__gmon_start__@plt>:
+[11;1H 804840b:       e9 c0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[12;1H08048410 <exit@plt>:
+[13;1H 804841b:       e9 b0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[14;1H08048420 <__libc_start_main@plt>:
+[15;1H 804842b:       e9 a0 ff ff ff          jmp    80483d0 <_init+0x2c>
+[16;1H08048430 <putchar@plt>:
+[17;1H 804843b:       e9 90 ff ff ff          jmp    80483d0 <_init+0x2c>
+[18;1H08048440 <__printf_chk@plt>:
+[19;1H 804844b:       e9 80 ff ff ff          jmp    80483d0 <_init+0x2c>
+[20;1H08048450 <__gets_chk@plt>:
+[21;1H 804845b:       e9 70 ff ff ff          jmp    80483d0 <_init+0x2c>
+[22;1H08048460 <__sprintf_chk@plt>:
+[23;1H 804846b:       e9 60 ff ff ff          jmp    80483d0 <_init+0x2c>
+[24;1H08048470 <_start>:
+[25;1H 804848c:       e8 8f ff ff ff          call   8048420 <__libc_start_main@plt>
+[26;1H080484a0 <__x86.get_pc_thunk.bx>:
+[27;1H080484b0 <deregister_tm_clones>:
+[28;1H 80484bd:       77 01                   ja     80484c0 <deregister_tm_clones+0x1 [29;1H0>
+[30;1H 80484c7:       74 f6                   je     80484bf <deregister_tm_clones+0xf [31;1H>
+[32;1H080484e0 <register_tm_clones>:
+[33;1H 80484f6:       75 01                   jne    80484f9 <register_tm_clones+0x19>
+[34;1H 8048500:       74 f6                   je     80484f8 <register_tm_clones+0x18>
+[35;1H08048520 <__do_global_dtors_aux>:
+[36;1H 8048527:       75 13                   jne    804853c <__do_global_dtors_aux+0x [37;1H1c>
+[38;1H 804852f:       e8 7c ff ff ff          call   80484b0 <deregister_tm_clones>
+[39;1H08048540 <frame_dummy>:
+[40;1H 8048547:       74 1f                   je     8048568 <frame_dummy+0x28>
+[41;1H 8048550:       74 16                   je     8048568 <frame_dummy+0x28>
+[42;1H 8048562:       e9 79 ff ff ff          jmp    80484e0 <register_tm_clones>
+[43;1H 8048568:       e9 73 ff ff ff          jmp    80484e0 <register_tm_clones>
+[44;1H0804856d [7m<main[27m>:
+[45;1H 80485a3:       e8 98 fe ff ff          call   8048440 <__printf_chk@plt>
+[46;1H 80485b7:       e8 94 fe ff ff          call   8048450 <__gets_chk@plt>
+[47;1H 80485c3:       e8 68 fe ff ff          call   8048430 <putchar@plt>
+[48;1H 80485f7:       e8 64 fe ff ff          call   8048460 <__sprintf_chk@plt>
+[49;1H 804862f:       e8 2c fe ff ff          call   8048460 <__sprintf_chk@plt>
+[50;1H 804863b:       e8 a0 fd ff ff          call   80483e0 <strcmp@plt>
+[51;1H 8048642:       75 27                   jne    804866b [7m<main[27m+0xfe>
+[52;1H 804864b:       e8 a0 fd ff ff          call   80483f0 <puts@plt>
+[53;1H 804865a:       e8 91 fd ff ff          call   80483f0 <puts@plt>
+[54;1H 8048666:       e8 a5 fd ff ff          call   8048410 <exit@plt>
+[55;1H 8048672:       e8 79 fd ff ff          call   80483f0 <puts@plt>
+[56;1H 804867e:       e8 8d fd ff ff          call   8048410 <exit@plt>
+[57;1H08048683 <proginit>:
+[58;1H08048690 <__libc_csu_init>:
+[59;1H 8048696:       e8 05 fe ff ff          call   80484a0 <__x86.get_pc_thunk.bx>
+[60;1H 80486ae:       e8 f1 fc ff ff          call   80483a4 <_init>
+[61;1H 80486c0:       74 27                   je     80486e9 <__libc_csu_init+0x59>
+[62;1H 80486e7:       75 df                   jne    80486c8 <__libc_csu_init+0x38>
+ 80486f1:       eb 0d                   jmp    8048700 <__libc_csu_fini>
+08048700 <__libc_csu_fini>:
+08048704 <_fini>:
+ 8048708:       e8 93 fd ff ff          call   80484a0 <__x86.get_pc_thunk.bx>
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[1m~[0m
+[7m(END)[27m[K[K[?1l>[?1049l]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ gdb a.out
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...(no debugging symbols found)...done.
+(gdb) break *804863b
+Invalid number "804863b".
+(gdb) break *0x804863b
+Breakpoint 1 at 0x804863b
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+Please enter the magic pass phrase: test
+
+
+Breakpoint 1, 0x0804863b in main ()
+(gdb) next
+Single stepping until exit from function main,
+which has no line number information.
+Sorry.  That pass phrase is incorrect.
+[Inferior 1 (process 8732) exited normally]
+(gdb) quit
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ less[K[K[K[Kvim a.s
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;62r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[62;1H"a.s" 310L, 13333C[>c[27m[m[H[2J[2;1H[36ma[m[33m.out[m:     [36mfile[m [36mformat[m [36melf32[m-[36mi386
+
+
+Disassembly[m [36mof[m [36msection[m [33m.init[m:
+
+0[31m80483[m[36ma4[m <[36m_init[m>:
+ [31m80483[m[36ma4[m:[7C[31m53[m[22C[36mpush[m   %[36mebx[m
+ [31m80483[m[36ma5[m:[7C[31m83[m [36mec[m 0[31m8[m[16C[36msub[m    $[31m0x8[m,%[36mesp[m
+ [31m80483[m[36ma8[m:[7C[36me8[m [36mf3[m [31m00 00 00 [m[9C[36mcall[m   [31m80484[m[36ma0[m <[36m__x86[m[33m.get[m[36m_pc_thunk[m[33m.bx[m>
+ [31m80483[m[36mad[m:[7C[31m81[m [36mc3[m [31m53[m [31m1[m[36mc[m [31m00 00 [m      [36madd[m    $[31m0x1c53[m,%[36mebx[m
+ [31m80483[m[36mb3[m:[7C[31m8[m[36mb[m [31m83[m [36mfc[m [36mff[m [36mff[m [36mff[7Cmov[m    -[31m0x4[m(%[36mebx[m),%[36meax[m
+ [31m80483[m[36mb9[m:[7C[31m85[m [36mc0[19Ctest[m   %[36meax[m,%[36meax[m
+ [31m80483[m[36mbb[m:[7C[31m74[m [31m05 [m[18C[36mje[m     [31m80483[m[36mc2[m <[36m_init[m+[31m0x1e[m>
+ [31m80483[m[36mbd[m:[7C[36me8[m [31m3[m[36me[m [31m00 00 00 [m[9C[36mcall[m   [31m8048400[m <[36m__gmon_start__[m@[36mplt[m>
+ [31m80483[m[36mc2[m:[7C[31m83[m [36mc4[m 0[31m8[m[16C[36madd[m    $[31m0x8[m,%[36mesp[m
+ [31m80483[m[36mc5[m:[7C[31m5[m[36mb[22Cpop[m    %[36mebx[m
+ [31m80483[m[36mc6[m:[7C[36mc3[22Cret
+
+Disassembly[m [36mof[m [36msection[m [33m.plt[m:
+
+0[31m80483[m[36md0[m <[36mstrcmp[m@[36mplt[m-[31m0x10[m>:
+ [31m80483[m[36md0[m:[7C[36mff[m [31m35[m [31m04 [m[36ma0[m [31m04 [m0[31m8[m[7C[36mpushl[m  [31m0x804a004
+[m [31m80483[m[36md6[m:[7C[36mff[m [31m25[m 0[31m8[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a008
+[m [31m80483[m[36mdc[m:[7C[31m00 00 [m[18C[36madd[m    %[36mal[m,(%[36meax[m)[26;9H...
+
+0[31m80483[m[36me0[m <[36mstrcmp[m@[36mplt[m>:
+ [31m80483[m[36me0[m:[7C[36mff[m [31m25[m 0[36mc[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a00c
+[m [31m80483[m[36me6[m:[7C[31m68[m [31m00 00 00 00 [m[9C[36mpush[m   $[31m0x0
+[m [31m80483[m[36meb[m:[7C[36me9[m [36me0[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m80483[m[36mf0[m <[36mputs[m@[36mplt[m>:
+ [31m80483[m[36mf0[m:[7C[36mff[m [31m25[m [31m10[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a010
+[m [31m80483[m[36mf6[m:[7C[31m68[m 0[31m8[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x8
+[m [31m80483[m[36mfb[m:[7C[36me9[m [36md0[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048400[m <[36m__gmon_start__[m@[36mplt[m>:
+ [31m8048400[m:[7C[36mff[m [31m25[m [31m14[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a014
+[m [31m8048406[m:[7C[31m68[m [31m10[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x10
+[m [31m804840[m[36mb[m:[7C[36me9[m [36mc0[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048410[m <[36mexit[m@[36mplt[m>:
+ [31m8048410[m:[7C[36mff[m [31m25[m [31m18[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a018
+[m [31m8048416[m:[7C[31m68[m [31m18[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x18
+[m [31m804841[m[36mb[m:[7C[36me9[m [36mb0[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048420[m <[36m__libc_start_main[m@[36mplt[m>:
+ [31m8048420[m:[7C[36mff[m [31m25[m [31m1[m[36mc[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a01c
+[m [31m8048426[m:[7C[31m68[m [31m20[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x20
+[m [31m804842[m[36mb[m:[7C[36me9[m [36ma0[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048430[m <[36mputchar[m@[36mplt[m>:
+ [31m8048430[m:[7C[36mff[m [31m25[m [31m20[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a020
+[m [31m8048436[m:[7C[31m68[m [31m28[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x28
+[m [31m804843[m[36mb[m:[7C[36me9[m [31m90[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048440[m <[36m__printf_chk[m@[36mplt[m>:
+ [31m8048440[m:[7C[36mff[m [31m25[m [31m24[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a024
+[m [31m8048446[m:[7C[31m68[m [31m30[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x30
+[m [31m804844[m[36mb[m:[7C[36me9[m [31m80[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>[62;63H1,0-1[9CTop"a.s" 310L, 13333C[44C     [9C   [1;1H[?12l[?25h[?25l[62;1H[K[62;1H/[?12l[?25hm[?25l[?12l[?25ha[?25l[?12l[?25hi[?25l[?12l[?25hn[?25l[?12l[?25h[?25l[62C48,24[9CTop[48;24H[?12l[?25h[?25l[62;1H[K[62;1H/[?12l[?25h[?25l/main[1;61r[1;1H[27M[1;62r[36;1H0[31m8048450[m <[36m__gets_chk[m@[36mplt[m>:
+ [31m8048450[m:[7C[36mff[m [31m25[m [31m28[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a028
+[m [31m8048456[m:[7C[31m68[m [31m38[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x38
+[m [31m804845[m[36mb[m:[7C[36me9[m [31m70[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+0[31m8048460[m <[36m__sprintf_chk[m@[36mplt[m>:
+ [31m8048460[m:[7C[36mff[m [31m25[m [31m2[m[36mc[m [36ma0[m [31m04 [m0[31m8[m[7C[36mjmp[m    *[31m0x804a02c
+[m [31m8048466[m:[7C[31m68[m [31m40[m [31m00 00 00 [m[9C[36mpush[m   $[31m0x40
+[m [31m804846[m[36mb[m:[7C[36me9[m [31m60[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80483[m[36md0[m <[36m_init[m+[31m0x2c[m>
+
+[36mDisassembly[m [36mof[m [36msection[m [33m.text[m:
+
+0[31m8048470[m <[36m_start[m>:
+ [31m8048470[m:[7C[31m31[m [36med[19Cxor[m    %[36mebp[m,%[36mebp[m
+ [31m8048472[m:[7C[31m5[m[36me[22Cpop[m    %[36mesi[m
+ [31m8048473[m:[7C[31m89[m [36me1[19Cmov[m    %[36mesp[m,%[36mecx[m
+ [31m8048475[m:[7C[31m83[m [36me4[m [36mf0[16Cand[m    $[31m0xfffffff0[m,%[36mesp[m
+ [31m8048478[m:[7C[31m50[m[22C[36mpush[m   %[36meax[m
+ [31m8048479[m:[7C[31m54[m[22C[36mpush[m   %[36mesp[m
+ [31m804847[m[36ma[m:[7C[31m52[m[22C[36mpush[m   %[36medx[m
+ [31m804847[m[36mb[m:[7C[31m68[m [31m00 87[m [31m04 [m0[31m8[m[10C[36mpush[m   $[31m0x8048700
+[m [31m8048480[m:[7C[31m68[m [31m90[m [31m86[m [31m04 [m0[31m8[m[10C[36mpush[m   $[31m0x8048690
+[m [31m8048485[m:[7C[31m51[m[22C[36mpush[m   %[36mecx[m
+ [31m8048486[m:[7C[31m56[m[22C[36mpush[m   %[36mesi[m
+ [31m8048487[m:[7C[31m68[m [31m6[m[36md[m [31m85[m [31m04 [m0[31m8[m[10C[36mpush[m   $[31m0x804856d
+[m [31m804848[m[36mc[m:[7C[36me8[m [31m8[m[36mf[m [36mff[m [36mff[m [36mff[10Ccall[m   [31m8048420[m <[36m__libc_start_main[m@[36mplt[m>[62;1H[K[62;63H88,62-70      10%[61;70H[?12l[?25h[?25l[62;63H[K[62;1H/[?12l[?25h[?25l/main[27m[m[H[2J[1;1H0[31m8048520[m <[36m__do_global_dtors_aux[m>:
+ [31m8048520[m:[7C[31m80[m [31m3[m[36md[m [31m38[m [36ma0[m [31m04 [m0[31m8[m [31m00 [m   [36mcmpb[m   $[31m0x0[m,[31m0x804a038
+[m [31m8048527[m:[7C[31m75[m [31m13[m[19C[36mjne[m    [31m804853[m[36mc[m <[36m__do_global_dtors_aux[m+[31m0xx[4;1H1c[m>
+ [31m8048529[m:[7C[31m55[m[22C[36mpush[m   %[36mebp[m
+ [31m804852[m[36ma[m:[7C[31m89[m [36me5[19Cmov[m    %[36mesp[m,%[36mebp[m
+ [31m804852[m[36mc[m:[7C[31m83[m [36mec[m 0[31m8[m[16C[36msub[m    $[31m0x8[m,%[36mesp[m
+ [31m804852[m[36mf[m:[7C[36me8[m [31m7[m[36mc[m [36mff[m [36mff[m [36mff[10Ccall[m   [31m80484[m[36mb0[m <[36mderegister_tm_clones[m>
+ [31m8048534[m:[7C[36mc6[m [31m05 38[m [36ma0[m [31m04 [m0[31m8[m [31m01 [m   [36mmovb[m   $[31m0x1[m,[31m0x804a038
+[m [31m804853[m[36mb[m:[7C[36mc9[22Cleave[m
+ [31m804853[m[36mc[m:[7C[36mf3[m [36mc3[19Crepz[m [36mret[m
+ [31m804853[m[36me[m:[7C[31m66[m [31m90[m[19C[36mxchg[m   %[36max[m,%[36max[m
+
+0[31m8048540[m <[36mframe_dummy[m>:
+ [31m8048540[m:[7C[36ma1[m [31m10[m [31m9[m[36mf[m [31m04 [m0[31m8[m[10C[36mmov[m    [31m0x8049f10[m,%[36meax[m
+ [31m8048545[m:[7C[31m85[m [36mc0[19Ctest[m   %[36meax[m,%[36meax[m
+ [31m8048547[m:[7C[31m74[m [31m1[m[36mf[19Cje[m     [31m8048568[m <[36mframe_dummy[m+[31m0x28[m>
+ [31m8048549[m:[7C[36mb8[m [31m00 00 00 00 [m[9C[36mmov[m    $[31m0x0[m,%[36meax[m
+ [31m804854[m[36me[m:[7C[31m85[m [36mc0[19Ctest[m   %[36meax[m,%[36meax[m
+ [31m8048550[m:[7C[31m74[m [31m16[m[19C[36mje[m     [31m8048568[m <[36mframe_dummy[m+[31m0x28[m>
+ [31m8048552[m:[7C[31m55[m[22C[36mpush[m   %[36mebp[m
+ [31m8048553[m:[7C[31m89[m [36me5[19Cmov[m    %[36mesp[m,%[36mebp[m
+ [31m8048555[m:[7C[31m83[m [36mec[m [31m18[m[16C[36msub[m    $[31m0x18[m,%[36mesp[m
+ [31m8048558[m:[7C[36mc7[m [31m04 24[m [31m10[m [31m9[m[36mf[m [31m04 [m0[31m8[m    [36mmovl[m   $[31m0x8049f10[m,(%[36mesp[m)
+ [31m804855[m[36mf[m:[7C[36mff[m [36md0[19Ccall[m   *%[36meax[m
+ [31m8048561[m:[7C[36mc9[22Cleave[m
+ [31m8048562[m:[7C[36me9[m [31m79[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80484[m[36me0[m <[36mregister_tm_clones[m>
+ [31m8048567[m:[7C[31m90[m[22C[36mnop[m
+ [31m8048568[m:[7C[36me9[m [31m73[m [36mff[m [36mff[m [36mff[10Cjmp[m    [31m80484[m[36me0[m <[36mregister_tm_clones[m>
+
+0[31m804856[m[36md[m <[36mmain[m>:
+ [31m804856[m[36md[m:[7C[31m55[m[22C[36mpush[m   %[36mebp[m
+ [31m804856[m[36me[m:[7C[31m89[m [36me5[19Cmov[m    %[36mesp[m,%[36mebp[m
+ [31m8048570[m:[7C[31m56[m[22C[36mpush[m   %[36mesi[m
+ [31m8048571[m:[7C[31m53[m[22C[36mpush[m   %[36mebx[m
+ [31m8048572[m:[7C[31m83[m [36me4[m [36mf0[16Cand[m    $[31m0xfffffff0[m,%[36mesp[m
+ [31m8048575[m:[7C[31m81[m [36mec[m [36mb0[m [31m01 00 00 [m      [36msub[m    $[31m0x1b0[m,%[36mesp[m
+ [31m804857[m[36mb[m:[7C[31m65[m [36ma1[m [31m14[m [31m00 00 00 [m      [36mmov[m    %[36mgs[m:[31m0x14[m,%[36meax[m
+ [31m8048581[m:[7C[31m89[m [31m84[m [31m24[m [36mac[m [31m01 00 00 [m   [36mmov[m    %[36meax[m,[31m0x1ac[m(%[36mesp[m)
+ [31m8048588[m:[7C[31m31[m [36mc0[19Cxor[m    %[36meax[m,%[36meax[m
+ [31m804858[m[36ma[m:[7C[36mc7[m [31m05 3[m[36mc[m [36ma0[m [31m04 [m0[31m8[m 0[36me[m    [36mmovl[m   $[31m0x10e[m,[31m0x804a03c
+[m [31m8048591[m:[7C[31m01 00 00 
+[m [31m8048594[m:[7C[36mc7[m [31m44[m [31m24[m [31m04 20[m [31m87[m [31m04 [m   [36mmovl[m   $[31m0x8048720[m,[31m0x4[m(%[36mesp[m)
+ [31m804859[m[36mb[m:[7C0[31m8
+[m [31m804859[m[36mc[m:[7C[36mc7[m [31m04 24[m [31m01 00 00 00 [m   [36mmovl[m   $[31m0x1[m,(%[36mesp[m)
+ [31m80485[m[36ma3[m:[7C[36me8[m [31m98[m [36mfe[m [36mff[m [36mff[10Ccall[m   [31m8048440[m <[36m__printf_chk[m@[36mplt[m>
+ [31m80485[m[36ma8[m:[7C[36mc7[m [31m44[m [31m24[m [31m04 80[m [31m00 00 [m   [36mmovl[m   $[31m0x80[m,[31m0x4[m(%[36mesp[m)
+ [31m80485[m[36maf[m:[7C[31m00 
+[m [31m80485[m[36mb0[m:[7C[31m8[m[36md[m [31m5[m[36mc[m [31m24[m [31m2[m[36mc[13Clea[m    [31m0x2c[m(%[36mesp[m),%[36mebx[m
+ [31m80485[m[36mb4[m:[7C[31m89[m [31m1[m[36mc[m [31m24[m[16C[36mmov[m    %[36mebx[m,(%[36mesp[m)
+ [31m80485[m[36mb7[m:[7C[36me8[m [31m94[m [36mfe[m [36mff[m [36mff[10Ccall[m   [31m8048450[m <[36m__gets_chk[m@[36mplt[m>
+ [31m80485[m[36mbc[m:[7C[36mc7[m [31m04 24[m 0[36ma[m [31m00 00 00 [m   [36mmovl[m   $[31m0xa[m,(%[36mesp[m)
+ [31m80485[m[36mc3[m:[7C[36me8[m [31m68[m [36mfe[m [36mff[m [36mff[10Ccall[m   [31m8048430[m <[36mputchar[m@[36mplt[m>
+ [31m80485[m[36mc8[m:[7C[31m89[m [31m5[m[36mc[m [31m24[m [31m14[m[13C[36mmov[m    %[36mebx[m,[31m0x14[m(%[36mesp[m)
+ [31m80485[m[36mcc[m:[7C[36ma1[m [31m3[m[36mc[m [36ma0[m [31m04 [m0[31m8[m[10C[36mmov[m    [31m0x804a03c[m,%[36meax[m
+ [31m80485[m[36md1[m:[7C[31m89[m [31m44[m [31m24[m [31m10[m[13C[36mmov[m    %[36meax[m,[31m0x10[m(%[36mesp[m)
+ [31m80485[m[36md5[m:[7C[36mc7[m [31m44[m [31m24[m 0[36mc[m [31m48[m [31m87[m [31m04 [m   [36mmovl[m   $[31m0x8048748[m,[31m0xc[m(%[36mesp[m)
+ [31m80485[m[36mdc[m:[7C0[31m8
+[m [31m80485[m[36mdd[m:[7C[36mc7[m [31m44[m [31m24[m 0[31m8[m [31m80[m [31m00 00 [m   [36mmovl[m   $[31m0x80[m,[31m0x8[m(%[36mesp[m)
+ [31m80485[m[36me4[m:[7C[31m00 
+[m [31m80485[m[36me5[m:[7C[36mc7[m [31m44[m [31m24[m [31m04 01 00 00 [m   [36mmovl[m   $[31m0x1[m,[31m0x4[m(%[36mesp[m)[62;63H179,11[8C59%[31;11H[?12l[?25h[?25l[62;64H80,10-16[32;16H[?12l[?25h[?25l[62;65H1[33;16H[?12l[?25h[?25l[62;65H2[34;16H[?12l[?25h[?25l[62;65H3[35;16H[?12l[?25h[?25l[62;65H4[36;16H[?12l[?25h[?25l[62;65H5[37;16H[?12l[?25h[?25l[62;65H6[38;16H[?12l[?25h[?25l[62;63H[K[62;1H/[?12l[?25hs[?25l[?12l[?25ht[?25l[?12l[?25hr[?25l[?12l[?25hc[?25l[?12l[?25hm[?25l[?12l[?25hp[?25l[?12l[?25h[?25l[1;61r[1;1H[20M[1;62r[42;2H[31m80485[m[36mec[m:[7C[31m00 
+[m [31m80485[m[36med[m:[7C[31m8[m[36md[m [36mb4[m [31m24[m [36mac[m [31m00 00 00 [m   [36mlea[m    [31m0xac[m(%[36mesp[m),%[36mesi[m
+ [31m80485[m[36mf4[m:[7C[31m89[m [31m34[m [31m24[m[16C[36mmov[m    %[36mesi[m,(%[36mesp[m)
+ [31m80485[m[36mf7[m:[7C[36me8[m [31m64[m [36mfe[m [36mff[m [36mff[10Ccall[m   [31m8048460[m <[36m__sprintf_chk[m@[36mplt[m>
+ [31m80485[m[36mfc[m:[7C[36mc7[m [31m44[m [31m24[m [31m14[m [31m6[m[36mc[m [31m87[m [31m04 [m   [36mmovl[m   $[31m0x804876c[m,[31m0x14[m(%[36mesp[m)
+ [31m8048603[m:[7C0[31m8
+[m [31m8048604[m:[7C[36ma1[m [31m3[m[36mc[m [36ma0[m [31m04 [m0[31m8[m[10C[36mmov[m    [31m0x804a03c[m,%[36meax[m
+ [31m8048609[m:[7C[31m89[m [31m44[m [31m24[m [31m10[m[13C[36mmov[m    %[36meax[m,[31m0x10[m(%[36mesp[m)
+ [31m804860[m[36md[m:[7C[36mc7[m [31m44[m [31m24[m 0[36mc[m [31m48[m [31m87[m [31m04 [m   [36mmovl[m   $[31m0x8048748[m,[31m0xc[m(%[36mesp[m)
+ [31m8048614[m:[7C0[31m8
+[m [31m8048615[m:[7C[36mc7[m [31m44[m [31m24[m 0[31m8[m [31m80[m [31m00 00 [m   [36mmovl[m   $[31m0x80[m,[31m0x8[m(%[36mesp[m)
+ [31m804861[m[36mc[m:[7C[31m00 
+[m [31m804861[m[36md[m:[7C[36mc7[m [31m44[m [31m24[m [31m04 01 00 00 [m   [36mmovl[m   $[31m0x1[m,[31m0x4[m(%[36mesp[m)
+ [31m8048624[m:[7C[31m00 
+[m [31m8048625[m:[7C[31m8[m[36md[m [31m9[m[36mc[m [31m24[m [31m2[m[36mc[m [31m01 00 00 [m   [36mlea[m    [31m0x12c[m(%[36mesp[m),%[36mebx[m
+ [31m804862[m[36mc[m:[7C[31m89[m [31m1[m[36mc[m [31m24[m[16C[36mmov[m    %[36mebx[m,(%[36mesp[m)
+ [31m804862[m[36mf[m:[7C[36me8[m [31m2[m[36mc[m [36mfe[m [36mff[m [36mff[10Ccall[m   [31m8048460[m <[36m__sprintf_chk[m@[36mplt[m>
+ [31m8048634[m:[7C[31m89[m [31m74[m [31m24[m [31m04 [m[12C[36mmov[m    %[36mesi[m,[31m0x4[m(%[36mesp[m)
+ [31m8048638[m:[7C[31m89[m [31m1[m[36mc[m [31m24[m[16C[36mmov[m    %[36mebx[m,(%[36mesp[m)
+ [31m804863[m[36mb[m:[7C[36me8[m [36ma0[m [36mfd[m [36mff[m [36mff[10Ccall[m   [31m80483[m[36me0[m <[36mstrcmp[m@[36mplt[m>[62;1H[K[62;63H229,49-57     67%[61;57H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;2H[31m8048640[m:[7C[31m85[m [36mc0[19Ctest[m   %[36meax[m,%[36meax[m[62;63H[K[62;63H230,48-56     67%[61;56H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;2H[31m8048642[m:[7C[31m75[m [31m27[m[19C[36mjne[m    [31m804866[m[36mb[m <[36mmain[m+[31m0xfe[m>[62;63H[K[62;63H231,49-57     68%[61;57H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;2H[31m8048644[m:[7C[36mc7[m [31m04 24[m [31m9[m[36mc[m [31m87[m [31m04 [m0[31m8[m    [36mmovl[m   $[31m0x804879c[m,(%[36mesp[m)[62;63H[K[62;63H232,49-57     68%[61;57H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;2H[31m804864[m[36mb[m:[7C[36me8[m [36ma0[m [36mfd[m [36mff[m [36mff[10Ccall[m   [31m80483[m[36mf0[m <[36mputs[m@[36mplt[m>[62;63H[K[62;63H233,49-57     69%[61;57H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[61;2H[31m8048650[m:[7C[31m8[m[36md[m [31m84[m [31m24[m [36mac[m [31m00 00 00 [m   [36mlea[m    [31m0xac[m[46m([m%[36mesp[m[46m)[m,%[36meax[m[62;63H[K[62;63H234,49-57     69%[61;57H[?12l[?25h[?25l[1;61r[61;1H
+[1;62r[60;52H([4C)
+ [31m8048657[m:[7C[31m89[m [31m04 24[m[16C[36mmov[m    %[36meax[m,(%[36mesp[m)[62;63H[K[62;63H235,49-57     69%[61;57H[?12l[?25h[?25l[60;52H[46m([4C)[m[62;65H4[60;57H[?12l[?25h[?25l([4C)[62;65H3[59;57H[?12l[?25h[?25l[62;65H2[58;57H[?12l[?25h[?25l[62;65H1[57;57H[?12l[?25h[?25l[62;65H0,48-56[56;56H[?12l[?25h[?25l[62;68H7-55[56;55H[?12l[?25h[?25l[62;68H6-54[56;54H[?12l[?25h[?25l[62;68H5-53[56;53H[?12l[?25h[?25l[62;68H4-52[56;52H[?12l[?25h[?25l[62;68H3-51[56;51H[?12l[?25h[?25l[62;68H2-50[56;50H[?12l[?25h[?25l[62;68H1-49[56;49H[?12l[?25h[?25l[62;64H29[55;49H[?12l[?25h[?25l[62;65H8[54;49H[?12l[?25h[?25l[62;65H7[53;49H[?12l[?25h[?25l[62;63H[K[62;1H:[?12l[?25hq[?25l[?12l[?25hu[?25l[?12l[?25hi[?25l[?12l[?25ht[?25l[?12l[?25h[?25l[62;1H[K[62;1H[?1l>[?12l[?25h[?1049l]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ vim a.sgdb a.out
+GNU gdb (Ubuntu 7.7-0ubuntu3.1) 7.7
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...(no debugging symbols found)...done.
+(gdb) break * 0x[K[K[K0x804863b
+Breakpoint 1 at 0x804863b
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+Please enter the magic pass phrase: test
+
+
+Breakpoint 1, 0x0804863b in main ()
+(gdb) print esi
+No symbol table is loaded.  Use the "file" command.
+(gdb) print $esi
+$1 = -10900
+(gdb) print $ebx
+$2 = -10772
+(gdb) next
+Single stepping until exit from function main,
+which has no line number information.
+Sorry.  That pass phrase is incorrect.
+[Inferior 1 (process 8742) exited normally]
+(gdb) nextprint $ebxsi
+No registers.
+(gdb) print $esi[C[C[C[C[C[C[6Pnextprint $esi
+No registers.
+(gdb) examin $[K[K[K[K[K[K[K[Kx [K/x $esi
+No registers.
+(gdb) run
+Starting program: /home/shliu2/lab3/a.out 
+Please enter the magic pass phrase: test
+
+
+Breakpoint 1, 0x0804863b in main ()
+(gdb) runx/x $esi
+0xffffd56c:	0x72756f59
+(gdb) x/x $esi[C[C[C[C[C[C[5Prunx/x $esi[K[Kbx
+0xffffd5ec:	0x72756f59
+(gdb) stepi
+0x080483e0 in strcmp@plt ()
+(gdb) stepix/x $ebx
+0xffffd5ec:	0x72756f59
+(gdb) x/x $ebx[C[C[C[C[C[C[3Pstepix/x $ebxsi
+0xffffd56c:	0x72756f59
+(gdb) stepi
+0x080483e6 in strcmp@plt ()
+(gdb) stepi
+0x080483eb in strcmp@plt ()
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 8749] will be killed.
+
+Quit anyway? (y or n) y
+]0;shliu2@shliu2: ~/lab3shliu2@shliu2:~/lab3$ exit
+exit
+
+Script done on Fri 19 Sep 2014 01:50:12 PM EDT

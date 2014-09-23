@@ -1,0 +1,190 @@
+<html><head><title>Final Jeopardy Simulation</title>
+
+<script language="JavaScript">
+  // provide prolog
+  var globalvalue  // variables declared with var
+                   // outside of functions are global
+  var watsonconfidence   // watson confidence (0-100) percent
+  var op1confidence       // opponent 1 confidence
+  var op2confidence       // opponent 2 confidence
+  // run simulation arrays. Each index is value for one standard simulation amount
+  // stake arrays
+  var watsonstakearray = new Array(12000, 10000, 8000,
+                              12000, 10000, 8000);
+
+  var op1stakearray = new Array(10000, 12000, 10000,
+                             10000, 12000, 10000);
+
+  var op2stakearray = new Array(8000, 8000, 12000,
+                             8000, 8000, 12000);
+  // bet arrays
+  // no watson bet array: it is calculated
+  var op1betarray = new Array(2000, 8001, 6001,
+                              6001, 8001, 6001);
+
+  var op2betarray = new Array(4000, 4001, 12000,
+                              4001, 4001, 8001);
+  // confidence arrays
+  var watsonconfidarray = new Array(75, 75, 75,
+                              75, 75, 75);
+  var op1confidarray = new Array(75, 75, 75,
+                              50, 50, 50);
+  var op2confidarray = new Array(75, 75, 75,
+                              50, 50, 50);
+  // opponent 2 confidence percent
+  var op2parray = new array(75, 75, 75,   
+                              50,50,50);
+  
+  // setupstd
+  // In this function display the amounts in the arrays
+  // called when user presses Setup button
+  function setupstd() {
+      // Example how to display data on screen
+      // Correct values must always be displayed
+      // Get index from screen: this always displays first index
+      i = 0;   // get from screen
+      document.JForm.watsonbet.value = 0;
+      document.JForm.watson.value = watsonstakearray[i];
+      document.JForm.opponent1.value = op1stakearray[i];
+      document.JForm.opponent2.value = op2stakearray[i];
+      document.JForm.opponent1bet.value = op1betarray[i];   
+      document.JForm.opponent2bet.value = op2betarray[i];
+      document.JForm.watsonconfidence.value = watsonconfidarray[i];
+      document.JForm.opponent1confidence.value = op1confidarray[i];
+      document.JForm.opponent2confidence.value = op2confidarray[i];
+      document.JForm.watsonanswer.value = "";
+      document.JForm.opponent1answer.value = "";
+      document.JForm.opponent2answer.value = "";
+  }
+  // calculatebet
+  // function returns amount to bet
+  // Calculets bet based on passed parameters:
+  // stakes for watson and opponents
+  // confidence for watson and opponents
+  // note that you cannot "cheat" and look at opponent's bets
+  function calculatebet(watson  // watson stake going into final  jeopardy  
+                        op1,  // opponent 1 stake
+                        op2,  // opponent 2 stake
+                        watsonconfidence, // watson confidence
+                        op1confidence, // op1 confidence
+                        op2confidence) // op2 confidence
+                        
+  {
+     // return amount to bet    
+     var amounttobet;
+     // for example return:
+     // maximum bet is your stake
+     amounttobet = watson;
+     return amounttobet;
+  }
+  function runsimulation() {
+    // run simulation using numbers in text boxes
+    // number of simulations to run in runnum
+    // if run once call run 
+    var numruns = parseInt(document.JForm.runnum.value);
+    if (numruns == 1)
+        run();
+    else {
+        // run numruns times and display number of wins
+        // For speed, do not update screen in the loop
+        var answer = "Number of wins: ";
+        var answer1 = 5000;
+        document.getElementById("data").innerHTML = answer + answer1;
+                      
+  }
+ 
+  // Run once using values from screen
+  function run() {
+    var watsonstake;  // watsonrstake is a local variable
+    // Example how to get value from form that will be a string
+    // watsonconfidence is a global variable
+    watsonconfidence=document.JForm.watsonconfidence.value;
+    // Example of error checking using regular expressions
+    // a check for nondigits
+    if (watsonconfidence.match(/\D/)) {
+      alert("Invalid confidence for Watson");
+      return;
+    }  
+    // Convert watsonconfidence to an integer
+    watsonconfidence = parseInt(watsonconfidence);
+    // Get watson stake from screen and convert it
+    watsonstake=document.JForm.watson.value;
+    watsonstake=parseInt(watsonstake);
+    // Putting data in the form
+    document.JForm.watsonbet.value=watsonstake;
+    document.JForm.watsonanswer.value ="Right answer";
+    document.JForm.opponent1answer.value ="Wrong answer";
+    document.JForm.opponent2answer.value ="Wrong answer'; 
+    result = "your score:    ";
+    result += watsonstake*2;
+    result += "<br>";
+    result += "Opponent 1 score: ";
+    result += 0;
+    result += "<br>";
+    result += "Opponent 2 score: ";
+    result += 0;
+    result += "<br>";
+    result += "You won!";
+    // Replacing the div section with text
+    document.getElementById("data").innerHTML = result;
+  }
+
+
+
+</script></head><body>
+<center>  
+<h2> Final Jeopardy Simulation by Paul Piwowarski</h2>
+
+
+<b>
+<form name="JForm">
+
+<table>
+<tbody><tr> <th></th>
+     <th> Watson
+     </th><th> Opponent 1
+     </th><th> Opponent 2
+</th></tr>
+<tr><td><b>Confidence of correct answer: 
+</td><td><input name="watsonconfidence" size="12" value="0"  type="text"/>
+</td><td><input name="opponent1confidence" size="12" value="0"  type="text"/>
+</td><td><input name="opponent2confidence" size="12" value="0"  type="text"/>
+</td></tr>
+<tr><td><b>Stake going into final jeopardy</td> 
+     <td><input name="watson" size="12" value="0"  type="text">
+     </td><td> <input name="opponent1" size="12" value="0"  type="text">
+     </td><td> <input name="opponent2" size="12" value="0"  type="text">
+</td></tr>
+<tr> <td><b>Amount bet in final jeopardy </td>
+     <td><input name="watsonbet" size="12" value="0"  type="text">
+     </td><td> <input name="opponent1bet" size="12" value="0"  type="text">
+     </td><td> <input name="opponent2bet" size="12" value="0"  type="text">
+</td></tr>
+<tr> <td><b>Right/wrong</td>
+     <td><input name="watsonanswer" size="12" value=""  type="text">
+     </td><td> <input name="opponent1answer" size="12" value=""  type="text">
+     </td><td> <input name="opponent2answer" size="12" value=""  type="text">
+</td></tr>
+ 
+</tbody></table>
+
+<br />
+<table>
+<tr><th>Perform setup with this standard amounts run number:
+</th><th><input name="stdnum" size="5" value="0"  type="text"> 
+</th><th><input value="Setup" onclick="setupstd();" type="button">
+</th></tr>
+<tr><th>Run this number of times: 
+</th><th><input name="runnum" size="5" value="0"  type="text"> 
+</th> <th><input value="Run" onclick="runsimulation();" type="button">
+</th></tr>
+</table>
+</form>
+</b>
+
+<h2>
+<div id="data">
+</div>
+</h2>
+</center>
+</body></html>

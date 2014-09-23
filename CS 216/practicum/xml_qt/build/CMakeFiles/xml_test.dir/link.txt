@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -O3 -DNDEBUG   CMakeFiles/xml_test.dir/main.o CMakeFiles/xml_test.dir/address.o CMakeFiles/xml_test.dir/addressprocessor.o CMakeFiles/xml_test.dir/qrc_addresslist.o  -o xml_test -rdynamic -lQtGui -lpng -lSM -lICE -lXext -lX11 -lm -lQtXml -lQtXmlPatterns -lQtNetwork -lQtCore -lz -lrt -lpthread -ldl 

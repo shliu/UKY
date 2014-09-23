@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+4d38f71551fba1329845bbc166cf85ac qrc_data.cxx
+829a1eb7ffb8216a80f859e7a011005d qrc_resource.cxx

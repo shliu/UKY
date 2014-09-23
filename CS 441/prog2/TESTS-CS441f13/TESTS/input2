@@ -1,0 +1,9 @@
+int var = 10;
+begin
+begin
+begin
+var = 11;
+end
+end
+print var;
+end

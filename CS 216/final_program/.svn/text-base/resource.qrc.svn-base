@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="xsd">
+    <file>accounts.xsd</file>
+    <file>plans.xsd</file>
+  </qresource>
+</RCC>

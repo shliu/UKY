@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="xsd">
+    <file>addresslist.xsd</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,32 @@
+<accountlist>
+  <account>
+    <accountnumber>1</accountnumber>
+    <phonenumber>650-253-0000</phonenumber>
+    <firstname>Larry</firstname>
+    <lastname>Page</lastname>
+    <street>1600 Amphitheatre Parkway</street>
+    <city>Mountain View</city>
+    <state>CA</state>
+    <zip>94043</zip>
+  </account>
+  <account>
+    <accountnumber>2</accountnumber>
+    <phonenumber>617-542-5942</phonenumber>   
+    <firstname>Richard</firstname>
+    <lastname>Stallmann</lastname>
+    <street>51 Franklin Street, Suite 500</street>
+    <city>Boston</city>
+    <state>MA</state>
+    <zip>02110</zip>
+  </account>
+  <account>
+    <accountnumber>3</accountnumber>
+    <phonenumber>425-705-1900</phonenumber>   
+    <firstname>Bill</firstname>
+    <lastname>Gates</lastname>
+    <street>One Microsoft Way</street>
+    <city>Redmont</city>
+    <state>WA</state>
+    <zip>98052</zip>
+  </account>
+</accountlist>

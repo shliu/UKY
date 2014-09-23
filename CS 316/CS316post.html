@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Test Post Submission</title>
+</head>
+<body>
+<h2 align="center"> <font color=red size=6 face=times>Post Submission Test</font></h2>
+<br>
+
+<form action="CS316post.php" method=post>
+
+      <p>Data Files Directory
+      <input type=text name=file value="~/HTML">
+<br>
+<br>
+   <p>Data to display:
+<br>
+   <p> View customer info by customer number
+      <input type=radio value=custID name=option>
+<br>
+   <p> View customer info by customer name
+      <input type=radio value=custName name=option>
+<br>
+   <p> Statistics Display
+       <input type=radio name=option value=stats>
+<br>
+	<p>Customer Name or Number to Search For:
+	<input type=text name=customer>
+<br>
+   <input type=submit value="Submit request">
+
+</form>
+</body>
+</html>

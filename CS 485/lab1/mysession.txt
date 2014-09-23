@@ -1,0 +1,262 @@
+Script started on Fri 05 Sep 2014 01:26:38 PM EDT
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -O0 -o test test.c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ time ./test 100
+No of iterations = 100
+
+real	0m0.368s
+user	0m0.278s
+sys	0m0.003s
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -O3 -o test test.c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ time ./test 100
+No of iterations = 100
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ echo "The FILL_IN_THE_BLANK was faster.  It took  FILL_IN_THE_BLANK time."--0[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took F[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FI[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FIL[C[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_I[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_T[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_TH[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_B[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_BL[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_BLA[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_BLAN[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C was faster.  It took FILL_IN_THE_BLANK[1P time."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C- was faster.  It took FILL_IN_THE_BLANK time."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[CO was faster.  It took FILL_IN_THE_BLA[1@N[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C3 was faster.  It took FILL_IN_THE_BL[1@A[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CILL_IN_THE_BLA[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLL_IN_THE_BLAN[1P[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_IN_THE_BLANK[1P time."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_IN_THE_BLANK [1Ptime."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CIN_THE_BLANK t[1Pime."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN_THE_BLANK ti[1Pme."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_THE_BLANK tim[1Pe."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CTHE_BLANK time[1P."[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CHE_BLANK time.[1P"[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CE_BLANK time."[K[A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_BLANK time." [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P time."0 time.". time."0 time."0 time."2 time."s time." [A]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ptime."
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pime."[1Pme."[1Pe."[1P."[1P"
+The -O3 was faster.  It took 0.002s
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -O0 -o test test.c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -p -g -O0 -o test test.c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ ./test 100
+No of iterations = 100
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gprof -p ./test
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 52.38      0.14     0.14      100     1.41     1.41  c
+ 41.15      0.25     0.11      100     1.11     2.53  b
+  7.48      0.27     0.02      100     0.20     0.20  a
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gprof -q ./test
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 3.67% of 0.27 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.27                 main [1]
+                0.11    0.14     100/100         b [2]
+                0.02    0.00     100/100         a [4]
+-----------------------------------------------
+                0.11    0.14     100/100         main [1]
+[2]     92.6    0.11    0.14     100         b [2]
+                0.14    0.00     100/100         c [3]
+-----------------------------------------------
+                0.14    0.00     100/100         b [2]
+[3]     51.9    0.14    0.00     100         c [3]
+-----------------------------------------------
+                0.02    0.00     100/100         main [1]
+[4]      7.4    0.02    0.00     100         a [4]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [4] a                       [2] b                       [3] c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -p -g -O0 -o test test.c[1P[1@3
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ ./test 100
+No of iterations = 100
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gprof -p ./test
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gprof -q ./test
+gprof: gmon.out file is missing call-graph data
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ gcc -O0 -o test test.c
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ valgrind --tool=callgrind ./test 100
+==3685== Callgrind, a call-graph generating cache profiler
+==3685== Copyright (C) 2002-2013, and GNU GPL'd, by Josef Weidendorfer et al.
+==3685== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==3685== Command: ./test 100
+==3685== 
+==3685== For interactive control, run 'callgrind_control -h'.
+No of iterations = 100
+==3685== 
+==3685== Events    : Ir
+==3685== Collected : 630109703
+==3685== 
+==3685== I   refs:      630,109,703
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ kcachegrind &
+[1] 3686
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ kcachegrind: cannot connect to X server 
+kcachegrind &[K[K[K[K[K[K[K[K[K[K[K[K[Kgcc -O3 -o test test.c
+[1]+  Exit 1                  kcachegrind
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ valgrind --tool=callgrind ./test 100
+==3693== Callgrind, a call-graph generating cache profiler
+==3693== Copyright (C) 2002-2013, and GNU GPL'd, by Josef Weidendorfer et al.
+==3693== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==3693== Command: ./test 100
+==3693== 
+==3693== For interactive control, run 'callgrind_control -h'.
+No of iterations = 100
+==3693== 
+==3693== Events    : Ir
+==3693== Collected : 105180
+==3693== 
+==3693== I   refs:      105,180
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ kcachegrind &
+[1] 3695
+]0;shliu2@shliu2: ~/Documents/lab1shliu2@shliu2:~/Documents/lab1$ kcachegrind: cannot connect to X server 
+exit
+Script done on Fri 05 Sep 2014 01:35:20 PM EDT

@@ -1,0 +1,14 @@
+
+This directory contains the code for a simple
+infix-to-posfix translator  presented in Aho, Sethi, Ullman
+Compilers book.  Refer to that book for details.
+
+
+Modernized by ___, Oct/8/2013 to eliminate
+warnings caused by archaic C style.
+
+REMEMBER: infix notation you enter MUST end with ';'
+Eg:
+	1+2;
+	(1+2)*(3-4);
+	etc.

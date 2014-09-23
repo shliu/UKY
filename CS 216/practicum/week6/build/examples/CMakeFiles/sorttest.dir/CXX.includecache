@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sort/sortablebase.h
+vector
+-
+
+../sort/timer.h
+
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/examples/main.cpp
+iostream
+-
+vector
+-
+cstdlib
+-
+sort/timer.h
+-
+sortable.h
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/examples/sortable.h
+
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/examples/sortable.cpp
+cstdlib
+-
+algorithm
+-
+sortable.h
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/examples/sortable.h
+
+/u/zon-d2/ugrad/shliu2/cs216/practicum/week6/examples/sortable.h
+sort/sortablebase.h
+-
+vector
+-
+

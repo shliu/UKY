@@ -1,0 +1,26 @@
+<addresslist>
+  <address>
+    <firstname>Larry</firstname>
+    <lastname>Page</lastname>
+    <street>1600 Amphitheatre Parkway</street>
+    <city>Mountain View</city>
+    <state>CA</state>
+    <zip>94043</zip>
+  </address>
+  <address>
+    <firstname>Richard</firstname>
+    <lastname>Stallmann</lastname>
+    <street>51 Franklin Street, Suite 500</street>
+    <city>Boston</city>
+    <state>MA</state>
+    <zip>02110</zip>
+  </address>
+  <address>
+    <firstname>Bill</firstname>
+    <lastname>Gates</lastname>
+    <street>One Microsoft Way</street>
+    <city>Redmont</city>
+    <state>WA</state>
+    <zip>98052</zip>
+  </address>
+</addresslist>

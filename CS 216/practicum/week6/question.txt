@@ -1,0 +1,27 @@
+Steven Liu
+CS216 
+Practicum5 (week 6) 
+
+1)How many backend generators are available for CMake on multilab machines?
+	5
+
+2)What are the setting CMake uses with GCC to do a release build?
+	-O3 -DNDEBUG
+
+3)Update timestamp of top-level CMakeLists.txt, rerun make.  What happens?
+	make rechecks configuration, regenerates, then rewrites build files.
+
+4)What is the approximate speedup when building serial vs parallel with "-j 4"?
+	serial: 2.567s, parallel: 2.117s
+	speedup: ~1.213
+
+5)The speed up in build time for CMake monolithic version is considerably
+  larger than library version.  Why?
+	I have no idea what "monolithic" means, and searching the cmake
+	documentation only turned up something called "CPACK_MONOLITHIC_INSTALL"
+	which did not affect the build time when set to 1.
+	If I had to guess, I'm going to say that any speedup in build time 
+	for the monolithic version is due to the compiler/linker(?) knowing
+	how the files link up at the time it is built, giving the tools the 
+	ability to separate out processes more precisely. 
+	

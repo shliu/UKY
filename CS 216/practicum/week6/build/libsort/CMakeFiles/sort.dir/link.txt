@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -Wall  -shared -Wl,-soname,libsort.so -o libsort.so CMakeFiles/sort.dir/sortablebase.cpp.o CMakeFiles/sort.dir/timer.cpp.o 

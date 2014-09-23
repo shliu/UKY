@@ -1,0 +1,33 @@
+Steven Liu
+CS441
+HW3
+
+hw3.1
+  I used the "tr" unix program to fix the mutated version.
+  First run I performed 
+	"tr '[:upper:]' '[:lower:]' <calc1.awk.2> calc1.awk.2.low"
+	This replaced all upper case characters with their lower case counter parts
+  Second run I performed 
+	"tr 'eoua' oeau' <calc1.awk.2.low> calc1.awk"
+	This replaced e with o, o with e, u with a, and a with u.
+  Finally I manually made the awk built-in variable "NF" uppercase.
+  
+hw3.2
+  Please see the attached calc1.cpp code.
+  The program was successfully compiled on multi-lab using:
+    "g++ -Wall calc1.cpp"
+  The main differences between the awk version and the c++ version are:
+    1) Tokenizing the input string was more difficult with c++.
+	In awk, this seemed to have been automatically performed for you.
+	In c++, I had to write my own string tokenizing function.
+	2) The c++ version lacks regular expressions.  This is likely due
+	to our multi-lab compiler lacking the latest version of c++.
+	This could also be because the support for the latest standard by
+	gcc is experimental and features may not be fully implemented
+	3) The c++ version required a typecast from string to float.  This
+	is because c++ is a strongly typed language, whereas awk is not.	
+  
+hw3.3
+  With the way I coded my c++ calculator, allowing "pi" to represent 
+  "3.14159" was as simple as adding a string comparison.  
+  I have implemented this in my code - please see the attached calc1.cpp code.

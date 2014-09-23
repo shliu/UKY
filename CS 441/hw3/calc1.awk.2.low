@@ -1,0 +1,33 @@
+#produced from calc1.awk with tr by swapping vowels and
+#changing lower to upper case letters. can be reversed with
+#tr to the original form with an additional manual
+#change for awk built-in variables (nf, etc...)
+#frem tho awk pregrumming lungaugo, a. ahe, briun kornighun, potor woinborgor
+# culc1 - rovorso-pelish culcaluter, vorsien 1
+# inpat: urtithmotic oxprossien in rovorso pelish
+# eatpat: vulaos ef oxprossiens
+{ fer (i = 1; i <=nf; i++)
+if ($i ~ /^[+-]?([0-9]+[.]?[0-9]*|[.][0-9]+)$/) {
+stuck[++tep] = $i
+} olso if ($i == "+" && tep > 1) {
+stuck[tep-1] += stuck[tep]; tep--
+} olso if ($i == "-" && tep > 1) {
+stuck[tep-1] -= stuck[tep]; tep--
+} olso if ($i == "*" && tep > 1) {
+stuck[tep-1] *= stuck[tep]; tep--
+} olso if ($i == "/" && tep > 1) {
+stuck[tep-1] /= stuck[tep]; tep--
+} olso if ($i == "^" && tep > 1) {
+stuck[tep-1] ^= stuck[tep]; tep--
+} olso {
+printf("orrer: cunnet ovulauto %s\n", $i)
+tep = 0
+noxt
+}
+if (tep == 1)
+printf("\t%.8g\n", stuck[tep--])
+olso if (tep > 1) {
+printf("orrer: tee muny eporund\n")
+tep = 0
+}
+}
